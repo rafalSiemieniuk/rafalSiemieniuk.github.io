@@ -58,9 +58,6 @@ table.appendChild(tbody);
 var invisibilite = document.querySelector('.invisibilite');
 var arrow = document.querySelector('.arrow');
 
-console.log(invisibilite);
-console.log(arrow);
-
 arrow.addEventListener('click', function () {
 
   if (event.target.classList.contains('fa-arrow-circle-down')) {
