@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: grey; 
+  }
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 40px;
+    border-bottom: 2px solid grey;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.inLine:before {
+    font-family: 'Simple-Line-Icons';
+    padding-right: 10px;
+    font-size: 16px;
+}
+.e069:before {
+    content: "\e069";
+}
+.e04b:before {
+    content: "\e04b";
+}
+.e01e:before {
+    content: "\e01e";
+}
+.e019:before {
+    content: "\e019";
+}
+.e01b:before {
+    content: "\e01b";
+}
+.e077:before {
+    content: "\e077";
+}
+.e07d:before {
+    content: "\e07d";
+}
+
+.container {
+    width: 100%;
+}
+.page {
+    background-color: white;
+    width: 210mm;
+    height: 281mm;
+    margin: 60px auto;
+    position: relative;
+}
+.header {
+    padding: 40px;
+}
+.article {
+    padding: 0px 100px 20px 100px;
+}
+.basic {
+    width: 100%;
+    padding-bottom: 15px;
+}
+.picture {
+    padding-top: 12px;
+    width: 25%;
+    float: left;
+    text-align: center;
+    display: inline-block;
+}
+.image {
+    height: 150px;
+}
+.personalDetails {
+    width: 75%;
+    float: left;
+    position: relative;
+}
+.github-link {
+    text-decoration: none;
+    color: black;
+}
+.github-link:hover {
+
+    opacity: 0.8;
+}
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.float {
+    float: left;
+}
+.personalDetails__ul {
+    list-style: none inside;
+    padding: 10px;
+}
+.personalDetails__ul > li {
+    padding: 1px 0px;
+}
+.hobby__ul {
+    margin-left: 10px;
+}
+.hobby__ul > li {
+    padding: 5px 0px;
+    list-style: circle outside;
+}
+.bold {
+    font-weight: bold
+}
+.otherInformations {
+    padding: 15px 0px;
+}
+.date, .info, #tableSkills {
+    float: left;
+    padding: 10px;
+}
+.skills, .hobby {
+    float: left;
+    width: 50%;
+}
+.language {
+    padding: 10px;
+}
+
+.form {
+    padding: 40px 0;
+    width: 50%;
+    margin: 0 auto;
+}
+.form > input, textarea {
+    display: block;
+    margin: 5px 0 15px 0;
+    padding: 5px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    background-color: rgb(216, 216, 216);
+    width: 100%;
+    resize: none;
+}
+.form-submit {
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 38%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 2px solid grey;
+    border-radius: 4px;
+    transition: all 0.5s;
+    font-weight: bold;
+    
+}
+.form-submit:hover {
+    background-color: grey;
+    cursor: pointer;
+    color: white;
+}
+.footer {
+    position: absolute; 
+    bottom: 0;
+    width: 100%;
+}
+.footer__text {
+    text-align: center;
+    font-size: 10px;
+    padding: 0 65px 15px 65px;;
+}
+.arrow {
+    text-align: right;
+    position: absolute; 
+    bottom: 0;
+    right: 0;
+    animation: scale 3s infinite;
+}
+.fa {
+    font-size: 35px;
+    padding: 15px;
+    color:black;
+}
+
+/* STYLE JS */
+
+.invisibilite {
+    display: none;
+}
+
+
+.arrow:hover {
+	animation-play-state: paused;
+}
+@keyframes scale {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+}

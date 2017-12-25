@@ -1,18 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+<!DOCTYPE HTML>
+<html lang="pl">
 
-    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title> CV - Rafał Siemieniuk </title>
+  <meta name="description" content="Staż dla każdego" />
+  <meta name="keywords" content="staż, challenge, kod, programista, web, www" />
+  <!-- 
+  <link rel="stylesheet" href="fonts.css" type="text/css" />
+  <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+-->
+  <link rel="stylesheet" href="simple-line-icons.css">
+  <link rel="stylesheet" href="font-awesome.css">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Source+Sans+Pro:400,700&amp;subset=latin-ext" rel="stylesheet">
 
 </head>
-<body>
-<h1>Rafał</h1>    
 
-<script type="text/javascript" src="js/main.js"></script>
+<body>
+
+  <div class="container">
+    <div class="page">
+      <header class="header">
+        <h1>Curriculum vitae</h1>
+      </header>
+      <article class="article">
+
+        <div class="basic clear">
+          <div class="picture">
+            <img class="image" src="person.jpg" alt="Zdjęcie profilowe osoby ubiegającej się o przyjęcie do pracy" />
+          </div>
+          <div class="personalDetails clear">
+            <h2 class="inLine e069">Dane personalne:</h2>
+            <div class="float">
+              <ul class="personalDetails__ul bold">
+                <li>Imię i nazwisko:</li>
+                <li>E-mail:</li>
+                <li>Telefon:</li>
+                <li>Data urodzenia:</li>
+                <li>Miejsce zamieszkania:</li>
+                <li>GitHub:</li>
+              </ul>
+            </div>
+            <div class="float">
+              <ul class="personalDetails__ul" itemtype="http://schema.org/Person">
+                <li itemprop="givenName">Rafał Siemieniuk</li>
+                <li itemprop="email">siemieniukrafal@gmail.com</li>
+                <li itemprop="telephone">730009252</li>
+                <li itemprop="birthDate">20 lipca 1992r.</li>
+                <li itemprop="address">Białystok</li>
+                <li>
+                  <a class="github-link" href="https://github.com/rafalSiemieniuk">https://github.com/rafalSiemieniuk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="cvContent">
+          <div class="experience otherInformations">
+            <h2 class="inLine e04b">Doświadczenie zawodowe:</h2>
+            <div class="date">
+              <h3>03.2016 - teraz</h3>
+            </div>
+            <div class="info">
+              <h3>Usługi Geodezyjne „Croma”</h3>
+              <p>Stanowisko: Asystent geodety</p>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="education otherInformations">
+            <h2 class="inLine e019">Edukacja:</h2>
+            <div class="date">
+              <h3>10.2012 - 02.2016</h3>
+            </div>
+            <div class="info">
+              <h3>Uniwerrsytet Warmińsko-Mazurski w Olsztynie</h3>
+              <p>Kierunek: Geodezja i Kartografia</p>
+            </div>
+            <div class="clear"></div>
+            <div class="date">
+              <h3>09.2008 - 06.2012</h3>
+            </div>
+            <div class="info">
+              <h3>Zespół Szkół Budowlano-Geodezyjnych w Białymstoku</h3>
+              <p>Kierunek: Technik Geodeta</p>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="cvContent clear otherInformations">
+            <div class="skills">
+              <h2 class="inLine e077">Umiejętności:</h2>
+              <div id="tableSkills"></div>
+            </div>
+            <div class="hobby">
+              <h2 class="inLine e01b">Hobby:</h2>
+              <ul class="hobby__ul">
+                <li>Makroekonomia - szkoła austriacka</li>
+                <li>Psychologia - psychologia osobowości, patopsychologia</li>
+                <li>Historia - wiek XIX, XX</li>
+                <li>Sport - łyżwy, rolki, rower, szachy</li>
+              </ul>
+            </div>
+          </div>
+          <div class="languages otherInformations">
+            <h2 class="inLine e07d">Języki obce:</h2>
+            <p class="language">
+              <span class="bold">Angielski:</span> poziom B1</p>
+          </div>
+      </article>
+
+      <footer class="footer">
+        <p class="footer__text">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie
+          z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922). </p>
+        <div class="arrow">
+          <a href="#CV">
+            <i title="Pokaż formularz" class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+          </a>
+
+        </div>
+      </footer>
+      </div>
+
+    </div>
+    <div class="container invisibilite">
+      <div class="page">
+        <header class="header">
+          <h1 id="CV">Curriculum vitae</h1>
+        </header>
+        <article class="article">
+          <div class="contactForm clear">
+            <h2 class="inLine e01e">Formularz:</h2>
+            <form name="CVForm" action="mailto:siemieniukrafal@gmail.com" method="post" enctype="text/plain">
+              <div class="form">
+                <label for="name">Imię lub nazwa firmy:</label>
+                <input id="name" name="name" type="text">
+
+                <label for="e-mail">Email:</label>
+                <input id="e-mail" name="e-mail" type="email">
+
+                <label for="topic">Tytuł:</label>
+                <input id="topic" name="topic" type="text">
+
+                <label class="Label" for="message">Wiadomość:</label>
+                <textarea class="textarea" id="message" name="message"></textarea>
+                <button class="form-submit" type="submit">Wyślij</button>
+              </div>
+            </form>
+          </div>
+
+        </article class="article">
+        <footer class="footer">
+          <p class="footer__text">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji
+            (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).
+            </p>
+        </footer>
+      </div>
+    </div>
+  </div>
 
 </body>
+<script src="work.js" type="text/javascript"></script>
+
 </html>
