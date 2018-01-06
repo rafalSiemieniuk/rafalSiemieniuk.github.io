@@ -1,1 +1,0 @@
-# rafalSiemieniuk.github.io

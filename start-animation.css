@@ -1,0 +1,233 @@
+.loading-start-window {
+    z-index: 4;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50.0%;
+    height: 550px;
+    width: 440px; 
+    opacity: 0;
+    background-color: white;
+    animation-name: loading-start-window;
+    animation-duration: 4s;
+    transition-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.fa-hourglass {
+    position: relative;
+    font-size: 60px;
+    line-height: 550px;
+    animation-name: rotate-hourglass;
+    animation-duration: 2s;
+    transition-timing-function: linear;
+}
+
+/* ANIMATIONS */
+.menu-buttons-one-page {
+    animation-name: action-left-centre;
+    animation-duration: 1s;
+    transition-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.menu-buttons-two-page {
+    animation-name: action-centre-left;
+    animation-duration: 1s;
+    transition-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.first-page-active {
+    z-index: 3;
+    animation-name: action-left-centre, appear;
+    animation-duration: 1s;
+    transition-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.first-page-hidden {
+    animation-name: action-centre-left, disappear;
+    animation-duration: 1s;
+    transition-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.left-page-active {
+    z-index: 2;
+    animation-name: action-centre-left, appear;
+    animation-duration: 1s, 1s;
+    transition-timing-function: ease-out, ease-out;
+    animation-fill-mode: forwards, forwards;
+}
+.left-page-hidden {
+    animation-name: action-left-centre, disappear;
+    animation-duration: 1s;
+    transition-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.right-page-active {
+    z-index: 1;
+    animation-name: action-centre-right, appear;
+    animation-duration: 1s, 1s;
+    transition-timing-function: ease-out, ease-out;
+    animation-fill-mode: forwards, forwards; 
+}
+.right-page-hidden {
+    animation-name: action-right-centre, disappear;
+    animation-duration: 1s;
+    transition-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes action-left-centre {
+    0%   {
+        left:-225px; 
+        top:0px;
+        }
+    100%  {
+        left:0px; 
+        top:0px;
+        animation-play-state: paused;
+        }
+}
+@keyframes action-right-centre {
+    0%   {
+        left:225px; 
+        top:0px;
+        }
+    100%  {
+        left:0px; 
+        top:0px;
+        animation-play-state: paused;
+        }
+}
+@keyframes action-centre-right {
+    0%   {
+        left:0px; 
+        top:0px;
+        }
+    100%  {
+        left:225px; 
+        top:0px;
+        animation-play-state: paused;
+        }
+}
+@keyframes action-centre-left {
+    0%   {
+        left:0px; 
+        top:0px;
+        }
+    100%  {
+        left:-225px; 
+        top:0px;
+        animation-play-state: paused;
+        }
+}
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0.9;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    30% {
+        opacity: 0.7;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0.4;
+    }
+    70% {
+        opacity: 0.3;
+    }
+    80% {
+        opacity: 0.2;
+    }
+    90% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 0;
+      animation-play-state: paused;
+    }
+  }
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+      opacity: 1;
+      animation-play-state: paused;
+    }
+  }
+@keyframes rotate-hourglass { 
+    0% { 
+        transform: rotate(0deg); 
+    } 
+    50% { 
+        transform: rotate(180deg);         
+    }
+    100% { 
+        transform: rotate(180deg); 
+        opacity: 0; 
+    }
+}
+@keyframes loading-start-window {
+    0%   {
+        opacity: 1;
+        width: 890px; 
+        position: absolute;
+        top: 50%;
+        }
+    25%   {
+        opacity: 1;
+        width: 440px; 
+        position: absolute;
+        top: 50%;
+        }
+    50%   {
+        opacity: 0;
+        width: 440px; 
+        position: absolute;
+        top: 50%;
+        }
+    51%  {
+        width: 440px; 
+        top: -50%;
+        }
+    100%  {
+        width: 890px; 
+        top: -50%;
+        }
+} 

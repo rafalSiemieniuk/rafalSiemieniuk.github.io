@@ -2,166 +2,230 @@
 <html lang="pl">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title> CV - Rafał Siemieniuk </title>
-  <meta name="description" content="Staż dla każdego" />
-  <meta name="keywords" content="staż, challenge, kod, programista, web, www" />
-  <!-- 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title> CV - Rafał Siemieniuk </title>
+    <meta name="description" content="Staż dla każdego" />
+    <meta name="keywords" content="staż, challenge, kod, programista, web, www" />
+    <!-- 
   <link rel="stylesheet" href="fonts.css" type="text/css" />
   <link rel="stylesheet" href="css/fontello.css" type="text/css" />
 -->
-  <link rel="stylesheet" href="simple-line-icons.css">
-  <link rel="stylesheet" href="font-awesome.css">
-  <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="simple-line-icons.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="topographic.css" type="text/css" />
+    <link rel="stylesheet" href="start-animation.css" type="text/css" />
+    <link rel="stylesheet" href="style-table-skills.css" type="text/css" />
 
-  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Source+Sans+Pro:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Source+Sans+Pro:400,700&amp;subset=latin-ext" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <div class="container">
-    <div class="page">
-      <header class="header">
-        <h1>Curriculum vitae</h1>
-      </header>
-      <article class="article">
+    <div class="space">
+        <div class="background"></div>
+        <div class="container">
+            <div class="menu-buttons menu-buttons-one-page">
+                <ul class="menu-buttons-ul">
+                    <li>
+                        <button class="menu-home" type="button">Home</button>
+                    </li>
+                    <li>
+                        <button class="menu-experience" type="button">Experience</button>
+                    </li>
+                    <li>
+                        <button class="menu-skills" type="button">Skills</button>
+                    </li>
+                    <li>
+                        <button class="menu-hobby" type="button">Hobby</button>
+                    </li>
+                    <li>
+                        <button class="menu-contact" type="button">Contact</button>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="basic clear">
-          <div class="picture">
-            <img class="image" src="Person.jpg" alt="Zdjęcie profilowe osoby ubiegającej się o przyjęcie do pracy" />
-          </div>
-          <div class="personalDetails clear">
-            <h2 class="inLine e069">Dane personalne:</h2>
-            <div class="float">
-              <ul class="personalDetails__ul bold">
-                <li>Imię i nazwisko:</li>
-                <li>E-mail:</li>
-                <li>Telefon:</li>
-                <li>Data urodzenia:</li>
-                <li>Miejsce zamieszkania:</li>
-                <li>GitHub:</li>
-              </ul>
+            <div class="loading-start-window">
+                <i class="fa fa-hourglass" aria-hidden="true"></i>
             </div>
-            <div class="float">
-              <ul class="personalDetails__ul" itemtype="http://schema.org/Person">
-                <li itemprop="givenName">Rafał Siemieniuk</li>
-                <li itemprop="email">siemieniukrafal@gmail.com</li>
-                <li itemprop="telephone">730009252</li>
-                <li itemprop="birthDate">20 lipca 1992r.</li>
-                <li itemprop="address">Białystok</li>
-                <li>
-                  <a class="github-link" href="https://github.com/rafalSiemieniuk">https://github.com/rafalSiemieniuk</a>
-                </li>
-              </ul>
+
+            <div class="first-page first-page-active">
+                <div class="vcard-pic">
+                    <img class="vcard-pic-img" src="person.jpg" alt="person picture">
+                </div>
+                <div class="vcard-description">
+                    <h1>Hi! I'm Rafał Siemieniuk</h1>
+                    <div class="vcard-description-text">
+                        <span>My name is Rafal and I am a Front-End Developer. I work on web technologies like HTML, CSS, JavaScript.</span>
+                    </div>
+                    <footer class="footer">
+                        <div class="email-and-phone">
+                            <p>
+                                <i class="vcard-icon fa fa-envelope-o" aria-hidden="true"></i>siemieniukrafal@gmail.com</p>
+                            <p>
+                                <i class="vcard-icon fa fa-phone" aria-hidden="true"></i>730 009 252</p>
+                        </div>
+                        <i class="footer-icon fa fa-facebook-square" aria-hidden="true"></i>
+                        <i class="footer-icon fa fa-github-square" aria-hidden="true"></i>
+                        <i class="footer-icon fa fa-google-plus-square" aria-hidden="true"></i>
+                    </footer>
+                </div>
             </div>
-          </div>
+
+            <div class="left-page left-page-hidden">
+                <div class="vcard-pic">
+                    <img class="vcard-pic-img" src="person2.jpg" alt="person picture">
+                </div>
+                <div class="vcard-description">
+                    <h1>Hi! I'm Rafał Siemieniuk</h1>
+                    <div class="vcard-description-text">
+                        <span>My name is Rafal and I am a Front-End Developer. I work on web technologies like HTML, CSS, JavaScript.</span>
+                    </div>
+                    <footer class="footer">
+                        <div class="email-and-phone">
+                            <p>
+                                <i class="vcard-icon fa fa-envelope-o" aria-hidden="true"></i>siemieniukrafal@gmail.com</p>
+                            <p>
+                                <i class="vcard-icon fa fa-phone" aria-hidden="true"></i>730 009 252</p>
+                        </div>
+                        <i class="footer-icon fa fa-facebook-square" aria-hidden="true"></i>
+                        <i class="footer-icon fa fa-github-square" aria-hidden="true"></i>
+                        <i class="footer-icon fa fa-google-plus-square" aria-hidden="true"></i>
+                        <div class="go-to-the-print-version">
+                            <a href="index-pdf.html">
+                                <i title="Go to the print version" class="footer-icon fa fa-print" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="right-page right-page-hidden experience">
+                <div class="job-experience">
+                    <h2>
+                        <i class="header-icon fa fa-briefcase" aria-hidden="true"></i>Working experience</h2>
+                    <div class="job">
+                        <h3>Surveyor services „Croma”</h3>
+                        <p class="job-date">03.2016 - present</p>
+                        <p class="job-description">Maecenas sollicitudin, justo vitae sagittis sollicitudin, mi ante feugiat ipsum, pretium feugiat
+                            justo risus quis turpis. Morbi enim justo, tincidunt a mollis eget, molestie non mi. Mauris vitae
+                            magna blandit, ultrices quam id, suscipit mauris. Quisque urna lacus, elementum vitae quam id,
+                            egestas sagittis ipsum.</p>
+                    </div>
+                    <div class="job">
+                        <h3>GLOBAL EAST</h3>
+                        <p class="job-date">03.2016 - 03.2016</p>
+                        <p class="job-description">Professional practice - sollicitudin, justo vitae sagittis sollicitudin, mi ante feugiat ipsum, pretium
+                            feugiat justo risus quis turpis. Morbi enim justo, tincidunt a mollis eget, molestie non mi.
+                            Mauris vitae magna blandit, ultrices quam id, suscipit mauris. Quisque urna lacus, elementum
+                            vitae quam id, egestas sagittis ipsum.</p>
+                    </div>
+                </div>
+                <div class="edu-experience">
+                    <h2>
+                        <i class="header-icon fa fa-graduation-cap" aria-hidden="true"></i>Education</h2>
+                    <div class="edu">
+                        <h3>Bialystok University of Technology</h3>
+                        <p class="edu-date">Internet Applications Front-End Development 10.2017 - present</p>
+                        <p class "edu-description"> Donec bibendum est turpis, non aliquam lectus accumsan ac. Suspendisse potenti. Donec consectetur
+                            ante vestibulum iaculis mattis. Suspendisse quis ullamcorper dolor, in ultrices lacus. Pellentesque
+                            viverra dui ipsum, at ornare nunc volutpat eu. Etiam laoreet turpis a faucibus viverra. Fusce
+                            sagittis neque augue, ac placerat mauris fermentum ac. Sed eget. </p>
+                    </div>
+                    <div class="edu">
+                        <h3>University of Warmia and Mazury in Olsztyn</h3>
+                        <p class="edu-date">Geodesy and Cartography 10.2012 - 02.2016</p>
+                        <p class "edu-description"> Donec bibendum est turpis, non aliquam lectus accumsan ac. Suspendisse potenti. Donec consectetur
+                            ante vestibulum iaculis mattis. Suspendisse quis ullamcorper dolor, in ultrices lacus. Pellentesque
+                            viverra dui ipsum, at ornare nunc volutpat eu. Etiam laoreet turpis a faucibus viverra. Fusce
+                            sagittis neque augue, ac placerat mauris fermentum ac. Sed eget. </p>
+                    </div>
+                    <div class="edu">
+                        <h3>Zespół Szkół Budowlano-Geodezyjnych w Białymstoku</h3>
+                        <p class="edu-date">Surveying technician 09.2008 - 06.2012</p>
+                        <p class "edu-description"> Donec bibendum est turpis, non aliquam lectus accumsan ac. Suspendisse potenti. Donec consectetur
+                            ante vestibulum iaculis mattis. Suspendisse quis ullamcorper dolor, in ultrices lacus. Pellentesque
+                            viverra dui ipsum, at ornare nunc volutpat eu. Etiam laoreet turpis a faucibus viverra. Fusce
+                            sagittis neque augue, ac placerat mauris fermentum ac. Sed eget. </p>
+                    </div>
+                </div>
+                <div class="workshop-experience">
+                    <h2>
+                        <i class="header-icon fa fa-plus" aria-hidden="true"></i>Workshops</h2>
+                    <div class="workshop">
+                        <h3>Training center EDUGIKA</h3>
+                        <p class="workshop-date">AutoCAD workshop - 20 December 2015</p>
+                        <p class="workshop-description">Maecenas sollicitudin, justo vitae sagittis sollicitudin, mi ante feugiat ipsum, pretium feugiat
+                            justo risus quis turpis. Morbi enim justo, tincidunt a mollis eget, molestie non mi. Mauris vitae
+                            magna blandit, ultrices quam id, suscipit mauris. Quisque urna lacus, elementum vitae quam id,
+                            egestas sagittis ipsum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-page right-page-hidden">
+                <h2>
+                    <i class="header-icon fa fa-table" aria-hidden="true"></i>Skills</h2>
+                <div id="tableSkills"></div>
+                <h2>
+                    <i class="header-icon fa fa-comments" aria-hidden="true"></i>Languages
+                </h2>
+            </div>
+            <div class="right-page right-page-hidden hobby">
+                <div class="hobby-description">
+                    <h2>
+                        <i class="header-icon fa fa-gamepad" aria-hidden="true"></i>Hobby</h2>
+                    <ul class="hobby-ul">
+                        <li>Macroeconomics - Austrian school</li>
+                        <li>Psychology - Personality, psychopathology</li>
+                        <li>History - XX and XIX century</li>
+                        <li>Sport - Ice skates, roller skates, bike, chess</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-page right-page-hidden contact">
+                <h2>
+                    <i class="header-icon fa fa-envelope" aria-hidden="true"></i>Contact</h2>
+                <div class="map">MAP</div>
+                <div class="adress">
+                    <h3 class="header-adress">
+                        <i class="contact-icon fa fa-map-marker" aria-hidden="true"></i>Adress</h3>
+                    <p class="contact-text">Białystok</p>
+                </div>
+                <div class="phone">
+                    <h3 class="header-phone">
+                        <i class="contact-icon fa fa-phone" aria-hidden="true"></i>Phone</h3>
+                    <p class="contact-text">730 009 252</p>
+                </div>
+                <div class="mail">
+                    <h3 class="header-mail">
+                        <i class="contact-icon fa fa-envelope" aria-hidden="true"></i>Mail</h3>
+                    <p class="contact-text">siemieniukrafal@gmail.com</p>
+                </div>
+                <div class="contact-form">
+                    <h3 class="header-contact-form">
+                        <i class="contact-icon fa fa-share" aria-hidden="true"></i>Send Me a Message</h3>
+                    <form class="form" name="CVForm" action="mailto:siemieniukrafal@gmail.com" method="post" enctype="text/plain">
+                        <input id="name" name="name" type="text" placeholder="Name">
+                        <input id="e-mail" name="e-mail" type="email" placeholder="Email">
+                        <input id="topic" name="topic" type="text" placeholder="Subject">
+                        <textarea class="textarea" id="message" name="message" placeholder="Message"></textarea>
+                        <button class="form-submit" type="submit">Send</button>
+                    </form>
+                </div>
+                <footer>
+                    <p class="footer-text">I hereby agree for processing the following personal information strictly for the purposes of job recruitment
+                        in accordance with the regulation for the protection of personal data passed on the following day:
+                        29.08.97 r. consolidated text Dz. U. 2016 r. poz. 922.</p>
+                </footer>
+            </div>
         </div>
-
-        <div class="cvContent">
-          <div class="experience otherInformations">
-            <h2 class="inLine e04b">Doświadczenie zawodowe:</h2>
-            <div class="date">
-              <h3>03.2016 - teraz</h3>
-            </div>
-            <div class="info">
-              <h3>Usługi Geodezyjne „Croma”</h3>
-              <p>Stanowisko: Asystent geodety</p>
-            </div>
-            <div class="clear"></div>
-          </div>
-          <div class="education otherInformations">
-            <h2 class="inLine e019">Edukacja:</h2>
-            <div class="date">
-              <h3>10.2012 - 02.2016</h3>
-            </div>
-            <div class="info">
-              <h3>Uniwerrsytet Warmińsko-Mazurski w Olsztynie</h3>
-              <p>Kierunek: Geodezja i Kartografia</p>
-            </div>
-            <div class="clear"></div>
-            <div class="date">
-              <h3>09.2008 - 06.2012</h3>
-            </div>
-            <div class="info">
-              <h3>Zespół Szkół Budowlano-Geodezyjnych w Białymstoku</h3>
-              <p>Kierunek: Technik Geodeta</p>
-            </div>
-            <div class="clear"></div>
-          </div>
-          <div class="cvContent clear otherInformations">
-            <div class="skills">
-              <h2 class="inLine e077">Umiejętności:</h2>
-              <div id="tableSkills"></div>
-            </div>
-            <div class="hobby">
-              <h2 class="inLine e01b">Hobby:</h2>
-              <ul class="hobby__ul">
-                <li>Makroekonomia - szkoła austriacka</li>
-                <li>Psychologia - psychologia osobowości, patopsychologia</li>
-                <li>Historia - wiek XIX, XX</li>
-                <li>Sport - łyżwy, rolki, rower, szachy</li>
-              </ul>
-            </div>
-          </div>
-          <div class="languages otherInformations">
-            <h2 class="inLine e07d">Języki obce:</h2>
-            <p class="language">
-              <span class="bold">Angielski:</span> poziom B1</p>
-          </div>
-      </article>
-
-      <footer class="footer">
-        <p class="footer__text">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie
-          z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922). </p>
-        <div class="arrow">
-          <a href="#CV">
-            <i title="Pokaż formularz" class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-          </a>
-
-        </div>
-      </footer>
-      </div>
-
+        <div id="bottom"></div>
     </div>
-    <div class="container invisibilite">
-      <div class="page">
-        <header class="header">
-          <h1 id="CV">Curriculum vitae</h1>
-        </header>
-        <article class="article">
-          <div class="contactForm clear">
-            <h2 class="inLine e01e">Formularz:</h2>
-            <form name="CVForm" action="mailto:siemieniukrafal@gmail.com" method="post" enctype="text/plain">
-              <div class="form">
-                <label for="name">Imię lub nazwa firmy:</label>
-                <input id="name" name="name" type="text">
-
-                <label for="e-mail">Email:</label>
-                <input id="e-mail" name="e-mail" type="email">
-
-                <label for="topic">Tytuł:</label>
-                <input id="topic" name="topic" type="text">
-
-                <label class="Label" for="message">Wiadomość:</label>
-                <textarea class="textarea" id="message" name="message"></textarea>
-                <button class="form-submit" type="submit">Wyślij</button>
-              </div>
-            </form>
-          </div>
-
-        </article class="article">
-        <footer class="footer">
-          <p class="footer__text">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji
-            (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).
-            </p>
-        </footer>
-      </div>
-    </div>
-  </div>
 
 </body>
+
 <script src="work.js" type="text/javascript"></script>
+<script src="table-skills.js" type="text/javascript"></script>
 
 </html>

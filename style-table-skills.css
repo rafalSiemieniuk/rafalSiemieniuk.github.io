@@ -1,0 +1,35 @@
+.table-skills {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-thead {
+    font-weight: bold;
+    text-align: center;
+}
+.table-thead-cell {
+    border: none;
+}
+.table-body {
+    border: none;
+}
+.table-row {
+    border: none;
+}
+.table-cell {
+    padding: 5px 10px;
+    border: none;
+}
+.table-cell-level {
+    width: 110px;
+    letter-spacing: 2px;
+    text-align: right;
+    color: rgb(5, 49, 145);
+    transition: letter-spacing 0.75s ease;
+}
+.table-light {
+    background: rgb(211, 211, 211);
+}
+.table-space-stars {
+    letter-spacing: 5px;
+    transition: letter-spacing 0.75s ease;
+}

@@ -1,75 +1,119 @@
-// TWORZENIE TABELI
+// Animations move
 
-var tableSkills = document.getElementById('tableSkills');
+var menuHome = document.querySelector('.menu-home');
+var menuExperience = document.querySelector('.menu-experience');
+var menuSkills = document.querySelector('.menu-skills');
+var menuHobby = document.querySelector('.menu-hobby');
+var menuContact = document.querySelector('.menu-contact');
 
-var number = [];
-for (var i = 0; i < number.length; i = + 1) {
-  number[i] = i;
+var rightPage = document.querySelector('.right-page');
+var rightPageAll = document.querySelectorAll('.right-page');
+
+
+var firstPage = document.querySelector('.first-page');
+var leftPage = document.querySelector('.left-page');
+var menuButtons = document.querySelector('.menu-buttons');
+var menuButton = document.querySelectorAll('.menu-buttons-ul li button');
+
+var arrayRightPage = Array.from(rightPageAll);
+var arrayMenuButton = Array.from(menuButton);
+var index
+
+function removeAllActive(all) {
+  return all.classList.remove('right-page-active');
+}
+function removeAllHidden(all) {
+  return all.classList.remove('right-page-hidden');
+}
+function addAllHidden(all) {
+  return all.classList.add('right-page-hidden');
 }
 
-var firstRow = ['nr', 'skill', 'level'];
-var firstRowLength = firstRow.length;
-var skills = ['html', 'CSS', 'Java Script', 'Adobe Photoshop', 'AutoCAD', 'EWmapa', 'TurboMap','MySQL','QGIS'];
-var skillsLength = skills.length;
-var levels = ['3/5', '3/5', '2/5', '1/5', '3/5', '4/5', '4/5','2/5','2/5'];
-
-var table = document.createElement("table");
-// var caption = document.createElement("caption");
-var thead = document.createElement("thead");
-var tbody = document.createElement("tbody");
-
-// caption.textContent = 'Umiejętności';
-// table.appendChild(caption);
-
-table.border = "1";
-
-var row = thead.insertRow(-1);
-for (var k = 0; k < firstRowLength; k++) {
-  var cell = row.insertCell(-1);
-  cell.innerHTML = firstRow[k];
+function removeAllId(all) {
+  return all.removeAttribute('id');
 }
 
-table.appendChild(thead);
-
-for (var j = 0; j < skillsLength; j++) {
-  row = tbody.insertRow(-1);
-  for (var k = 0; k < firstRowLength; k++) {
-    cell = row.insertCell(-1);
-    if (k === 0) {
-      cell.innerHTML = j + 1;
-    }
-    else if (k === 1) {
-      cell.innerHTML = skills[j];
-    }
-    else if (k === 2) {
-      cell.innerHTML = levels[j];
-    }
-    else {
-      cell.innerHTML = 'button';
-    }
-  }
+for (var i = 0; i < menuButton.length; ++i) {
+  menuButton[i].addEventListener('click', function (event) {
+    arrayMenuButton.map(removeAllId);
+    event.target.setAttribute('id', 'join__button');
+    menuHome.removeAttribute('id');
+  });
 }
 
-tableSkills.appendChild(table);
-table.appendChild(tbody);
-
-// ODSŁANIANIE FORMULARZA
-
-var invisibilite = document.querySelector('.invisibilite');
-var arrow = document.querySelector('.arrow');
-
-arrow.addEventListener('click', function () {
-
-  if (event.target.classList.contains('fa-arrow-circle-down')) {
-    invisibilite.removeAttribute('class');
-    event.target.setAttribute('title','Ukryj formularz');
-    event.target.classList.remove('fa-arrow-circle-down');
-    event.target.classList.add('fa-arrow-circle-up');
+function rightPageBtn(index) {
+  arrayRightPage.map(removeAllActive);
+  arrayRightPage.map(removeAllHidden);
+  rightPageAll[index].classList.add('right-page-active');
+  for (var i = 0; i < rightPageAll.length; i++) {
+    if (i !== index) {
+      arrayRightPage[i].classList.add('right-page-hidden');
+    }
   }
-  else {
-    invisibilite.classList.add('invisibilite');
-    event.target.setAttribute('title','Pokaż formularz');
-    event.target.classList.remove('fa-arrow-circle-up');
-    event.target.classList.add('fa-arrow-circle-down');
-  }
+  firstPage.classList.remove('first-page-active');
+  firstPage.classList.add('first-page-hidden');
+  leftPage.classList.add('left-page-active');
+  leftPage.classList.remove('left-page-hidden');
+  menuButtons.classList.add('menu-buttons-two-page');
+  menuButtons.classList.remove('menu-buttons-one-page');
+
+};
+
+menuHome.addEventListener('click', function () {
+  arrayRightPage.map(removeAllActive);
+  arrayRightPage.map(addAllHidden);
+
+  firstPage.classList.add('first-page-active');
+  firstPage.classList.remove('first-page-hidden');
+
+  leftPage.classList.remove('left-page-active');
+  leftPage.classList.add('left-page-hidden');
+
+  menuButtons.classList.remove('menu-buttons-two-page');
+  menuButtons.classList.add('menu-buttons-one-page');
 });
+
+menuExperience.addEventListener('click', function () {
+  rightPageBtn(0);
+});
+
+menuSkills.addEventListener('click', function () {
+  rightPageBtn(1);
+});
+
+menuHobby.addEventListener('click', function () {
+  rightPageBtn(2);
+});
+
+menuContact.addEventListener('click', function () {
+  rightPageBtn(3);
+});
+
+
+// PRZEWIJANIE STRONY
+function scrollpage() {
+  function f() {
+    window.scrollTo(0, n);
+    if (status == 0) {
+      // console.log(i);
+      n += 1;
+      // console.log(i);
+      if (n >= (height - window.innerHeight)) {
+        status = 1;
+        // console.log('koniec');
+        return
+      }
+    }
+    setTimeout(f, 1);
+  }
+  f();
+}
+
+var height = document.documentElement.scrollHeight;
+// console.log(height);
+var n = height - ((-0.000181818 * window.innerHeight + 1.291789) * window.innerHeight);
+var status = 0;
+scrollpage();
+
+// console.log((-0.000181818 * window.innerHeight + 0.291789) + 1);
+

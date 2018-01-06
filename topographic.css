@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+  }
+h1 {
+    font-size: 25px;
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 2px solid grey;
+}
+h2 {
+    margin: 25px 0 15px 0;
+    font-size: 20px;
+    padding: 5px;
+    border-left: 4px solid rgb(13, 116, 163);
+    font-family: 'Hammersmith One', sans-serif;
+}
+h3 {
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+.space {
+    background-color: black; 
+}
+.background {
+    background-image: url(image/galaxy2.jpg);
+    background-position: center;
+    opacity: 0.8;
+    height: 2500px;
+}
+.container {
+    position: fixed;
+    height: 550px;
+    width: 440px; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu-buttons{
+    position: absolute;
+    left: 0;
+    transform: translate(-100%, 0);
+}
+
+.menu-buttons-ul > li > button {
+    height: 35px;
+    width: 160px; 
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    text-align: left;
+    background-color: rgb(13, 116, 163);
+    margin-right: 10px;
+    transition: all 0.5s ease;
+}
+.menu-buttons-ul > li > button:hover {
+    background-color: rgb(5, 49, 145); 
+    color: white;
+    transition: all 0.5s ease;
+}
+#join__button {
+    background-color: rgb(5, 49, 145); 
+    color: white;
+    width: 170px;
+    margin-right: 0;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: all 0.5s ease; 
+} 
+
+/* ///////////////////////////////////////////////////////// */
+/* FIRST PAGE */
+.first-page {
+    /* margin-left: 10px; */
+    background-color: white;
+    height: 550px;
+    width: 440px; 
+    position: absolute;
+    border-bottom: 15px solid white;
+}
+.vcard-pic {
+    margin: 0 auto;
+    height: 38%;
+    text-align: center;
+    padding-top: 40px;
+}
+.vcard-pic-img {
+    border-radius: 100%;
+    height: 100%;
+}
+.vcard-description {
+    height: 62%;
+    padding: 40px 40px 25px 40px;
+    position: relative;
+}
+.vcard-description-text {
+    height: 30%;
+    padding: 15px;
+    text-align: center;
+}
+.email-and-phone {
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: rgb(13, 116, 163);
+    border-radius: 10px;
+    font-size: 16px;
+    color: wheat;
+}
+.vcard-icon, .contact-icon {
+    padding: 0 5px;
+}
+.footer {
+    position: absolute;
+    bottom: 25px;
+    text-align: center; 
+    width: 360px;
+    /* width: 100%; */
+}
+.footer-icon {
+    /* width: 60px; */
+    padding: 0 20px;
+    font-size: 35px;
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* LEFT PAGE */
+.left-page {
+    /* margin-left: 10px; */
+    height: 550px;
+    width: 440px;
+    background-color: white;
+    position: absolute;
+    border-bottom: 15px solid white;
+}
+.go-to-the-print-version {
+    text-align: right;
+}
+.fa-print {
+    animation: clapper 1s infinite;
+    animation-delay: 2s;
+    color: black;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 35px;
+    padding: 0;
+}
+@keyframes clapper {
+    0% {transform: rotate(0deg);}
+    5% {transform: rotate(30deg);}
+    10% {transform: rotate(0deg);}
+    15% {transform: rotate(-30deg);}
+    20% {transform: rotate(0deg);}
+    25% {transform: rotate(30deg);}
+    30% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
+}
+/* ///////////////////////////////////////////////////////// */
+/* RIGHT PAGE */
+.right-page {
+    /* margin-left: 10px; */
+    padding: 0 40px 25px 40px;
+    border-bottom: 15px solid white;
+    border-top: 15px solid white;
+    height: 550px;
+    width: 440px;
+    background-color: white;
+    position: absolute;
+    left: 220px; 
+    top: 0px;
+}
+.header-icon {
+    padding: 0 10px 0 5px;
+}
+/* EXPERIENCE */
+.experience {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.job-experience, .edu-experience, .workshop-experience {
+    width: 100%;
+}
+.job, .edu, .workshop {
+    border: 1px solid grey;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.job:before, .edu:before, .workshop:before {
+    content: " ";
+    position: absolute;
+    /* z-index: -1; */
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 1px solid grey;
+} 
+.job-date, .edu-date, .workshop-date {
+    font-style: italic;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+/* HOBBY */
+.hobby-ul {
+    /* list-style-type:none; */
+    padding: 10px;
+    font-size: 15px;
+    list-style: circle inside;
+}
+.hobby-ul > li {
+    padding-bottom: 5px;
+}
+/* CONTACT */
+.contact {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.map {
+    height: 200px;
+    background-color: rgb(30, 156, 30);
+    text-align: center;
+    line-height: 200px;
+    font-size: 25px;
+}
+.adress, .phone, .mail, .contact-form {
+    margin-top: 15px;
+}
+.header-adress, .header-phone, .header-mail, .header-contact-form {
+    border-bottom: 1px solid rgb(13, 116, 163);
+    color: rgb(13, 116, 163);
+    font-size: 14px;
+}
+.contact-text {
+    padding: 5px 0 0 0px;
+}
+.form input {
+    padding: 15px;
+    border: 1px solid grey;
+    margin-top: 10px;
+    width: 100%;
+}
+.form textarea {
+    padding: 5px 15px;
+    border: 1px solid grey;
+    margin-top: 10px;
+    width: 100%;
+    height: 131px;
+}
+.form-submit {
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 2px solid rgb(13, 116, 163);
+    background-color: rgb(186, 214, 247);
+    border-radius: 4px;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+.form-submit:hover {
+    background-color: rgb(13, 116, 163);
+    cursor: pointer;
+    color: white;
+}
+.footer-text {
+    border-top: 1px solid rgb(13, 116, 163);
+    padding-top: 5px; 
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1.2;
+}

@@ -21,33 +21,6 @@ h2 {
     font-family: 'Hammersmith One', sans-serif;
 }
 
-.inLine:before {
-    font-family: 'Simple-Line-Icons';
-    padding-right: 10px;
-    font-size: 16px;
-}
-.e069:before {
-    content: "\e069";
-}
-.e04b:before {
-    content: "\e04b";
-}
-.e01e:before {
-    content: "\e01e";
-}
-.e019:before {
-    content: "\e019";
-}
-.e01b:before {
-    content: "\e01b";
-}
-.e077:before {
-    content: "\e077";
-}
-.e07d:before {
-    content: "\e07d";
-}
-
 .container {
     width: 100%;
 }
@@ -79,9 +52,13 @@ h2 {
     height: 150px;
 }
 .personalDetails {
+    padding-left: 10px;
     width: 75%;
     float: left;
     position: relative;
+}
+.superscript {
+    font-size: 10px; 
 }
 .github-link {
     text-decoration: none;
@@ -129,6 +106,8 @@ h2 {
 }
 .language {
     padding: 10px;
+    float: left;
+    width: 40%;
 }
 
 .form {
@@ -146,6 +125,10 @@ h2 {
     width: 100%;
     resize: none;
 }
+.textarea  {
+    height: 100px;
+}
+
 .form-submit {
     font-size: 15px;
     letter-spacing: 2px;
@@ -174,15 +157,22 @@ h2 {
     padding: 0 65px 15px 65px;;
 }
 .arrow {
-    text-align: right;
-    position: absolute; 
-    bottom: 0;
     right: 0;
     animation: scale 3s infinite;
 }
+.go-to-other-cv {
+    left: 0;
+    animation: clapper 1s infinite;
+}
+.anchor {
+    font-size: 30px;
+    padding: 10px;
+    text-align: right;
+    position: absolute; 
+    bottom: 0;
+}
 .fa {
-    font-size: 35px;
-    padding: 15px;
+    padding: 0 10px 0 5px;
     color:black;
 }
 
@@ -200,4 +190,15 @@ h2 {
     0% {transform: scale(1);}
     50% {transform: scale(1.5);}
     100% {transform: scale(1);}
+}
+
+@keyframes clapper {
+    0% {transform: rotate(0deg);}
+    5% {transform: rotate(30deg);}
+    10% {transform: rotate(0deg);}
+    15% {transform: rotate(-30deg);}
+    20% {transform: rotate(0deg);}
+    25% {transform: rotate(30deg);}
+    30% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
 }
