@@ -1,79 +1,78 @@
-// TWORZENIE TABELI
-
-var tableSkills = document.getElementById('tableSkills');
-
-var number = [];
-for (var i = 0; i < number.length; i = + 1) {
-  number[i] = i;
-}
-
 var firstRow = ['nr', 'skill', 'level'];
 var firstRowLength = firstRow.length;
-var skills = ['html', 'CSS', 'Java Script', 'Adobe Photoshop', 'AutoCAD', 'EWmapa', 'TurboMap', 'MySQL', 'QGIS'];
-var skillsLength = skills.length;
-var levels = [
-  '<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>',
 
-  '<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>',
+var skills = [{
+  title: 'html',
+  stars: 3.5,
+}, {
+  title: 'CSS',
+  stars: 3.5,
+}, {
+  title: 'Java Script',
+  stars: 3,
+}, {
+  title: 'Adobe Photoshop',
+  stars: 2,
+}, {
+  title: 'AutoCAD',
+  stars: 3.5,
+}, {
+  title: 'EWmapa',
+  stars: 4,
+}, {
+  title: 'TurboMap',
+  stars: 4,
+}, {
+  title: 'MySQL',
+  stars: 2,
+}, {
+  title: 'QGIS',
+  stars: 2.5,
+}];
 
-  '<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>',
-
-  '<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>',
-
-  '<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>',
-
-  '<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>',
-
-  '<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>',
-
-  '<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>',
-
-  '<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>'
-];
-
-var table = document.createElement("table");
-// var caption = document.createElement("caption");
-var thead = document.createElement("thead");
-var tbody = document.createElement("tbody");
-
-// caption.textContent = 'Umiejętności';
-// table.appendChild(caption);
-
-// table.border = "1";
+var table = document.createElement('table');
+var tbody = document.createElement('tbody');
+var thead = document.createElement('thead');
 
 var row = thead.insertRow(-1);
 for (var k = 0; k < firstRowLength; k++) {
   var cell = row.insertCell(-1);
   cell.innerHTML = firstRow[k];
-  cell.classList.add('table-cell');
-  cell.classList.add('table-thead-cell');
 }
-
 table.appendChild(thead);
 
-for (var j = 0; j < skillsLength; j++) {
-  row = tbody.insertRow(-1);
-  for (var k = 0; k < firstRowLength; k++) {
-    cell = row.insertCell(-1);
-    if (k === 0) {
-      cell.innerHTML = j + 1;
-    }
-    else if (k === 1) {
-      cell.innerHTML = skills[j];
+
+for (var i = 0; i < skills.length; i += 1) {
+  var row = tbody.insertRow(-1);
+  row.classList.add('row');
+  var cells = [];
+  var stars = [];
+
+  for (var j = 0; j < 3; j += 1) {
+    var cell = row.insertCell(-1);
+    cells.push(cell);
+  }
+
+  cells[0].innerHTML = i + 1;
+  cells[1].innerHTML = skills[i].title;
+
+  for (var k = 0; k < 5; k += 1) {
+    var star = document.createElement('i');
+    if (k < (skills[i].stars - 0.5)) {
+      star.classList.add('fa', 'fa-star');
     }
     else {
-      cell.innerHTML = levels[j];
-      cell.classList.add('table-cell-level');
+      if (skills[i].stars % 1 !== 0) {
+        star.classList.add('fa', 'fa-star-half-o');
+        skills[i].stars -= 0.5;
+      }
+      else {
+        star.classList.add('fa', 'fa-star-o');
+      }
     }
-    cell.classList.add('table-cell');
-    row.classList.add('table-row');
-
-    cell.addEventListener('mouseover', function (event) {
-      mouseOver(event);
-    });
-    cell.addEventListener('mouseout', function (event) {
-      mouseOut(event);
-    });
+    cells[2].appendChild(star);
+    cells[2].classList.add('table-cell-stars');
+    stars.push(star);
   }
 }
 
@@ -83,42 +82,3 @@ table.appendChild(tbody);
 thead.classList.add('table-thead');
 table.setAttribute('class', 'table-skills');
 
-
-// function spaceStars() {
-//   var tableLight = document.getElementsByClassName('table-light');
-//   tableLightLength = tableLight.length;
-//   for (var i = 0; i < tableLightLength; i += 1) {
-//     tableLight[i].lastElementChild.classList.add('table-space-stars');
-//   }
-// }
-
-function mouseOver(event) {
-  var newy = event.target;
-  neighborRow = newy.parentNode;
-  if (newy.classList.contains('fa')) {
-    neighborRow.parentNode.classList.add('table-light');
-  }
-  else {
-    neighborRow.classList.add('table-light');
-  }
-  var tableLight = document.getElementsByClassName('table-light');
-  tableLightLength = tableLight.length;
-  for (var i = 0; i < tableLightLength; i += 1) {
-    tableLight[i].lastElementChild.classList.add('table-space-stars');
-  }
-}
-
-function mouseOut(event) {
-  var newy = event.target;
-  newy.classList.remove('table-light');
-  var lightOut = document.getElementsByClassName('table-light');
-  lightOutLength = lightOut.length;
-  for (var i = 0; i < lightOutLength; i += 1) {
-    lightOut[0].classList.remove('table-light');
-  }
-  var spaceStarsOut = document.getElementsByClassName('table-space-stars');
-  spaceStarsOutLength = spaceStarsOut.length;
-  for (var i = 0; i < spaceStarsOutLength; i += 1) {
-    spaceStarsOut[0].classList.remove('table-space-stars');
-  }
-}

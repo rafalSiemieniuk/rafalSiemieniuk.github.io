@@ -6,30 +6,24 @@
     font-weight: bold;
     text-align: center;
 }
-.table-thead-cell {
-    border: none;
-}
-.table-body {
-    border: none;
-}
-.table-row {
-    border: none;
-}
 .table-cell {
     padding: 5px 10px;
     border: none;
 }
-.table-cell-level {
+.table-cell-stars {
     width: 110px;
     letter-spacing: 2px;
     text-align: right;
     color: rgb(5, 49, 145);
     transition: letter-spacing 0.75s ease;
 }
-.table-light {
-    background: rgb(211, 211, 211);
+.row > td {
+    padding: 5px 10px;
 }
-.table-space-stars {
+.row:hover > td:last-child {
     letter-spacing: 5px;
     transition: letter-spacing 0.75s ease;
+}
+.row:hover {
+    background: rgb(211, 211, 211);
 }

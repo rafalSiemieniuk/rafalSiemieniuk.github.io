@@ -50,6 +50,7 @@ h2 {
 }
 .image {
     height: 150px;
+    border-radius: 10%;
 }
 .personalDetails {
     padding-left: 10px;
@@ -65,7 +66,6 @@ h2 {
     color: black;
 }
 .github-link:hover {
-
     opacity: 0.8;
 }
 .clear::after {
@@ -76,19 +76,19 @@ h2 {
 .float {
     float: left;
 }
-.personalDetails__ul {
+.personalDetails-ul {
     list-style: none inside;
     padding: 10px;
 }
-.personalDetails__ul > li {
+.personalDetails-ul > li {
     padding: 1px 0px;
 }
-.hobby__ul {
+.hobby-ul {
     margin-left: 10px;
 }
-.hobby__ul > li {
+.hobby-ul > li {
     padding: 5px 0px;
-    list-style: circle outside;
+    list-style: none;
 }
 .bold {
     font-weight: bold
@@ -100,6 +100,17 @@ h2 {
     float: left;
     padding: 10px;
 }
+.table-thead {
+    font-weight: bold;
+    text-align: center;
+}
+.table-cell-stars {
+    width: 110px;
+    text-align: right;
+}
+.table-cell-stars .fa {
+    padding: 2px;
+}
 .skills, .hobby {
     float: left;
     width: 50%;
@@ -109,7 +120,12 @@ h2 {
     float: left;
     width: 40%;
 }
-
+.language-bold {
+    font-weight: bold;
+}
+.language-level {
+    padding-left: 5px;
+}
 .form {
     padding: 40px 0;
     width: 50%;
@@ -128,7 +144,6 @@ h2 {
 .textarea  {
     height: 100px;
 }
-
 .form-submit {
     font-size: 15px;
     letter-spacing: 2px;
@@ -138,8 +153,7 @@ h2 {
     border: 2px solid grey;
     border-radius: 4px;
     transition: all 0.5s;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
 .form-submit:hover {
     background-color: grey;
@@ -151,7 +165,7 @@ h2 {
     bottom: 0;
     width: 100%;
 }
-.footer__text {
+.footer-text {
     text-align: center;
     font-size: 10px;
     padding: 0 65px 15px 65px;;
@@ -177,12 +191,9 @@ h2 {
 }
 
 /* STYLE JS */
-
 .invisibilite {
     display: none;
 }
-
-
 .arrow:hover {
 	animation-play-state: paused;
 }
