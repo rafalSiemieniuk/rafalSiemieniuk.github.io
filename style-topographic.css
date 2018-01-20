@@ -243,12 +243,14 @@ h3 {
     overflow: scroll;
     overflow-x: hidden;
 }
-.map {
-    height: 200px;
-    background-color: rgb(30, 156, 30);
+.map, .div-map {
     text-align: center;
-    line-height: 200px;
+    line-height: 250px;
     font-size: 25px;
+    background-color: green;
+
+    height: 250px;
+    width: 100%;
 }
 .adress, .phone, .mail, .contact-form {
     margin-top: 15px;

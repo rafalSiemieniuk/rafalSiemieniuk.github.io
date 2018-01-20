@@ -22,8 +22,9 @@
 }
 .row:hover > td:last-child {
     letter-spacing: 5px;
-    transition: letter-spacing 0.75s ease;
+    transition: all 0.75s ease;
 }
 .row:hover {
     background: rgb(211, 211, 211);
 }
+

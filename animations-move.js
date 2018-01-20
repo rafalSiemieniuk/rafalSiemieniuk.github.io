@@ -90,30 +90,4 @@ menuContact.addEventListener('click', function () {
 });
 
 
-// PRZEWIJANIE STRONY
-function scrollpage() {
-  function f() {
-    window.scrollTo(0, n);
-    if (status == 0) {
-      // console.log(i);
-      n += 1;
-      // console.log(i);
-      if (n >= (height - window.innerHeight)) {
-        status = 1;
-        // console.log('koniec');
-        return
-      }
-    }
-    setTimeout(f, 1);
-  }
-  f();
-}
-
-var height = document.documentElement.scrollHeight;
-// console.log(height);
-var n = height - ((-0.000181818 * window.innerHeight + 1.291789) * window.innerHeight);
-var status = 0;
-scrollpage();
-
-// console.log((-0.000181818 * window.innerHeight + 0.291789) + 1);
 

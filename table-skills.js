@@ -1,3 +1,5 @@
+var tableSkills = document.getElementById('tableSkills');
+
 var firstRow = ['nr', 'skill', 'level'];
 var firstRowLength = firstRow.length;
 
