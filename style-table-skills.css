@@ -2,10 +2,6 @@
     width: 100%;
     border-collapse: collapse;
 }
-.table-thead {
-    font-weight: bold;
-    text-align: center;
-}
 .table-cell {
     padding: 5px 10px;
     border: none;

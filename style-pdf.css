@@ -27,7 +27,7 @@ h2 {
 .page {
     background-color: white;
     width: 210mm;
-    height: 281mm;
+    /* height: 281mm; */
     margin: 60px auto;
     position: relative;
 }
@@ -35,7 +35,7 @@ h2 {
     padding: 40px;
 }
 .article {
-    padding: 0px 100px 20px 100px;
+    padding: 0px 100px 55px 100px;
 }
 .basic {
     width: 100%;
@@ -116,22 +116,25 @@ h2 {
     width: 50%;
 }
 .language {
+    text-align: center;
+    display: inline-block;
     padding: 10px;
     float: left;
-    width: 40%;
+    width: 46.5%;
 }
 .language-bold {
     font-weight: bold;
+    font-size: 16px;
 }
 .language-level {
     padding-left: 5px;
 }
 .form {
-    padding: 40px 0;
+    padding: 10px 0 0 0;
     width: 50%;
     margin: 0 auto;
 }
-.form > input, textarea {
+.form-input > input, textarea {
     display: block;
     margin: 5px 0 15px 0;
     padding: 5px;
@@ -159,6 +162,14 @@ h2 {
     background-color: grey;
     cursor: pointer;
     color: white;
+}
+.form-input {
+    position: relative; 
+}
+.checkpiont {
+    position: absolute;
+    right: -60px;
+    top: 23px;
 }
 .footer {
     position: absolute; 
@@ -188,6 +199,12 @@ h2 {
 .fa {
     padding: 0 10px 0 5px;
     color:black;
+}
+.fa-check-circle-o {
+    color: green;
+}
+.fa-times-circle-o {
+    color: red;
 }
 
 /* STYLE JS */

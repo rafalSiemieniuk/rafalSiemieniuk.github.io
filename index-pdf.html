@@ -109,9 +109,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="languages otherInformations">
+                    <div class="languages clear otherInformations">
                         <h2>
-                            <i class="fa fa-comments" aria-hidden="true"></i>Languages
+                            <i class="fa fa-comments" aria-hidden="true"></i>Languages:
                         </h2>
                         <p class="language">
                             <span class="language-bold">Polish:</span>
@@ -121,6 +121,47 @@
                             <span class="language-bold">English:</span>
                             <span class="language-level">Level B1</span>
                         </p>
+                    </div>
+                    <div class="contactForm otherInformations invisibilite">
+                        <h2>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>Form:</h2>
+                        <form name="CVForm" action="mailto:siemieniukrafal@gmail.com" method="post" enctype="text/plain">
+                            <div class="form">
+                                <div class="form-input">
+                                    <label for="name">Name:</label>
+                                    <input class="input-txt" id="name" name="name" type="text">
+                                    <div class="checkpiont">
+                                        <i class="fa fa-2x" aria-hidden="true"></i>
+                                        <i class="fa fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="form-input">
+                                    <label for="e-mail">Email:</label>
+                                    <input class="input-txt" id="e-mail" name="e-mail" type="email">
+                                    <div class="checkpiont">
+                                        <i class="fa fa-2x" aria-hidden="true"></i>
+                                        <i class="fa fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="form-input">
+                                    <label for="topic">Topic:</label>
+                                    <input class="input-txt" id="topic" name="topic" type="text" required>
+                                    <div class="checkpiont">
+                                        <i class="fa fa-2x" aria-hidden="true"></i>
+                                        <i class="fa fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="form-input">
+                                    <label class="Label" for="message">Message:</label>
+                                    <textarea class="textarea input-txt" id="message" name="message"></textarea>
+                                    <div class="checkpiont">
+                                        <i class="fa fa-2x" aria-hidden="true"></i>
+                                        <i class="fa fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <button class="form-submit" type="submit">Send</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </article>
@@ -135,52 +176,18 @@
                     in accordance with the regulation for the protection of personal data passed on the following day: 29.08.97
                     r. consolidated text Dz. U. 2016 r. poz. 922.</p>
                 <div class="anchor arrow">
-                    <a href="#CV">
-                        <i title="Show the form" class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    <a href="#name">
+                        <i title="Show the form" class="fa fa-chevron-circle-down" aria-hidden="true"></i>
                     </a>
                 </div>
             </footer>
         </div>
 
     </div>
-    <div class="container invisibilite">
-        <div class="page">
-            <header class="header">
-                <h1 id="CV">Curriculum vitae</h1>
-            </header>
-            <article class="article">
-                <div class="contactForm clear">
-                    <h2>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>Form:</h2>
-                    <form name="CVForm" action="mailto:siemieniukrafal@gmail.com" method="post" enctype="text/plain">
-                        <div class="form">
-                            <label for="name">Name:</label>
-                            <input id="name" name="name" type="text">
-
-                            <label for="e-mail">Email:</label>
-                            <input id="e-mail" name="e-mail" type="email">
-
-                            <label for="topic">Topic:</label>
-                            <input id="topic" name="topic" type="text">
-
-                            <label class="Label" for="message">Message:</label>
-                            <textarea class="textarea" id="message" name="message"></textarea>
-                            <button class="form-submit" type="submit">Send</button>
-                        </div>
-                    </form>
-                </div>
-
-            </article>
-            <footer class="footer">
-                <p class="footer-text">I hereby agree for processing the following personal information strictly for the purposes of job recruitment
-                    in accordance with the regulation for the protection of personal data passed on the following day: 29.08.97
-                    r. consolidated text Dz. U. 2016 r. poz. 922.
-                </p>
-            </footer>
-        </div>
-    </div>
+    
     <script src="show-the-form-pdf.js"></script>
     <script src="table-skills.js"></script>
+    <script src="form-validation.js"></script>
 </body>
 
 </html>

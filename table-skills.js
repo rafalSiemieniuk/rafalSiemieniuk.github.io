@@ -38,8 +38,9 @@ var thead = document.createElement('thead');
 
 var row = thead.insertRow(-1);
 for (var k = 0; k < firstRowLength; k++) {
-  var cell = row.insertCell(-1);
-  cell.innerHTML = firstRow[k];
+  var th = document.createElement('th');
+  thead.appendChild(th);
+  th.innerHTML = firstRow[k];
 }
 table.appendChild(thead);
 

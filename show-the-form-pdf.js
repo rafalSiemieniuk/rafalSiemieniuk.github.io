@@ -3,18 +3,18 @@
 var invisibilite = document.querySelector('.invisibilite');
 var arrow = document.querySelector('.arrow');
 
-arrow.addEventListener('click', function () {
+arrow.addEventListener('click', function (event) {
 
-  if (event.target.classList.contains('fa-arrow-circle-down')) {
-    invisibilite.removeAttribute('class');
-    event.target.setAttribute('title','Ukryj formularz');
-    event.target.classList.remove('fa-arrow-circle-down');
-    event.target.classList.add('fa-arrow-circle-up');
+  if (event.target.classList.contains('fa-chevron-circle-down')) {
+    invisibilite.classList.remove('invisibilite');
+    event.target.setAttribute('title','Hide the form');
+    event.target.classList.remove('fa-chevron-circle-down');
+    event.target.classList.add('fa-chevron-circle-up');
   }
   else {
     invisibilite.classList.add('invisibilite');
-    event.target.setAttribute('title','Pokaż formularz');
-    event.target.classList.remove('fa-arrow-circle-up');
-    event.target.classList.add('fa-arrow-circle-down');
+    event.target.setAttribute('title','Show the form');
+    event.target.classList.remove('fa-chevron-circle-up');
+    event.target.classList.add('fa-chevron-circle-down');
   }
 });
