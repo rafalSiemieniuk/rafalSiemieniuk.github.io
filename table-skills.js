@@ -36,7 +36,6 @@ var table = document.createElement('table');
 var tbody = document.createElement('tbody');
 var thead = document.createElement('thead');
 
-var row = thead.insertRow(-1);
 for (var k = 0; k < firstRowLength; k++) {
   var th = document.createElement('th');
   thead.appendChild(th);
@@ -45,7 +44,7 @@ for (var k = 0; k < firstRowLength; k++) {
 table.appendChild(thead);
 
 
-for (var i = 0; i < skills.length; i += 1) {
+for (var i = 0; i < skills.length; i += 1, j++) {
   var row = tbody.insertRow(-1);
   row.classList.add('row');
   var cells = [];
@@ -58,6 +57,11 @@ for (var i = 0; i < skills.length; i += 1) {
 
   cells[0].innerHTML = i + 1;
   cells[1].innerHTML = skills[i].title;
+
+  var span = document.createElement('span');
+  span.classList.add('special');
+  span.innerHTML = skills[i].stars;
+  cells[2].appendChild(span);
 
   for (var k = 0; k < 5; k += 1) {
     var star = document.createElement('i');
@@ -75,6 +79,7 @@ for (var i = 0; i < skills.length; i += 1) {
     }
     cells[2].appendChild(star);
     cells[2].classList.add('table-cell-stars');
+
     stars.push(star);
   }
 }
@@ -85,3 +90,71 @@ table.appendChild(tbody);
 thead.classList.add('table-thead');
 table.setAttribute('class', 'table-skills');
 
+// SORT TABLE
+
+var ths = document.getElementsByTagName('th');
+
+for (var i = 0; i < ths.length; i += 1) {
+  ths[i].addEventListener('click', function (event) {
+    if (this.textContent === 'nr') {
+      sorting(tbody, 0);
+    }
+    else if (this.textContent === 'skill') {
+      sorting(tbody, 1);
+    }
+    else {
+      sorting(tbody, 2);
+    }
+  });
+}
+
+var index;      // cell index
+var toggleBool; // sorting asc, desc 
+function sorting(tbody, index) {
+  this.index = index;
+  if (toggleBool) {
+    toggleBool = false;
+  } else {
+    toggleBool = true;
+  }
+
+  var datas = new Array();
+  var tbodyLength = tbody.rows.length;
+  for (var i = 0; i < tbodyLength; i++) {
+    datas[i] = tbody.rows[i];
+  }
+
+  // sort by cell[index] 
+  datas.sort(compareCells);
+  for (var i = 0; i < tbody.rows.length; i++) {
+    // rearrange table rows by sorted rows
+    tbody.appendChild(datas[i]);
+  }
+}
+
+function compareCells(a, b) {
+  var aVal = a.cells[index].innerText;
+  var bVal = b.cells[index].innerText;
+
+  aVal = aVal.replace(/\,/g, '');
+  bVal = bVal.replace(/\,/g, '');
+
+  if (toggleBool) {
+    var temp = aVal;
+    aVal = bVal;
+    bVal = temp;
+  }
+
+  if (aVal.match(/^[0-9]+$/) && bVal.match(/^[0-9]+$/)) {
+    return parseFloat(aVal) - parseFloat(bVal);
+  }
+  else {
+    if (aVal < bVal) {
+      return -1;
+    } else if (aVal > bVal) {
+      return 1;
+    } else {
+      return 0;
+    }
+  }
+}

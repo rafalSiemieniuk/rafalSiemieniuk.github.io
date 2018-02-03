@@ -2,12 +2,16 @@
     width: 100%;
     border-collapse: collapse;
 }
+.table-thead > th:hover {
+    color: rgb(13, 116, 163);
+    cursor: pointer;
+}
 .table-cell {
     padding: 5px 10px;
     border: none;
 }
 .table-cell-stars {
-    width: 110px;
+    width: 115px;
     letter-spacing: 2px;
     text-align: right;
     color: rgb(5, 49, 145);
