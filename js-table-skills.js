@@ -48,7 +48,6 @@ for (var i = 0; i < skills.length; i += 1, j++) {
   var row = tbody.insertRow(-1);
   row.classList.add('row');
   var cells = [];
-  var stars = [];
 
   for (var j = 0; j < 3; j += 1) {
     var cell = row.insertCell(-1);
@@ -79,8 +78,6 @@ for (var i = 0; i < skills.length; i += 1, j++) {
     }
     cells[2].appendChild(star);
     cells[2].classList.add('table-cell-stars');
-
-    stars.push(star);
   }
 }
 
@@ -110,15 +107,15 @@ for (var i = 0; i < ths.length; i += 1) {
 
 var index;      // cell index
 var toggleBool; // sorting asc, desc 
-function sorting(tbody, index) {
-  this.index = index;
+function sorting(tbody, columnNumber) {
+  index = columnNumber;
   if (toggleBool) {
     toggleBool = false;
   } else {
     toggleBool = true;
   }
 
-  var datas = new Array();
+  var datas = [];
   var tbodyLength = tbody.rows.length;
   for (var i = 0; i < tbodyLength; i++) {
     datas[i] = tbody.rows[i];
