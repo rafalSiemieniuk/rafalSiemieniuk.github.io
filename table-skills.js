@@ -95,7 +95,7 @@ table.setAttribute('class', 'table-skills');
 var ths = document.getElementsByTagName('th');
 
 for (var i = 0; i < ths.length; i += 1) {
-  ths[i].addEventListener('click', function (event) {
+  ths[i].addEventListener('click', function () {
     if (this.textContent === 'nr') {
       sorting(tbody, 0);
     }

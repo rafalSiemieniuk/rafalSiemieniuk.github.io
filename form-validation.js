@@ -36,7 +36,7 @@ eMail.addEventListener('input', function () {
         divValidation[1].innerHTML = 'Use lowercases!';
         formValidation(eMail, 'fa-check-circle-o', 'fa-times-circle-o');
     } else if (!(errorMailReg0.test(eMail.value))) {     // completely wrong input
-        divValidation[1].innerHTML ='Incorrect email address';
+        divValidation[1].innerHTML = 'Incorrect email address';
         formValidation(eMail, 'fa-check-circle-o', 'fa-times-circle-o');
     } else {    // input is correct
         divValidation[1].innerHTML = '';
@@ -71,6 +71,7 @@ submit[0].addEventListener('click', function (event) {
         for (var i = 0; i < inputTxt.length; i += 1) {
             if (!inputTxt[i].value) {
                 formValidation(inputTxt[i], 'fa-check-circle-o', 'fa-times-circle-o');
+                divValidation[i].innerHTML = 'Fill the field!'
             }
         }
         alert('Fill in all fields!');
