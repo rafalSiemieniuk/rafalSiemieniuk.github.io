@@ -1,0 +1,120 @@
+@media (min-width: 1250px) {
+    .background {
+        height: 100vh;
+    }
+    .container {
+        position: fixed;
+        height: 550px;
+        width: 440px; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .first-page {
+        background-color: white;
+        height: 550px;
+        width: 440px; 
+        position: absolute;
+        border-bottom: 15px solid white;
+    }
+    .left-page {
+        height: 550px;
+        width: 440px;
+        background-color: white;
+        position: absolute;
+        border-bottom: 15px solid white;
+    }
+    .right-page {
+        padding: 0 40px 25px 40px;
+        border-bottom: 15px solid white;
+        border-top: 15px solid white;
+        height: 550px;
+        width: 440px;
+        background-color: white;
+        position: absolute;
+        left: 220px; 
+        top: 0px;
+    }
+}
+@media (max-width: 1249px) {
+    *{
+        font-size: 16px;
+    }
+    .background {
+        background-attachment: fixed;
+    }
+    .container {
+        position: static;
+        width: 80vw; 
+        margin: 0 auto;
+    }
+    .first-page {
+        display: none;
+    }
+    .left-page {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        border-bottom: 15px solid white;
+    }
+    .right-page {
+        margin-top: 30px;
+        padding: 0 40px 25px 40px;
+        border-bottom: 15px solid white;
+        border-top: 15px solid white;
+        width: 100%;
+        background-color: white;
+    }
+    .vcard-pic {
+        height: 14rem;
+    }
+    .header-icon {
+        padding: 0 1rem 0 15px;
+    }
+    .div-map, .map {
+        height: 50vw;
+    }
+}
+@media (max-width: 991px) {
+    *{
+        font-size: 20px;
+    }
+    h1 {
+       font-size: 25px;
+    }
+    .container {
+        width: 90vw;
+    }
+    .right-page {
+        margin-top: 20px;
+    }
+    .vcard-pic {
+        height: 18rem;
+    }
+    .header-icon {
+        padding: 0 2.5rem 0 15px;
+    }
+    .contact-icon {
+        padding: 0 1.8rem 0 5px;
+    }
+    .hobby-ul > li, span {
+        font-size: 0.6rem;
+    }
+    .table-skills {
+        font-size: 5rem;
+    }
+    .job, .edu, .workshop {
+        margin-bottom: 20px;
+    }
+    .div-map, .map {
+        height: 80vw;
+    }
+}
+@media (max-width: 767px) {
+    * {
+        font-size: 20px;
+    }
+    .right-page {
+        margin-top: 10px;
+    }
+}

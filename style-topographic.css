@@ -27,21 +27,11 @@ h3 {
     font-size: 18px;
 }
 .space {
-    background-color: black; 
+    background: linear-gradient(black, rgb(50, 50, 50), rgb(100, 100, 100));
 }
 .background {
     background-image: url(image/galaxy.jpg);
     background-position: bottom;
-    opacity: 0.8;
-    height: 100vh;
-}
-.container {
-    position: fixed;
-    height: 550px;
-    width: 440px; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 .menu-buttons{
     position: absolute;
@@ -79,28 +69,20 @@ h3 {
 
 /* ///////////////////////////////////////////////////////// */
 /* FIRST PAGE */
-.first-page {
-    /* margin-left: 10px; */
-    background-color: white;
-    height: 550px;
-    width: 440px; 
-    position: absolute;
-    border-bottom: 15px solid white;
-}
 .vcard-pic {
     margin: 0 auto;
-    height: 38%;
+    height: 203.3px;
     text-align: center;
     padding-top: 40px;
 }
 .vcard-pic-img {
     border-radius: 100%;
     height: 100%;
-    
 }
 .vcard-description {
     height: 62%;
-    padding: 40px 40px 25px 40px;
+    padding: 40px 0 25px 0;
+    margin: 0 40px 0 40px;
     position: relative;
 }
 .vcard-description-text {
@@ -122,10 +104,8 @@ h3 {
     padding: 0 5px;
 }
 .footer {
-    position: absolute;
-    bottom: 25px;
     text-align: center; 
-    width: 360px;
+    width: 100%;
 }
 .footer-icon {
     font-size: 35px;
@@ -143,13 +123,6 @@ h3 {
 
 /* ///////////////////////////////////////////////////////// */
 /* LEFT PAGE */
-.left-page {
-    height: 550px;
-    width: 440px;
-    background-color: white;
-    position: absolute;
-    border-bottom: 15px solid white;
-}
 .go-to-the-print-version {
     text-align: right;
 }
@@ -175,19 +148,8 @@ h3 {
 }
 /* ///////////////////////////////////////////////////////// */
 /* RIGHT PAGE */
-.right-page {
-    padding: 0 40px 25px 40px;
-    border-bottom: 15px solid white;
-    border-top: 15px solid white;
-    height: 550px;
-    width: 440px;
-    background-color: white;
-    position: absolute;
-    left: 220px; 
-    top: 0px;
-}
 .header-icon {
-    padding: 0 10px 0 5px;
+    padding: 0 0.625rem 0 5px;
 }
 /* EXPERIENCE */
 .experience {

@@ -4,9 +4,7 @@
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 50.0%;
-    height: 550px;
-    width: 440px; 
+    left: 50%;
     opacity: 0;
     background-color: white;
     animation-name: loading-start-window;
@@ -22,7 +20,7 @@
     animation-duration: 2s;
     transition-timing-function: linear;
 }
-
+@media (min-width: 1250px) {
 /* ANIMATIONS */
 .menu-buttons-one-page {
     animation-name: action-left-centre;
@@ -191,6 +189,7 @@
       animation-play-state: paused;
     }
   }
+
 @keyframes rotate-hourglass { 
     0% { 
         transform: rotate(0deg); 
@@ -206,28 +205,26 @@
 @keyframes loading-start-window {
     0%   {
         opacity: 1;
-        width: 890px; 
+        width: 100vw; 
+        height: 100vh; 
         position: absolute;
         top: 50%;
         }
     25%   {
         opacity: 1;
-        width: 440px; 
-        position: absolute;
         top: 50%;
         }
     50%   {
         opacity: 0;
-        width: 440px; 
-        position: absolute;
         top: 50%;
         }
     51%  {
-        width: 440px; 
-        top: -50%;
+        top: -150%;
         }
     100%  {
-        width: 890px; 
-        top: -50%;
+        width: 100vw;  
+        height: 100vh; 
+        top: -150%;
         }
 } 
+}

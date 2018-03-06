@@ -90,4 +90,4 @@ menuContact.addEventListener('click', function () {
 });
 
 
-
+console.log(window.innerWidth);

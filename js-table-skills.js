@@ -36,7 +36,8 @@ var table = document.createElement('table');
 var tbody = document.createElement('tbody');
 var thead = document.createElement('thead');
 
-for (var k = 0; k < firstRowLength; k++) {
+
+for (var k = 0; k < firstRowLength; k++) {                 // create thead row
   var th = document.createElement('th');
   thead.appendChild(th);
   th.innerHTML = firstRow[k];
@@ -44,7 +45,7 @@ for (var k = 0; k < firstRowLength; k++) {
 table.appendChild(thead);
 
 
-for (var i = 0; i < skills.length; i += 1, j++) {
+for (var i = 0; i < skills.length; i += 1, j++) {          // create table
   var row = tbody.insertRow(-1);
   row.classList.add('row');
   var cells = [];
@@ -57,10 +58,12 @@ for (var i = 0; i < skills.length; i += 1, j++) {
   cells[0].innerHTML = i + 1;
   cells[1].innerHTML = skills[i].title;
 
+  /*part of the sorting function */
   var span = document.createElement('span');
   span.classList.add('special');
   span.innerHTML = skills[i].stars;
   cells[2].appendChild(span);
+  /* end */
 
   for (var k = 0; k < 5; k += 1) {
     var star = document.createElement('i');
@@ -87,6 +90,7 @@ table.appendChild(tbody);
 thead.classList.add('table-thead');
 table.setAttribute('class', 'table-skills');
 
+
 // SORT TABLE
 
 var ths = document.getElementsByTagName('th');
@@ -105,8 +109,8 @@ for (var i = 0; i < ths.length; i += 1) {
   });
 }
 
-var index;      // cell index
-var toggleBool; // sorting asc, desc 
+var index;
+var toggleBool;
 function sorting(tbody, columnNumber) {
   index = columnNumber;
   if (toggleBool) {
@@ -121,10 +125,8 @@ function sorting(tbody, columnNumber) {
     datas[i] = tbody.rows[i];
   }
 
-  // sort by cell[index] 
   datas.sort(compareCells);
   for (var i = 0; i < tbody.rows.length; i++) {
-    // rearrange table rows by sorted rows
     tbody.appendChild(datas[i]);
   }
 }
