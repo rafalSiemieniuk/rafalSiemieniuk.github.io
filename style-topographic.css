@@ -87,6 +87,7 @@ h3 {
     text-align: center;
 }
 .email-and-phone {
+    white-space: nowrap;
     font-weight: bold;
     text-align: center;
     padding: 12px;
@@ -106,7 +107,6 @@ h3 {
 .footer-link-icons {
     display: flex;
     justify-content: space-between;
-    margin-left: 58px;
 }
 .footer-icon {
     font-size: 35px;

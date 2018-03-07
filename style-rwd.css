@@ -37,6 +37,9 @@
         left: 220px; 
         top: 0px;
     }
+    .footer-link-icons {
+        margin-left: 58px;
+    }
     .fa-print {
         position: absolute;
         right: 0px;
@@ -94,5 +97,8 @@
     .row > td {
         padding: 0 10px;
         height: 50px;
+    }
+    .email-and-phone {
+        font-size: 3.7vw;
     }
 }
