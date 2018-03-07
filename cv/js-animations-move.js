@@ -3,6 +3,7 @@
 var menuHome = document.querySelector('.menu-home');
 var menuExperience = document.querySelector('.menu-experience');
 var menuSkills = document.querySelector('.menu-skills');
+var menuPortfolio = document.querySelector('.menu-portfolio');
 var menuHobby = document.querySelector('.menu-hobby');
 var menuContact = document.querySelector('.menu-contact');
 
@@ -81,11 +82,15 @@ menuSkills.addEventListener('click', function () {
   rightPageBtn(1);
 });
 
-menuHobby.addEventListener('click', function () {
+menuPortfolio.addEventListener('click', function () {
   rightPageBtn(2);
 });
 
-menuContact.addEventListener('click', function () {
+menuHobby.addEventListener('click', function () {
   rightPageBtn(3);
+});
+
+menuContact.addEventListener('click', function () {
+  rightPageBtn(4);
 });
 

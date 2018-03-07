@@ -9,11 +9,13 @@
     <meta name="keywords" content="staż, challenge, kod, programista, web, www" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="font-awesome.css">
-    <link rel="stylesheet" href="style-topographic.css" type="text/css" />
-    <link rel="stylesheet" href="style-start-animation.css" type="text/css" />
-    <link rel="stylesheet" href="style-table-skills.css" type="text/css" />
-    <link rel="stylesheet" href="style-rwd.css" type="text/css" />
+    <link rel="stylesheet" href="cv/font-awesome.css">
+    <link rel="stylesheet" href="cv/style-topographic.css" type="text/css" />
+    <link rel="stylesheet" href="cv/style-start-animation.css" type="text/css" />
+    <link rel="stylesheet" href="cv/style-table-skills.css" type="text/css" />
+    <link rel="stylesheet" href="cv/style-rwd.css" type="text/css" />
+
+    <link rel="stylesheet" href="cv/style-jquery.css" type="text/css" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;subset=latin-ext">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith+One">
@@ -21,236 +23,259 @@
 </head>
 
 <body>
-    <div class="space">
-        <div class="background">
-            <div class="container">
-                <div class="menu-buttons menu-buttons-one-page">
-                    <ul class="menu-buttons-ul">
-                        <li>
-                            <button class="menu-home" type="button">Home</button>
-                        </li>
-                        <li>
-                            <button class="menu-experience" type="button">Experience</button>
-                        </li>
-                        <li>
-                            <button class="menu-skills" type="button">Skills</button>
-                        </li>
-                        <li>
-                            <button class="menu-hobby" type="button">Hobby</button>
-                        </li>
-                        <li>
-                            <button class="menu-contact" type="button">Contact</button>
-                        </li>
-                    </ul>
-                </div>
+    <div class="background-mobile"></div>
+    <div class="background">
 
-                <div class="loading-start-window">
-                    <i class="fa fa-hourglass" aria-hidden="true"></i>
-                </div>
+        <div class="container">
+            <div class="menu-buttons menu-buttons-one-page">
+                <ul class="menu-buttons-ul">
+                    <li>
+                        <button class="menu-home" type="button">Home</button>
+                    </li>
+                    <li>
+                        <button class="menu-experience" type="button">Experience</button>
+                    </li>
+                    <li>
+                        <button class="menu-skills" type="button">Skills</button>
+                    </li>
+                    <li>
+                        <button class="menu-portfolio" type="button">Portfolio</button>
+                    </li>
+                    <li>
+                        <button class="menu-hobby" type="button">Hobby</button>
+                    </li>
+                    <li>
+                        <button class="menu-contact" type="button">Contact</button>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="first-page first-page-active">
-                    <div class="vcard-pic">
-                        <img class="vcard-pic-img" src="image/rafal.jpg" alt="person picture">
-                    </div>
-                    <div class="vcard-description">
-                        <h1>Hi! I'm Rafał Siemieniuk</h1>
-                        <div class="vcard-description-text">
-                            <span>My name is Rafal and I am a Front-End Developer. I work on web technologies like HTML, CSS, JavaScript.</span>
-                        </div>
-                        <footer class="footer">
-                            <div class="email-and-phone">
-                                <p>
-                                    <i class="vcard-icon fa fa-envelope-o" aria-hidden="true"></i>siemieniukrafal@gmail.com</p>
-                                <p>
-                                    <i class="vcard-icon fa fa-phone" aria-hidden="true"></i>123 456 789</p>
-                            </div>
-                            <div class="footer-link-icons">
-                                <a class="hyper-link-icon" href="https://www.facebook.com">
-                                    <i class="footer-icon fa fa-facebook-square" aria-hidden="true"></i>
-                                </a>
-                                <a class="hyper-link-icon" href="https://github.com/rafalSiemieniuk">
-                                    <i class="footer-icon fa fa-github-square" aria-hidden="true"></i>
-                                </a>
-                                <a class="hyper-link-icon" href="https://plus.google.com/u/0/">
-                                    <i class="footer-icon fa fa-google-plus-square" aria-hidden="true"></i>
-                                </a>
-                                <a class="fake-link-icon" href="#">
-                                    <i class="footer-icon fa fa-print" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </footer>
-                    </div>
-                </div>
+            <div class="loading-start-window">
+                <i class="fa fa-hourglass" aria-hidden="true"></i>
+            </div>
 
-                <div class="left-page left-page-hidden">
-                    <div class="vcard-pic">
-                        <img class="vcard-pic-img" src="image/rafal2.jpg" alt="person picture">
-                    </div>
-                    <div class="vcard-description">
-                        <h1>Hi! I'm Rafał Siemieniuk</h1>
-                        <div class="vcard-description-text">
-                            <span>My name is Rafal and I am a Front-End Developer. I work on web technologies like HTML, CSS, JavaScript.</span>
-                        </div>
-                        <footer class="footer">
-                            <div class="email-and-phone">
-                                <p>
-                                    <i class="vcard-icon fa fa-envelope-o" aria-hidden="true"></i>siemieniukrafal@gmail.com</p>
-                                <p>
-                                    <i class="vcard-icon fa fa-phone" aria-hidden="true"></i>123 456 789</p>
-                            </div>
-                            <div class="footer-link-icons">
-                                <a class="hyper-link-icon" href="https://www.facebook.com">
-                                    <i title="Go to the my Facebook" class="footer-icon fa fa-facebook-square" aria-hidden="true"></i>
-                                </a>
-                                <a class="hyper-link-icon" href="https://github.com/rafalSiemieniuk">
-                                    <i title="Go to the my Github" class="footer-icon fa fa-github-square" aria-hidden="true"></i>
-                                </a>
-                                <a class="hyper-link-icon" href="https://plus.google.com/u/0/">
-                                    <i title="Go to the my Google+" class="footer-icon fa fa-google-plus-square" aria-hidden="true"></i>
-                                </a>
-                                <a class="hyper-link-icon" href="index-pdf.html">
-                                    <i title="Go to the print version" class="footer-icon fa fa-print" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </footer>
-                    </div>
+            <div class="first-page first-page-active">
+                <div class="vcard-pic">
+                    <img class="vcard-pic-img" src="cv/image/rafal.jpg" alt="person picture">
                 </div>
-
-                <div class="right-page right-page-hidden experience">
-                    <div class="job-experience">
-                        <h2>
-                            <i class="header-icon fa fa-briefcase" aria-hidden="true"></i>Working experience</h2>
-                        <div class="job">
-                            <h3>Surveyor services „Croma”</h3>
-                            <p class="job-date">03.2016 - present</p>
-                            <p class="job-description">Maecenas sollicitudin, justo vitae sagittis sollicitudin, mi ante feugiat ipsum, pretium feugiat
-                                justo risus quis turpis. Morbi enim justo, tincidunt a mollis eget, molestie non mi. Mauris
-                                vitae magna blandit, ultrices quam id, suscipit mauris. Quisque urna lacus, elementum vitae
-                                quam id, egestas sagittis ipsum.</p>
+                <div class="vcard-description">
+                    <h1>Hi! I'm Rafał Siemieniuk</h1>
+                    <div class="vcard-description-text">
+                        <span>My name is Rafal and I am a Front-End Developer. I work on web technologies like HTML, CSS, JavaScript.</span>
+                    </div>
+                    <footer class="footer">
+                        <div class="email-and-phone">
+                            <p>
+                                <i class="vcard-icon fa fa-envelope-o" aria-hidden="true"></i>siemieniukrafal@gmail.com</p>
+                            <p>
+                                <i class="vcard-icon fa fa-phone" aria-hidden="true"></i>123 456 789</p>
                         </div>
-                        <div class="job">
-                            <h3>GLOBAL EAST</h3>
-                            <p class="job-date">07.2015 - 08.2015</p>
-                            <p class="job-description">Professional practice - sollicitudin, justo vitae sagittis sollicitudin, mi ante feugiat ipsum,
-                                pretium feugiat justo risus quis turpis. Morbi enim justo, tincidunt a mollis eget, molestie
-                                non mi. Mauris vitae magna blandit, ultrices quam id, suscipit mauris. Quisque urna lacus,
-                                elementum vitae quam id, egestas sagittis ipsum.</p>
+                        <div class="footer-link-icons">
+                            <a class="hyper-link-icon" href="https://www.facebook.com">
+                                <i class="footer-icon fa fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                            <a class="hyper-link-icon" href="https://github.com/rafalSiemieniuk">
+                                <i class="footer-icon fa fa-github-square" aria-hidden="true"></i>
+                            </a>
+                            <a class="hyper-link-icon" href="https://plus.google.com/u/0/">
+                                <i class="footer-icon fa fa-google-plus-square" aria-hidden="true"></i>
+                            </a>
+                            <a class="fake-link-icon" href="#">
+                                <i class="footer-icon fa fa-print" aria-hidden="true"></i>
+                            </a>
                         </div>
-                    </div>
-                    <div class="edu-experience">
-                        <h2>
-                            <i class="header-icon fa fa-graduation-cap" aria-hidden="true"></i>Education</h2>
-                        <div class="edu">
-                            <h3>Bialystok University of Technology</h3>
-                            <p class="edu-date">Internet Applications Front-End Development 10.2017 - present</p>
-                            <p class="edu-description"> Donec bibendum est turpis, non aliquam lectus accumsan ac. Suspendisse potenti. Donec consectetur
-                                ante vestibulum iaculis mattis. Suspendisse quis ullamcorper dolor, in ultrices lacus. Pellentesque
-                                viverra dui ipsum, at ornare nunc volutpat eu. Etiam laoreet turpis a faucibus viverra. Fusce
-                                sagittis neque augue, ac placerat mauris fermentum ac. Sed eget. </p>
-                        </div>
-                        <div class="edu">
-                            <h3>University of Warmia and Mazury in Olsztyn</h3>
-                            <p class="edu-date">Geodesy and Cartography 10.2012 - 02.2016</p>
-                            <p class="edu-description"> Donec bibendum est turpis, non aliquam lectus accumsan ac. Suspendisse potenti. Donec consectetur
-                                ante vestibulum iaculis mattis. Suspendisse quis ullamcorper dolor, in ultrices lacus. Pellentesque
-                                viverra dui ipsum, at ornare nunc volutpat eu. Etiam laoreet turpis a faucibus viverra. Fusce
-                                sagittis neque augue, ac placerat mauris fermentum ac. Sed eget. </p>
-                        </div>
-                        <div class="edu">
-                            <h3>Zespół Szkół Budowlano-Geodezyjnych w Białymstoku</h3>
-                            <p class="edu-date">Surveying technician 09.2008 - 06.2012</p>
-                            <p class="edu-description"> Donec bibendum est turpis, non aliquam lectus accumsan ac. Suspendisse potenti. Donec consectetur
-                                ante vestibulum iaculis mattis. Suspendisse quis ullamcorper dolor, in ultrices lacus. Pellentesque
-                                viverra dui ipsum, at ornare nunc volutpat eu. Etiam laoreet turpis a faucibus viverra. Fusce
-                                sagittis neque augue, ac placerat mauris fermentum ac. Sed eget. </p>
-                        </div>
-                    </div>
-                    <div class="workshop-experience">
-                        <h2>
-                            <i class="header-icon fa fa-plus" aria-hidden="true"></i>Workshops</h2>
-                        <div class="workshop">
-                            <h3>Training center EDUGIKA</h3>
-                            <p class="workshop-date">AutoCAD workshop - 20 December 2015</p>
-                            <p class="workshop-description">Maecenas sollicitudin, justo vitae sagittis sollicitudin, mi ante feugiat ipsum, pretium feugiat
-                                justo risus quis turpis. Morbi enim justo, tincidunt a mollis eget, molestie non mi. Mauris
-                                vitae magna blandit, ultrices quam id, suscipit mauris. Quisque urna lacus, elementum vitae
-                                quam id, egestas sagittis ipsum.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="right-page right-page-hidden">
-                    <h2>
-                        <i class="header-icon fa fa-table" aria-hidden="true"></i>Skills</h2>
-                    <div id="tableSkills"></div>
-                    <h2>
-                        <i class="header-icon fa fa-comments" aria-hidden="true"></i>Languages
-                    </h2>
-                    <p class="language">
-                        <span class="language-bold">Polish:</span>
-                        <span class="language-level">Mother tongue</span>
-                    </p>
-                    <p class="language">
-                        <span class="language-bold">English:</span>
-                        <span class="language-level">Level B1</span>
-                    </p>
-                </div>
-                <div class="right-page right-page-hidden hobby">
-                    <div class="hobby-description">
-                        <h2>
-                            <i class="header-icon fa fa-gamepad" aria-hidden="true"></i>Hobby</h2>
-                        <ul class="hobby-ul">
-                            <li>Macroeconomics - Austrian school</li>
-                            <li>Psychology - Personality, psychopathology</li>
-                            <li>History - XX and XIX century</li>
-                            <li>Sport - Ice skates, roller skates, bike, chess</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="right-page right-page-hidden contact">
-                    <h2>
-                        <i class="header-icon fa fa-envelope" aria-hidden="true"></i>Contact</h2>
-                    <div class="div-map">
-                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d76618.69597537257!2d23.0922058!3d53.1221452!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc048f41971d%3A0x72317dcc8bf07b2c!2s15-001+Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1516475457651"
-                            style="border:0"></iframe>
-                    </div>
-                    <div class="adress">
-                        <h3 class="header-adress">
-                            <i class="contact-icon fa fa-map-marker" aria-hidden="true"></i>Adress</h3>
-                        <p class="contact-text">Białystok</p>
-                    </div>
-                    <div class="phone">
-                        <h3 class="header-phone">
-                            <i class="contact-icon fa fa-phone" aria-hidden="true"></i>Phone</h3>
-                        <p class="contact-text">123 456 789</p>
-                    </div>
-                    <div class="mail">
-                        <h3 class="header-mail">
-                            <i class="contact-icon fa fa-envelope" aria-hidden="true"></i>Mail</h3>
-                        <p class="contact-text">siemieniukrafal@gmail.com</p>
-                    </div>
-                    <div class="contact-form">
-                        <h3 class="header-contact-form">
-                            <i class="contact-icon fa fa-share" aria-hidden="true"></i>Send Me a Message</h3>
-                        <form class="form" name="CVForm" action="mailto:siemieniukrafal@gmail.com" method="post" enctype="text/plain">
-                            <input id="name" name="name" type="text" placeholder="Name">
-                            <input id="e-mail" name="e-mail" type="email" placeholder="Email">
-                            <input id="topic" name="topic" type="text" placeholder="Subject">
-                            <textarea class="textarea" id="message" name="message" placeholder="Message"></textarea>
-                            <button class="form-submit" type="submit">Send</button>
-                        </form>
-                    </div>
-                    <footer>
-                        <p class="footer-text">I hereby agree for processing the following personal information strictly for the purposes of job
-                            recruitment in accordance with the regulation for the protection of personal data passed on the
-                            following day: 29.08.97 r. consolidated text Dz. U. 2016 r. poz. 922.</p>
                     </footer>
                 </div>
             </div>
+
+            <div class="left-page left-page-hidden">
+                <div class="vcard-pic">
+                    <img class="vcard-pic-img" src="cv/image/rafal2.jpg" alt="person picture">
+                </div>
+                <div class="vcard-description">
+                    <h1>Hi! I'm Rafał Siemieniuk</h1>
+                    <div class="vcard-description-text">
+                        <span>My name is Rafal and I am a Front-End Developer. I work on web technologies like HTML, CSS, JavaScript.</span>
+                    </div>
+                    <footer class="footer">
+                        <div class="email-and-phone">
+                            <p>
+                                <i class="vcard-icon fa fa-envelope-o" aria-hidden="true"></i>siemieniukrafal@gmail.com</p>
+                            <p>
+                                <i class="vcard-icon fa fa-phone" aria-hidden="true"></i>123 456 789</p>
+                        </div>
+                        <div class="footer-link-icons">
+                            <a class="hyper-link-icon" href="https://www.facebook.com">
+                                <i title="Go to the my Facebook" class="footer-icon fa fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                            <a class="hyper-link-icon" href="https://github.com/rafalSiemieniuk">
+                                <i title="Go to the my Github" class="footer-icon fa fa-github-square" aria-hidden="true"></i>
+                            </a>
+                            <a class="hyper-link-icon" href="https://plus.google.com/u/0/">
+                                <i title="Go to the my Google+" class="footer-icon fa fa-google-plus-square" aria-hidden="true"></i>
+                            </a>
+                            <a class="hyper-link-icon" href="cv/index-pdf.html">
+                                <i title="Go to the print version" class="footer-icon fa fa-print" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="right-page right-page-hidden experience">
+                <div class="job-experience">
+                    <h2>
+                        <i class="header-icon fa fa-briefcase" aria-hidden="true"></i>Working experience</h2>
+                    <div class="job">
+                        <h3>Surveyor services „Croma”</h3>
+                        <p class="job-date">03.2016 - present</p>
+                        <p class="job-description">Maecenas sollicitudin, justo vitae sagittis sollicitudin, mi ante feugiat ipsum, pretium feugiat
+                            justo risus quis turpis. Morbi enim justo, tincidunt a mollis eget, molestie non mi. Mauris vitae
+                            magna blandit, ultrices quam id, suscipit mauris. Quisque urna lacus, elementum vitae quam id,
+                            egestas sagittis ipsum.</p>
+                    </div>
+                    <div class="job">
+                        <h3>GLOBAL EAST</h3>
+                        <p class="job-date">07.2015 - 08.2015</p>
+                        <p class="job-description">Professional practice - sollicitudin, justo vitae sagittis sollicitudin, mi ante feugiat ipsum, pretium
+                            feugiat justo risus quis turpis. Morbi enim justo, tincidunt a mollis eget, molestie non mi.
+                            Mauris vitae magna blandit, ultrices quam id, suscipit mauris. Quisque urna lacus, elementum
+                            vitae quam id, egestas sagittis ipsum.</p>
+                    </div>
+                </div>
+                <div class="edu-experience">
+                    <h2>
+                        <i class="header-icon fa fa-graduation-cap" aria-hidden="true"></i>Education</h2>
+                    <div class="edu">
+                        <h3>Bialystok University of Technology</h3>
+                        <p class="edu-date">Internet Applications Front-End Development 10.2017 - present</p>
+                        <p class="edu-description"> Donec bibendum est turpis, non aliquam lectus accumsan ac. Suspendisse potenti. Donec consectetur
+                            ante vestibulum iaculis mattis. Suspendisse quis ullamcorper dolor, in ultrices lacus. Pellentesque
+                            viverra dui ipsum, at ornare nunc volutpat eu. Etiam laoreet turpis a faucibus viverra. Fusce
+                            sagittis neque augue, ac placerat mauris fermentum ac. Sed eget. </p>
+                    </div>
+                    <div class="edu">
+                        <h3>University of Warmia and Mazury in Olsztyn</h3>
+                        <p class="edu-date">Geodesy and Cartography 10.2012 - 02.2016</p>
+                        <p class="edu-description"> Donec bibendum est turpis, non aliquam lectus accumsan ac. Suspendisse potenti. Donec consectetur
+                            ante vestibulum iaculis mattis. Suspendisse quis ullamcorper dolor, in ultrices lacus. Pellentesque
+                            viverra dui ipsum, at ornare nunc volutpat eu. Etiam laoreet turpis a faucibus viverra. Fusce
+                            sagittis neque augue, ac placerat mauris fermentum ac. Sed eget. </p>
+                    </div>
+                    <div class="edu">
+                        <h3>Zespół Szkół Budowlano-Geodezyjnych w Białymstoku</h3>
+                        <p class="edu-date">Surveying technician 09.2008 - 06.2012</p>
+                        <p class="edu-description"> Donec bibendum est turpis, non aliquam lectus accumsan ac. Suspendisse potenti. Donec consectetur
+                            ante vestibulum iaculis mattis. Suspendisse quis ullamcorper dolor, in ultrices lacus. Pellentesque
+                            viverra dui ipsum, at ornare nunc volutpat eu. Etiam laoreet turpis a faucibus viverra. Fusce
+                            sagittis neque augue, ac placerat mauris fermentum ac. Sed eget. </p>
+                    </div>
+                </div>
+                <div class="workshop-experience">
+                    <h2>
+                        <i class="header-icon fa fa-plus" aria-hidden="true"></i>Workshops</h2>
+                    <div class="workshop">
+                        <h3>Training center EDUGIKA</h3>
+                        <p class="workshop-date">AutoCAD workshop - 20 December 2015</p>
+                        <p class="workshop-description">Maecenas sollicitudin, justo vitae sagittis sollicitudin, mi ante feugiat ipsum, pretium feugiat
+                            justo risus quis turpis. Morbi enim justo, tincidunt a mollis eget, molestie non mi. Mauris vitae
+                            magna blandit, ultrices quam id, suscipit mauris. Quisque urna lacus, elementum vitae quam id,
+                            egestas sagittis ipsum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-page right-page-hidden">
+                <h2>
+                    <i class="header-icon fa fa-table" aria-hidden="true"></i>Skills</h2>
+                <div id="tableSkills"></div>
+                <h2>
+                    <i class="header-icon fa fa-comments" aria-hidden="true"></i>Languages
+                </h2>
+                <p class="language">
+                    <span class="language-bold">Polish:</span>
+                    <span class="language-level">Mother tongue</span>
+                </p>
+                <p class="language">
+                    <span class="language-bold">English:</span>
+                    <span class="language-level">Level B1</span>
+                </p>
+            </div>
+            <div class="right-page right-page-hidden portfolio">
+                <div class="portfolio-description">
+                    <h2>
+                        <i class="header-icon fa fa-tasks" aria-hidden="true"></i>Portfolio</h2>
+                    <ol class="portfolio-ol">
+                        <li>
+                            <a class="portfolio-hyper-link portfolio-masteralb" href="1_task/index.html">Masteralb
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="right-page right-page-hidden hobby">
+                <div class="hobby-description">
+                    <h2>
+                        <i class="header-icon fa fa-gamepad" aria-hidden="true"></i>Hobby</h2>
+                    <ul class="hobby-ul">
+                        <li>Macroeconomics - Austrian school</li>
+                        <li>Psychology - Personality, psychopathology</li>
+                        <li>History - XX and XIX century</li>
+                        <li>Sport - Ice skates, roller skates, bike, chess</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-page right-page-hidden contact">
+                <h2>
+                    <i class="header-icon fa fa-envelope" aria-hidden="true"></i>Contact</h2>
+                <div class="div-map">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d76618.69597537257!2d23.0922058!3d53.1221452!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc048f41971d%3A0x72317dcc8bf07b2c!2s15-001+Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1516475457651"
+                        style="border:0"></iframe>
+                </div>
+                <div class="adress">
+                    <h3 class="header-adress">
+                        <i class="contact-icon fa fa-map-marker" aria-hidden="true"></i>Adress</h3>
+                    <p class="contact-text">Białystok</p>
+                </div>
+                <div class="phone">
+                    <h3 class="header-phone">
+                        <i class="contact-icon fa fa-phone" aria-hidden="true"></i>Phone</h3>
+                    <p class="contact-text">123 456 789</p>
+                </div>
+                <div class="mail">
+                    <h3 class="header-mail">
+                        <i class="contact-icon fa fa-envelope" aria-hidden="true"></i>Mail</h3>
+                    <p class="contact-text">siemieniukrafal@gmail.com</p>
+                </div>
+                <div class="contact-form">
+                    <h3 class="header-contact-form">
+                        <i class="contact-icon fa fa-share" aria-hidden="true"></i>Send Me a Message</h3>
+                    <form class="form" name="CVForm" action="mailto:siemieniukrafal@gmail.com" method="post" enctype="text/plain">
+                        <input id="name" name="name" type="text" placeholder="Name">
+                        <input id="e-mail" name="e-mail" type="email" placeholder="Email">
+                        <input id="topic" name="topic" type="text" placeholder="Subject">
+                        <textarea class="textarea" id="message" name="message" placeholder="Message"></textarea>
+                        <button class="form-submit" type="submit">Send</button>
+                    </form>
+                </div>
+                <footer>
+                    <p class="footer-text">I hereby agree for processing the following personal information strictly for the purposes of job recruitment
+                        in accordance with the regulation for the protection of personal data passed on the following day:
+                        29.08.97 r. consolidated text Dz. U. 2016 r. poz. 922.</p>
+                </footer>
+            </div>
         </div>
-        <div id="bottom"></div>
+        <div id="bottom">
+            <a href="#" class="scrollup">
+                <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+            </a>
+        </div>
     </div>
-    <script src="js-animations-move.js"></script>
-    <script src="js-table-skills.js"></script>
+
+    <script src="cv/jquery-3.3.1.min.js"></script>
+    <script src="cv/jQuery.js"></script>
+    <script src="cv/js-animations-move.js"></script>
+    <script src="cv/js-table-skills.js"></script>
+
 </body>
 
 

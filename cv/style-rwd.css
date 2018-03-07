@@ -1,8 +1,10 @@
 @media (min-width: 1250px) {
     .background {
         height: 100vh;
+        background-color: rgb(66, 66, 66);
         background-image: url(image/galaxy.jpg);
         background-position: bottom;
+        padding: 0;
     }
     .container {
         position: fixed;
@@ -45,10 +47,19 @@
         right: 0px;
         bottom: 38px;
     }
+    .experience, .contact {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
 }
 
 @media (max-width: 1249px) {
     .background {
+        padding: 30px 0;
+    }
+    .background-mobile {
+        z-index: -5;
+        background-color: rgb(66, 66, 66);
         background-image: url(image/galaxy.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -57,6 +68,7 @@
         height: 100%; 
         position: fixed;
         overflow-y: scroll;
+        /* margin-top: 30px; */
     }
     .container {
         position: static;
@@ -67,7 +79,6 @@
         display: none;
     }
     .left-page {
-        margin-top: 30px;
         height: 100%;
         width: 100%;
         background-color: white;
@@ -81,13 +92,11 @@
         width: 100%;
         background-color: white;
     }
-    .form-submit {
-        font-size: 18px;
-        letter-spacing: 2px;
-        padding: 15px;
-    }
 }
 @media (max-width: 576px) {
+    .background {
+        padding: 15px 0;
+    }
     .container {
         width: 90vw;
     }
@@ -101,4 +110,13 @@
     .email-and-phone {
         font-size: 3.7vw;
     }
+    .form-submit {
+        font-size: 18px;
+        letter-spacing: 2px;
+        padding: 15px;
+        background-color: rgb(5, 49, 145);
+        color: white;
+    }
 }
+
+

@@ -18,16 +18,17 @@
 .row > td {
     padding: 5px 10px;
 }
-@media (min-width: 768px) {
-.row:hover > td:last-child {
-    letter-spacing: 5px;
-    transition: all 0.75s ease;
-}
-.row:hover {
-    background: rgb(211, 211, 211);
-}
-.table-thead > th:hover {
-    color: rgb(13, 116, 163);
-    cursor: pointer;
-}
+
+@media (min-width: 576px) {
+    .row:hover > td:last-child {
+        letter-spacing: 5px;
+        transition: all 0.75s ease;
+    }
+    .row:hover {
+        background: rgb(211, 211, 211);
+    }
+    .table-thead > th:hover {
+        color: rgb(13, 116, 163);
+        cursor: pointer;
+    }
 }
