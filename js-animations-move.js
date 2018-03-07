@@ -89,5 +89,3 @@ menuContact.addEventListener('click', function () {
   rightPageBtn(3);
 });
 
-
-console.log(window.innerWidth);
