@@ -29,10 +29,6 @@ h3 {
 .space {
     background: linear-gradient(black, rgb(50, 50, 50), rgb(100, 100, 100));
 }
-.background {
-    background-image: url(image/galaxy.jpg);
-    background-position: bottom;
-}
 .menu-buttons{
     position: absolute;
     left: 0;
@@ -71,7 +67,7 @@ h3 {
 /* FIRST PAGE */
 .vcard-pic {
     margin: 0 auto;
-    height: 203.3px;
+    height: 203px;
     text-align: center;
     padding-top: 40px;
 }
@@ -107,11 +103,16 @@ h3 {
     text-align: center; 
     width: 100%;
 }
+.footer-link-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 58px;
+}
 .footer-icon {
     font-size: 35px;
 }
 .hyper-link-icon {
-    margin: 0 20px;
+    margin: 0 10px;
     text-decoration: none;
     color: black;
 }
@@ -120,21 +121,15 @@ h3 {
     cursor: pointer;
     transition: color 0.5s;
 }
-
+.fake-link-icon {
+    opacity: 0;
+    margin: 0 10px;
+}
 /* ///////////////////////////////////////////////////////// */
 /* LEFT PAGE */
-.go-to-the-print-version {
-    text-align: right;
-}
 .fa-print {
     animation: clapper 1s infinite;
-    animation-delay: 2s;
-    color: black;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    font-size: 35px;
-    padding: 0;
+    animation-delay: 1s;
 }
 @keyframes clapper {
     0% {transform: rotate(0deg);}
@@ -146,10 +141,11 @@ h3 {
     30% {transform: rotate(0deg);}
     100% {transform: rotate(0deg);}
 }
+
 /* ///////////////////////////////////////////////////////// */
 /* RIGHT PAGE */
 .header-icon {
-    padding: 0 0.625rem 0 5px;
+    padding: 0 15px 0 5px;
 }
 /* EXPERIENCE */
 .experience {
