@@ -19,7 +19,7 @@
     padding: 5px 10px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 769px) {
     .row:hover > td:last-child {
         letter-spacing: 5px;
         transition: all 0.75s ease;

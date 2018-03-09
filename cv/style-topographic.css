@@ -203,9 +203,9 @@ h3 {
 .portfolio-hyper-link {
     text-decoration: none;
     color: rgb(13, 116, 163);
-    transition-duration: 1s;
+    transition-duration: .5s;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
 .portfolio-hyper-link:hover {
     letter-spacing: .5px;
     color: rgb(5, 49, 145);

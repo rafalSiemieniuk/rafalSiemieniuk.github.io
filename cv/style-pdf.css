@@ -103,6 +103,7 @@ h2 {
 .table-thead {
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
 }
 .table-cell-stars {
     width: 110px;
@@ -247,3 +248,4 @@ h2 {
     color: red;
     text-align: center;
 }
+
