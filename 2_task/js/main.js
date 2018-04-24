@@ -1,5 +1,3 @@
-'use strict';
-
 var containerNavbar = document.getElementsByClassName('container-navbar')[0];
 var navLink = document.getElementsByClassName('nav-link');
 var freshLife = document.getElementById('fresh-life');
@@ -31,7 +29,7 @@ for (var i = 0; i < navLink.length; i++) {
 
 ///////////////////FUNCTIONS///////////////////
 
-var screenDetection = function screenDetection() {
+var screenDetection = function () {
     var rectFreshLife = freshLife.getBoundingClientRect();
     var rectAbout = about.getBoundingClientRect();
     var rectServices = services.getBoundingClientRect();
@@ -40,99 +38,103 @@ var screenDetection = function screenDetection() {
     var rectBlog = blog.getBoundingClientRect();
     var rectContact = contact.getBoundingClientRect();
 
+
     if (window.scrollY === 0 && window.innerWidth >= 992) {
-        containerNavbar.removeAttribute('id');
-        containerNavbar.setAttribute('id', 'bg_start');
-        navLink[0].setAttribute('id', 'active');
-    } else if (rectAbout.top > 101) {
-        containerNavbar.removeAttribute('id');
-        containerNavbar.setAttribute('id', 'bg_fresh_life');
-        navLink[0].setAttribute('id', 'active');
-    } else if (rectServices.top > 101) {
-        containerNavbar.removeAttribute('id');
-        containerNavbar.setAttribute('id', 'bg_about');
-        navLink[1].setAttribute('id', 'active');
-    } else if (rectGallery.top > 101) {
-        containerNavbar.removeAttribute('id');
-        containerNavbar.setAttribute('id', 'bg_services');
-        navLink[2].setAttribute('id', 'active');
-    } else if (rectSubscribe.top > 101) {
-        containerNavbar.removeAttribute('id');
-        containerNavbar.setAttribute('id', 'bg_gallery');
-        navLink[3].setAttribute('id', 'active');
-    } else if (rectBlog.top > 101) {
-        containerNavbar.removeAttribute('id');
-        containerNavbar.setAttribute('id', 'bg_subscribe');
-        navLink[4].setAttribute('id', 'active');
-    } else if (rectContact.top > 101) {
-        containerNavbar.removeAttribute('id');
-        containerNavbar.setAttribute('id', 'bg_blog');
-        navLink[5].setAttribute('id', 'active');
-    } else {
-        containerNavbar.removeAttribute('id');
-        containerNavbar.setAttribute('id', 'bg_contact');
-        navLink[6].setAttribute('id', 'active');
+        windowScroll(0,'bg_start');
+    }
+    else if (rectAbout.top > 101) {
+        windowScroll(0,'bg_fresh_life');
+    }
+    else if (rectServices.top > 101) {
+        windowScroll(1,'bg_about');
+    }
+    else if (rectGallery.top > 101) {
+        windowScroll(2,'bg_services');
+    }
+    else if (rectSubscribe.top > 101) {
+        windowScroll(3,'bg_gallery');
+    }
+    else if (rectBlog.top > 101) {
+        windowScroll(4,'bg_subscribe');
+    }
+    else if (rectContact.top > 101) {
+        windowScroll(5,'bg_blog');
+    }
+    else {
+        windowScroll(6,'bg_contact');
     }
 };
 
-var setActiveBar = function setActiveBar(section) {
-    for (var j = 0; j < navLink.length; j++) {
+function windowScroll(index,section) {
+    containerNavbar.removeAttribute('id');
+    containerNavbar.setAttribute('id', section);
+    navLink[index].setAttribute('id', 'active');
+}
+
+var setActiveBar = function (section) {
+    for (let j = 0; j < navLink.length; j++) {
         navLink[j].removeAttribute('id');
     }
-    section.setAttribute('id', 'active');
 };
-var removeActiveBar = function removeActiveBar() {
-    for (var j = 0; j < navLink.length; j++) {
+var removeActiveBar = function () {
+    for (let j = 0; j < navLink.length; j++) {
         navLink[j].removeAttribute('id');
     }
 };
 
 ////////////////smooth scrolling////////////////
 
-(function () // Code in a function to create an isolate scope
+(function() // Code in a function to create an isolate scope
 {
-    var speed = 600;
-    var moving_frequency = 15; // Affects performance !
-    var links = document.getElementsByTagName('a');
-    var href;
-    for (var i = 0; i < links.length; i++) {
-        href = links[i].attributes.href === undefined ? null : links[i].attributes.href.nodeValue.toString();
-        if (href !== null && href.length > 1 && href.substr(0, 1) == '#') {
-            links[i].onclick = function () {
-                var element;
-                var href = this.attributes.href.nodeValue.toString();
-                if (element = document.getElementById(href.substr(1))) {
-                    var hop_count = speed / moving_frequency;
-                    var getScrollTopDocumentAtBegin = getScrollTopDocument();
-                    var gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hop_count;
+var speed = 600;
+var moving_frequency = 15; // Affects performance !
+var links = document.getElementsByTagName('a');
+var href;
+for(var i=0; i<links.length; i++)
+{   
+    href = (links[i].attributes.href === undefined) ? null : links[i].attributes.href.nodeValue.toString();
+    if(href !== null && href.length > 1 && href.substr(0, 1) == '#')
+    {
+        links[i].onclick = function()
+        {
+            var element;
+            var href = this.attributes.href.nodeValue.toString();
+            if(element = document.getElementById(href.substr(1)))
+            {
+                var hop_count = speed/moving_frequency
+                var getScrollTopDocumentAtBegin = getScrollTopDocument();
+                var gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hop_count;
 
-                    for (var i = 1; i <= hop_count; i++) {
-                        (function () {
-                            var hop_top_position = gap * i;
-                            setTimeout(function () {
-                                window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin);
-                            }, moving_frequency * i);
-                        })();
-                    }
+                for(var i = 1; i <= hop_count; i++)
+                {
+                    (function()
+                    {
+                        var hop_top_position = gap*i;
+                        setTimeout(function(){  window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin); }, moving_frequency*i);
+                    })();
                 }
+            }
 
-                return false;
-            };
-        }
+            return false;
+        };
+    }
+}
+
+var getScrollTopElement =  function (e)
+{
+    var top = -100;
+
+    while (e.offsetParent != undefined && e.offsetParent != null)
+    {
+        top += e.offsetTop + (e.clientTop != null ? e.clientTop : 0);
+        e = e.offsetParent;
     }
 
-    var getScrollTopElement = function getScrollTopElement(e) {
-        var top = -100;
+    return top;
+};
 
-        while (e.offsetParent != undefined && e.offsetParent != null) {
-            top += e.offsetTop + (e.clientTop != null ? e.clientTop : 0);
-            e = e.offsetParent;
-        }
-
-        return top;
-    };
-
-    var getScrollTopDocument = function getScrollTopDocument() {
-        return document.documentElement.scrollTop + document.body.scrollTop;
-    };
+var getScrollTopDocument = function()
+{
+    return document.documentElement.scrollTop + document.body.scrollTop;
+};
 })();
