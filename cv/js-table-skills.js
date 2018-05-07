@@ -5,31 +5,31 @@ var firstRowLength = firstRow.length;
 
 var skills = [{
   title: 'html',
-  stars: 3.5,
+  stars: 4.5,
 }, {
   title: 'CSS',
+  stars: 4.5,
+}, {
+  title: 'Java Script (ES6)',
   stars: 3.5,
 }, {
-  title: 'Java Script',
+  title: 'Sass',
+  stars: 4,
+}, {
+  title: 'Less',
+  stars: 2.5,
+}, {
+  title: 'RWD, Bootstrap',
   stars: 3,
 }, {
-  title: 'Adobe Photoshop',
+  title: 'GiT',
+  stars: 3,
+}, {
+  title: 'jQuery',
   stars: 2,
-}, {
-  title: 'AutoCAD',
-  stars: 3.5,
-}, {
-  title: 'EWmapa',
-  stars: 4,
-}, {
-  title: 'TurboMap',
-  stars: 4,
 }, {
   title: 'MySQL',
   stars: 2,
-}, {
-  title: 'QGIS',
-  stars: 2.5,
 }];
 
 var table = document.createElement('table');

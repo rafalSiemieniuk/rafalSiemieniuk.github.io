@@ -1,0 +1,43 @@
+.container {
+    margin: 40px 10vw;
+}
+
+h4 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px; 
+}
+
+h4 + span {
+    font-weight: bold;
+}
+
+.para {
+    visibility: hidden;
+}
+.green {
+    background-color: green; 
+}
+.blue {
+    background-color: blue; 
+}
+.cell {
+    background-color: red;
+}
+
+
+.greenChain {
+    color: green;
+}
+.blueChain {
+    color: blue;
+}
+.orangeChain {
+    color: orange;
+}
+.lightGrey {
+    background-color: LightSlateGrey ;
+}
+.darkGrey {
+    background-color: DarkGrey ;
+}

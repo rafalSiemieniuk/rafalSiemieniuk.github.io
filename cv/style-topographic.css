@@ -213,6 +213,15 @@ h3 {
     cursor: pointer;
 }
 }
+.portfolio-left-col, .portfolio-right-col {
+  float: left;
+  width: 50%;
+}
+.portfolio-left-col span, .portfolio-right-col span {
+  font-weight: bold;
+  display: inline-block;
+  padding-bottom: 10px;
+}
 /* HOBBY */
 .hobby-ul {
     padding: 10px;
@@ -298,4 +307,10 @@ h3 {
 ::-o-scrollbar-thumb {
     border-radius: 10px;
     background-color: #a6a6a6;
+}
+
+.clear::after {
+  display: block;
+  content: "";
+  clear: both;
 }

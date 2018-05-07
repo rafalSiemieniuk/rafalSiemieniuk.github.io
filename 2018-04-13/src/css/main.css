@@ -1,0 +1,131 @@
+.container {
+    margin: 0 30px;
+}
+
+.clear::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+/* //////////TASK 1////////// */
+.task-1__cat {
+    position: relative;
+}
+.task-1__img {
+    border-radius: 50%;
+    height: 250px;
+}
+.task-1__cat-reaction {
+    position: absolute;
+    top: 0;
+    left: 265px;
+    font-weight: bold;
+}
+.task-1__divisibility {
+    display: none;
+}
+/* //////////TASK 2////////// */
+.task-2__questionnaire {
+    padding: 20px;
+    border: 1px solid black;
+    margin-left: 20px;
+    width: 250px;
+    float: left;
+}
+.task-2__results {
+    float: left;
+    width: 250px;
+    height: 123px;
+    padding: 20px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+/* //////////TASK 3////////// */
+.task-3__coffee {
+    float: left;
+}
+.task-3__img {
+    padding: 10px;
+    padding-bottom: 0;
+    width: 250px;
+}
+.task-3__dataset {
+    float: left;
+    width: 210px;
+}
+.task-3__components { 
+    background-color: rgb(255, 255, 139);
+    width: 100%;
+}
+.task-3__prices {
+    background-color: rgb(255, 255, 211);
+    width: 100%;
+}
+.task-3 p {
+    margin: 0;
+    padding: 8px;
+}
+.task-3__btn-order {
+    width: 250px;
+    padding: 2px;
+    margin: 0 10px 10px 10px;
+}
+.task-3__add-components {
+    float: left;
+    height: 102px;
+}
+.task-3__btn-add {
+    float: left;
+    height: 100%;
+    padding: 12px;
+}
+.task-3__add-inputs {
+    float: left;
+}
+.task-3__results {
+    padding: 50px 0 0 50px;
+}
+
+/* //////////TASK 4////////// */
+.task-4 {
+    margin-bottom: 30px;
+}
+.red-cell {
+    background-color: white;
+    border: 1px solid red;
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    top: 2px;
+    left: 53px;
+    z-index: 20;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.task-4__gradeBookTable {
+    margin: 10px 0;
+}
+th {
+    width: 180px;
+    padding: 5px;
+    line-height: 1.5;
+}
+.task-4__gradeBookTable td {
+    width: 30px;
+    text-align: center;
+    position: relative;
+    padding: 0 10px;
+}
+
+.task-4__cell-date {
+    cursor: pointer;
+}
+
+.task-4__btn-add-grade {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}

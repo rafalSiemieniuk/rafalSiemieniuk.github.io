@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+    <link rel="stylesheet" href="src/css/main.css">
+    <title>Test title</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="task-1">
+            <h1>Zadanie 1</h1>
+            <p>Stwórz obiektową reprezentację kota. Kot udostępnia tylko jedną operację: podrap. Jako parametr (string) przekazujemy
+                miejsce drapania. Kot reaguje pozytywnie (mruczeniem) tylko na drapanie w trzech miejscach: po grzbiecie,
+                pod pyszczkiem i za uchem. Na każde inne reaguje prychaniem. Nasz kot lubi różnorodność i reaguje prychaniem
+                również wtedy, gdy próbujemy podrapać go w tym samym miejscu drugi raz pod rząd.</p>
+            <div class="task-1__content">
+                <div class="task-1__cat">
+                    <div class="task-1__cat-reaction"></div>
+                    <img class="task-1__img" src="img/kot.jpg" alt="Smiley cat">
+                </div>
+            </div>
+            <div class="task-1__form">
+                <button class="task-1__btn">Podrap</button>
+                <input type="text" class="task-1__input" placeholder="Gdzie?">
+            </div>
+            <div class="task-2">
+                <h1>Zadanie 2</h1>
+                <p>Stwórz obiektową reprezentację prostej ankiety. Ankieta składa się z pytania, na które możemy odpowiedzieć
+                    "tak" lub "nie". Ankieta udostępnia osobne metody do oddania głosu na "tak" oraz na "nie". Ankieta powinna
+                    pozwolić na sprawdzenie ile oddano głosów oraz jaki procent z nich oddano którą opcję.</p>
+                <div class="task-2__content clear">
+                    <div class="task-2__questionnaire">
+                        <p class="task-2__question">Czy posiadasz telewizor w domu?</p>
+                        <div class="task-2__answers">
+                            <label>
+                                <input id="task-2__yes" type="radio" name="answer">TAK</label>
+                            <label>
+                                <input id="task-2__no" type="radio" name="answer">NIE</label>
+                        </div>
+                        <p class="task-2__button">
+                            <button class="task-2__btn">Głosuj</button>
+                        </p>
+                    </div>
+                    <div class="task-2__results">
+                        <p>Ilość oddanych głosów:
+                            <span class="task-2__total"></span>
+                        </p>
+                        <p>na tak:
+                            <span class="task-2__procent-yes"></span>
+                        </p>
+                        <p>na nie:
+                            <span class="task-2__procent-no"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="task-3">
+                <h1>Zadanie 3</h1>
+                <p>Zaprojektuj i stwórz obiektową reprezentację automatu do kawy. Automat pozwala zamówić dużą lub małą kawę.
+                    Do każdej kawy można wziąć jedną lub więcej porcji mleka lub/i cukru. Po wybraniu zamówienia, powinna
+                    być zwracana informacja o cenie lub o niepowodzeniu, jeśli nie udało sie go zrealizować z powodu braku
+                    składników. Cenę małej i dużej kawy oraz pojedynczej porcji mleka i cukru ustalamy tworząc obiekt. Automat
+                    przechowuje pewną ilość składników: mielonej kawy oraz porcji mleka i cukru. Dodawać je możemy przy pomocy
+                    osobnych metod. Mleko i cukier ładowane są w porcjach, natomiast kawa w gramach. Przygotowanie małej
+                    kawy zużywa 6 gramów, natomiast dużej - 15.
+                    <br>Stwórz interfejs w HTML, który pozwoli skorzystać z automatu (a także doładowywać go składnikami).</p>
+                <div class="task-3__content clear">
+                    <div class="task-3__coffee">
+                        <img class="task-3__img" src="img/coffee.jpg" alt="coffee machine">
+                        <div class="task-3__form">
+                            <label>
+                                <input id="task-3__large-coffee" type="radio" name="type-of-coffee">Duża</label>
+                            <label>
+                                <input id="task-3__small-coffee" type="radio" name="type-of-coffee">Mała</label>
+                            <p>
+                                <input type="text" class="task-3__input-order-milk" placeholder="Mleko, domyślnie 1 porcja">
+                            </p>
+                            <p>
+                                <input type="text" class="task-3__input-order-sugar" placeholder="Cukier, domyślnie 1 porcja">
+                            </p>
+                        </div>
+                        <button class="task-3__btn-order">Zamów</button>
+                    </div>
+                    <div class="task-3__dataset">
+                        <div class="task-3__components">
+                            <p> Kawa =
+                                <span class="task-3__gram-caffee task-3__data"></span>g
+                            </p>
+                            <p>Porcje mleka =
+                                <span class="task-3__portion-milk task-3__data"></span>
+                            </p>
+                            <p>Porcje cukru =
+                                <span class="task-3__portion-sugar task-3__data"></span>
+                            </p>
+                        </div>
+                        <div class="task-3__prices">
+                            <p>Cena dużej kawy =
+                                <span class="task-3__price-large-coffee task-3__data"></span> zł
+                            </p>
+                            <p>Cena małej kawy =
+                                <span class="task-3__price-small-coffee task-3__data"></span> zł
+                            </p>
+                            <p>Cena 1 porcji mleka =
+                                <span class="task-3__price-milk task-3__data"></span> zł
+                            </p>
+                            <p>Cena 1 porcji cukru =
+                                <span class="task-3__price-sugar task-3__data"></span> zł
+                            </p>
+                        </div>
+                        <div class="task-3__results">
+                        </div>
+                    </div>
+                    <div class="task-3__add-components clear">
+                        <button class="task-3__btn-add">Doładuj</button>
+                        <div class="task-3__add-inputs">
+                            <p>
+                                <input type="text" class="task-3__input-add-coffee task-3__input-add" placeholder="Gram kawy">
+                            </p>
+                            <p>
+                                <input type="text" class="task-3__input-add-milk task-3__input-add" placeholder="Porcje mleka">
+                            </p>
+                            <p>
+                                <input type="text" class="task-3__input-add-sugar task-3__input-add" placeholder="Porcje cukru">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task-4">
+                <h1>Zadanie 4</h1>
+                <p>Zaprojektuj i stwórz obiektową reprezentację dziennika ocen. Do dziennika można dodawać (ale nie edytować czy usuwać) oceny, podając nazwę przedmiotu, stopień (w skali akademickiej: 2, 3, 3.5, 4, 4.5 lub 5) oraz datę.
+                    <br>Stwórz interfejs w HTML, który pozwoli na posługiwanie się dziennikiem.</p>
+                <div class="task-4__content clear">
+                    <div class="task-4__gradeBookTable">
+                    </div>
+                    <input type="text" class="task-4__input-add-subject" placeholder="Wpisz przedmiot">
+                    <button class="task-4__btn-add-subject">Dodaj Przedmiot</button>
+                </div>
+            </div>
+        </div>
+        <script src="dist/js/app.js"></script>
+</body>
+
+</html>

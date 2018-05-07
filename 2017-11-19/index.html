@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title> Operacje na tabelach </title>
+  <meta name="description" content="Staż dla każdego" />
+  <meta name="keywords" content="staż, challenge, kod, programista, web, www" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="column-left">
+      <div id="table-wrapper">
+        <h4>Zadanie 2a</h4>
+      </div>
+
+      <div id="table-wrapper2">
+        <h4>Zadanie 2b</h4>
+      </div>
+
+      <div id="table-wrapper3">
+        <h4>Zadanie 3</h4>
+      </div>
+
+      <div>
+        <h4>Zadanie 4</h4>
+        <p id="paragraph"></p>
+        <textarea id="textarea"></textarea>
+        <button id="btnLeft">Lewo</button>
+        <button id="btnRight">Prawo</button>
+      </div>
+
+      <div>
+        <h4>Zadanie 4b</h4>
+        <img src="" id="img" class="img">
+        <button id="btnImgLeft">Lewo</button>
+        <button id="btnImgRight">Prawo</button>
+      </div>
+
+      <div>
+        <h4>Zadanie 5a</h4>
+        <div class="content">
+          <p id="paragraph1" class="message">Witaj świecie!</p>
+        </div>
+        <button id="btnShow1">Pokaż</button>
+        <div class="content">
+          <p id="paragraph2" class="message">Cześć i czołem</p>
+        </div>
+        <button id="btnShow2">Pokaż</button>
+        <div class="content">
+          <p id="paragraph3" class="message">Jakiś napis!</p>
+        </div>
+        <button id="btnShow3">Pokaż</button>
+      </div>
+
+      <div class="choosen">
+        <h4>Zadanie 5b</h4>
+        <div class="contentB">
+          <p class="messageB">Witaj świecie!</p>
+        </div>
+        <button id="btnShowB1">Pokaż</button>
+        <div class="contentB">
+          <p class="messageB">Cześć i czołem</p>
+        </div>
+        <button id="btnShowB2">Pokaż</button>
+        <div class="contentB">
+          <p class="messageB">Jakiś napis!</p>
+        </div>
+        <button id="btnShowB3">Pokaż</button>
+      </div>
+    </div>
+    <div class="column-right">
+      <ul>
+        <b> 1. Stwórz (w dokumencie lub przy pomocy kodu JS) tabelę o rozmiarach przynajmniej 3x3. Następnie (w kodzie JS) podepnij
+          odpowiednie zdarzenia, aby komórka nad którą znajduje sie wskaźnik myszy zmieniała kolor. Rozważ dwa warianty:</b>
+        <li>a. podepnij zdarzenia do wszystkich komórek tabeli,</li>
+        <li>b. podepnij zdarzenie do tabeli.</li>
+      </ul>
+      <ul>
+        <b>2. Kliknięcie w komórkę powinno zmieniać jej kolor.</b>
+        <li> a. Tylko jedna komórka naraz powinna być oznaczona innym kolorem, zatem kliknięcie w kolejną powinno czyścić poprzednią.
+        </li>
+        <li> b. Wiele komórek może być pokolorowanych jednocześnie, ale kolejne kliknięcie w kolorową powoduje powrót do poprzedniego
+          stanu.
+        </li>
+      </ul>
+      <ul>
+        <b>3. Dokładnie jedna komórka jest kolorowa. Naciskanie klawiszy strzałek powinno przemieszczać pokolorowaną komórkę
+          (tylko kolor, nie jej zawartość).</b>
+      </ul>
+      <ul>
+        <b>4. W kodzie JS stwórz tablicę dowolnych napisów. W dokumencie stwórz dwa przyciski ("poprzedni" i "następny") oraz
+          pole tekstowe tylko do odczytu (atrybut readonly). Pole tekstowe wyświetla początkowo pierwszą wartość z tablicy.
+          Naciskanie przycisków powoduje przechodzenie do poprzedniego lub następnego elementu. Jeśli nie ma elementu następnego/
+          poprzedniego (początek/ koniec tablicy), przyciski powinny być wyszarzone (atrybut disabled).</b>
+        <li> a. Zmodyfikuj kod, aby pole tekstowe nie było tylko do odczytu, a wprowadzone w nim zmiany był zapamiętywane w tablicy
+          JS. </li>
+        <li> b. Zmodyfikuj kod, aby tablica nie zawierała zwykłych tekstów, a adresy obrazków, natomiast pole tekstowe wymień
+          na element img i wyświetlaj w nim kolejne grafiki (zmieniając atrybut src). </li>
+      </ul>
+      <ul>
+        <b>5. Dokument powinien zawierać jakiś napis powitalny, przycisk "pokaż" oraz sekcję div z jakąś zawartością (początkowo
+          ukrytą). Kliknięcie w przycisk "pokaż" powinno na przemian odsłaniać i chować jej zawartość (zmieniaj również tekst
+          na przycisku).</b>
+        <li> a. Dodaj kilka przycisków oraz kilka sekcji - każdy odsłania lub ukrywa sekcję przypisaną do niego (np. "dane produktu",
+          "opinie klientów", "dostępność"). </li>
+        <li> b. Zmodyfikuj poprzedni wariant, aby przyciski i sekcje działały jak karty/zakładki - tylko jedna sekcja może być
+          w danym momencie widoczna, klikanie w przyciski odsłania jedną, ale ukrywa pozostałe.</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+</body>
+<script src="tabels.js" type="text/javascript"></script>
+<script src="zad4-5.js" type="text/javascript"></script>
+
+</html>
