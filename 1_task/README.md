@@ -7,6 +7,4 @@ zadanie 1
 
 
 szablon:
-<img src="template.jpg" alt="info" title="Info" />
-
-
+<img src="https://github.com/rafalSiemieniuk/html-CSS/blob/master/1-task/template.jpg" alt="info" title="Info" />
