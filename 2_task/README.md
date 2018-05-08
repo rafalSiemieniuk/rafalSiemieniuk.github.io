@@ -2,7 +2,7 @@ zadanie 2
 
 Technika wykonania: Bootstrap 4.
 
-Uwagi dodatkowe: menu ma sie przyklejac do góry przy skrolowaniu (navbar-fixed-top), mo¿na dodac smooth scroll 
+Uwagi dodatkowe: menu ma sie przyklejac do gÃ³ry przy skrolowaniu (navbar-fixed-top), moÅ¼na dodac smooth scroll 
 (po kliknieciu na odnosnik w menu ma plynnie przenosic do danej sekcji, trzeba dodac id od kazdej sekcji).
 
 
@@ -10,4 +10,4 @@ Uwagi dodatkowe: menu ma sie przyklejac do góry przy skrolowaniu (navbar-fixed-t
 
 
 szablon:
-<img src="template.jpg" alt="info" title="Info" />
+<img src="https://github.com/rafalSiemieniuk/html-CSS/blob/master/2-task/template.jpg" alt="info" title="Info" />
