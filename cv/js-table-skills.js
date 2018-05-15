@@ -19,11 +19,14 @@ var skills = [{
   title: 'Less',
   stars: 2.5,
 }, {
-  title: 'RWD, Bootstrap',
+  title: 'RWD, Bootstrap 4',
   stars: 3,
 }, {
   title: 'GiT',
   stars: 3,
+}, {
+  title: 'Photoshop',
+  stars: 2.5,
 }, {
   title: 'jQuery',
   stars: 2,

@@ -184,6 +184,8 @@ h3 {
 /* SKILLS AND LANGUAGE */
 .language {
     padding: 10px;
+    float: left;
+    width: 50%;
 }
 .language-bold {
     font-weight: bold;
