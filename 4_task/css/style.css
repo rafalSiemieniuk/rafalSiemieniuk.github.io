@@ -271,9 +271,22 @@ h4, .h4 {
     margin-top: 1.16662rem; }
 
 .section__works {
+  position: relative;
   background-color: #7b7b7b;
   text-align: center; }
+  .section__works::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to top, transparent 2px, #5f616c 2px, #5f616c 4px, transparent 4px), linear-gradient(to left, transparent 2px, #5f616c 2px, #5f616c 4px, transparent 4px);
+    background-size: 4px 4px; }
   .section__works .works__wrapper {
+    position: relative;
+    z-index: 1;
     padding-top: 14.9994rem;
     padding-bottom: 12.4995rem; }
     @media (max-width: 767px) {
@@ -534,9 +547,22 @@ h4, .h4 {
             box-shadow: 0 0 0 3.8px #323232; } }
 
 .section__touch {
+  position: relative;
   background-color: #7b7b7b;
   text-align: center; }
+  .section__touch::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to top, transparent 2px, #5f616c 2px, #5f616c 4px, transparent 4px), linear-gradient(to left, transparent 2px, #5f616c 2px, #5f616c 4px, transparent 4px);
+    background-size: 4px 4px; }
   .section__touch .touch__wrapper {
+    position: relative;
+    z-index: 1;
     padding-top: 14.9994rem;
     padding-bottom: 12.4995rem; }
     @media (max-width: 767px) {
@@ -550,6 +576,7 @@ h4, .h4 {
   color: #fff;
   background-color: #475a85; }
   .section__contact .contact__wrapper {
+    position: relative;
     padding-top: 7.4997rem;
     padding-bottom: 7.4997rem; }
     @media (max-width: 767px) {
@@ -663,6 +690,31 @@ h4, .h4 {
             flex: 1 0 auto; }
   .section__contact .form__btn {
     margin: 0.8333rem; }
+  .section__contact .contact__scroll-top {
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: -50px;
+    background-color: #a7a7a7;
+    color: #5f616c;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px; }
+    @media (max-width: 1300px) {
+      .section__contact .contact__scroll-top {
+        right: 10px; } }
+    @media (max-width: 767px) {
+      .section__contact .contact__scroll-top {
+        -webkit-transform: translateY(-104%);
+                transform: translateY(-104%);
+        right: 2.4999rem; } }
+    @media (max-width: 575px) {
+      .section__contact .contact__scroll-top {
+        -webkit-transform: translateY(-84%);
+                transform: translateY(-84%); } }
 
 .secion__footer {
   background-color: #161828;
