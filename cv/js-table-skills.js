@@ -25,13 +25,13 @@ var skills = [{
   title: 'GiT',
   stars: 3,
 }, {
+  title: 'MySQL',
+  stars: 2.5,
+}, {
   title: 'Photoshop',
   stars: 2.5,
 }, {
   title: 'jQuery',
-  stars: 2,
-}, {
-  title: 'MySQL',
   stars: 2,
 }];
 
