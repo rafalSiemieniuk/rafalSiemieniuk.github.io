@@ -25,14 +25,17 @@ var skills = [{
   title: 'GiT',
   stars: 3,
 }, {
-  title: 'MySQL',
-  stars: 2.5,
-}, {
   title: 'Photoshop',
   stars: 2.5,
 }, {
+  title: 'MySQL',
+  stars: 1.5,
+}, {
   title: 'jQuery',
   stars: 2,
+}, {
+  title: 'Angular 2',
+  stars: 1,
 }];
 
 var table = document.createElement('table');

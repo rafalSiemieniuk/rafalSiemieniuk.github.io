@@ -38,6 +38,8 @@
         position: absolute;
         left: 220px; 
         top: 0px;
+              overflow: scroll;
+        overflow-x: hidden;
     }
     .footer-link-icons {
         margin-left: 58px;
@@ -46,10 +48,6 @@
         position: absolute;
         right: 0px;
         bottom: 38px;
-    }
-    .experience, .contact {
-        overflow: scroll;
-        overflow-x: hidden;
     }
 }
 

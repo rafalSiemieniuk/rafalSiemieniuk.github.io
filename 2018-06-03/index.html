@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <title>Books</title>
+</head>
+
+<body>
+    <button id="openAddPopup" title="Add a new book">
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-book"></i>
+    </button>
+    <div id="booksContainer"></div>
+    <div id="popupAdd" class="popup popup--hide">
+        <div class="popup__content">
+            <h1>Add a new Book</h1>
+            <div class="popup__wrapper">
+                <label for="bookTitle">Book's title:</label>
+                <input type="text" id="bookTitle">
+            </div>
+            <div class="popup__wrapper">
+                <label for="bookAuthor">Book's author:</label>
+                <input type="text" id="bookAuthor">
+            </div>
+            <div class="popup__wrapper">
+                <label for="bookUrl">Url address of the cover:</label>
+                <input type="text" id="bookUrl">
+            </div>
+            <button id="addBook" class="ok-button">OK</button>
+            <div class="error-field"></div>
+        </div>
+        <button id="cancelAddBook" class="cancle-button"></button>
+    </div>
+    <div id="popupEdit" class="popup popup--hide">
+        <div class="popup__content">
+            <h2>Edit Book</h2>
+            <div class="popup__wrapper">
+                <label for="editBookTitle">Book's title:</label>
+                <input type="text" id="editBookTitle">
+            </div>
+            <div class="popup__wrapper">
+                <label for="editBookAuthor">Book's author:</label>
+                <input type="text" id="editBookAuthor">
+            </div>
+            <div class="popup__wrapper">
+                <label for="editBookUrl">Url address of the cover:</label>
+                <input type="text" id="editBookUrl">
+            </div>
+            <button id="editBook" class="ok-button">OK</button>
+            <div class="error-field"></div>
+        </div>
+        <button id="cancelEditBook" class="cancle-button">Cancel</button>
+    </div>
+    <div id="popupChapterEdit" class="popup popup--hide">
+        <div class="popup__content">
+            <h2>Edit Chapters</h2>
+            <div class="popup__wrapper">
+                    <label for="editChapterName">Chapter name:</label>
+                    <input type="text" id="editChapterName">
+                </div>
+                <div class="popup__wrapper">
+                    <label for="editChapterPage">Chapter page:</label>
+                    <input type="text" id="editChapterPage">
+                </div>
+            <button id="editChapter" class="ok-button">OK</button>
+            <div class="error-field"></div>
+        </div>
+        <button id="cancelEditChapter" class="cancle-button">Cancel</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
