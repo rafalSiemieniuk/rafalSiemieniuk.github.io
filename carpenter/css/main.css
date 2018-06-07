@@ -242,7 +242,7 @@ h3,
   border-bottom: 2px solid #c04000;
 }
 .hidden {
-  visibility: hidden;
+  opacity: 0;
 }
 /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
@@ -2359,7 +2359,7 @@ html {
   position: absolute;
   display: none;
   background-color: #ffffff;
-  box-shadow: 0 0.41665rem 0.41665rem #000000;
+  box-shadow: 0 0.24999rem 0.24999rem #000000;
   padding: 1.6666rem 3.3332rem;
 }
 .hdr .rwd__submenu {
@@ -2407,7 +2407,7 @@ html {
 .header__nav-1 {
   background-color: #fff;
   color: #808080;
-  box-shadow: 0 0.41665rem 0.41665rem #000000;
+  box-shadow: 0 0.24999rem 0.24999rem #000000;
 }
 .header__logo-1 {
   opacity: 1;
@@ -2504,9 +2504,24 @@ html {
   position: relative;
   margin-top: 100vh;
 }
-.about-us__container {
+.about-us .about-us__container {
   padding-top: 6.6664rem;
   padding-bottom: 6.6664rem;
+}
+@media (max-width: 1200px) {
+  .about-us .about-us__container {
+    padding-bottom: 4.9998rem;
+  }
+}
+@media (max-width: 768px) {
+  .about-us .about-us__container {
+    padding-bottom: 3.3332rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-us .about-us__container {
+    padding-bottom: 1.6666rem;
+  }
 }
 .about-us__info {
   padding-top: 15px;
@@ -2519,24 +2534,6 @@ html {
 .offer .offer__container {
   padding-top: 6.6664rem;
   padding-bottom: 6.6664rem;
-}
-@media (max-width: 1200px) {
-  .offer .offer__container {
-    padding-top: 5.8331rem;
-    padding-bottom: 5.8331rem;
-  }
-}
-@media (max-width: 768px) {
-  .offer .offer__container {
-    padding-top: 4.9998rem;
-    padding-bottom: 4.9998rem;
-  }
-}
-@media (max-width: 576px) {
-  .offer .offer__container {
-    padding-top: 4.1665rem;
-    padding-bottom: 4.1665rem;
-  }
 }
 .offer .offer__square {
   position: relative;
@@ -2720,11 +2717,26 @@ html {
   background: url(../img/hero9.jpg) center / cover no-repeat;
   opacity: .1;
 }
-.contact__container {
+.contact .contact__container {
   position: relative;
   z-index: 1;
   padding-top: 6.6664rem;
   padding-bottom: 6.6664rem;
+}
+@media (max-width: 1200px) {
+  .contact .contact__container {
+    padding-bottom: 4.9998rem;
+  }
+}
+@media (max-width: 768px) {
+  .contact .contact__container {
+    padding-bottom: 3.3332rem;
+  }
+}
+@media (max-width: 576px) {
+  .contact .contact__container {
+    padding-bottom: 1.6666rem;
+  }
 }
 .contact__informations {
   text-align: left;
@@ -2749,6 +2761,9 @@ html {
 .contact__info-details i {
   padding: 0 1.6666rem;
   line-height: 2.5rem;
+}
+.contact__name-phone {
+  padding-right: 12px;
 }
 .contact .form {
   padding-top: 30px;
@@ -2791,9 +2806,6 @@ html {
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
   }
@@ -2802,9 +2814,6 @@ html {
   0% {
     opacity: 0;
   }
-  30% {
-    opacity: .0;
-  }
   100% {
     opacity: 1;
   }
@@ -2812,59 +2821,6 @@ html {
 .slide-in {
   -webkit-animation: 2s slideIn;
   animation: 2s slideIn;
-  visibility: visible;
-  animation-fill-mode: forwards;
-}
-@-webkit-keyframes slideInRight {
-  0% {
-    opacity: 0;
-    right: 300px;
-  }
-  100% {
-    opacity: 1;
-    right: 0px;
-  }
-}
-@keyframes slideInRight {
-  0% {
-    opacity: 0;
-    right: 300px;
-  }
-  100% {
-    opacity: 1;
-    right: 0px;
-  }
-}
-.slide-in-right {
-  -webkit-animation: 2s slideInRight;
-  animation: 2s slideInRight;
-  visibility: visible;
-  animation-fill-mode: forwards;
-}
-@-webkit-keyframes slideInLeft {
-  0% {
-    opacity: 0;
-    left: 300px;
-  }
-  100% {
-    opacity: 1;
-    left: 0px;
-  }
-}
-@keyframes slideInLeft {
-  0% {
-    opacity: 0;
-    left: 300px;
-  }
-  100% {
-    opacity: 1;
-    left: 0px;
-  }
-}
-.slide-in-left {
-  -webkit-animation: 2s slideInLeft;
-  animation: 2s slideInLeft;
-  visibility: visible;
   animation-fill-mode: forwards;
 }
 @-webkit-keyframes sk-rotateplane {

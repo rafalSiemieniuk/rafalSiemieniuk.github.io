@@ -40,12 +40,9 @@ $(function () {
 
     animation('.about-us__container', 'slide-in');
     animation('.offer__title', 'slide-in');
-    animation('.photo-1', 'slide-in-right');
-    animation('.photo-2', 'slide-in-right');
-    animation('.photo-3', 'slide-in');
-    animation('.photo-4', 'slide-in-left');
-    animation('.photo-5', 'slide-in-right');
-    animation('.photo-6', 'slide-in-left');
+    for (var i = 1; i < 7; i++) {
+        animation('.photo-' + i, 'slide-in');
+    }
 
     windowScrollScope('.hdr__logo', '.section__about-us', 'footer', 'header__logo-1');
     windowScrollScope('header', '.section__about-us', 'footer', 'header__nav-1');
@@ -61,8 +58,7 @@ var loadingPage = document.getElementsByClassName('section__curtain')[0];
 
 window.addEventListener('load', function () {
     loadingPage.classList.add('disappear');
-    window.scrollTo(0, 0);
-    // window.scrollToTop();
+    window.scrollTo(0, 0); // Go to top website
     setTimeout(function () {
         loadingPage.remove();
     }, 1200);
