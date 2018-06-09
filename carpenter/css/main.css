@@ -2414,6 +2414,7 @@ html {
   opacity: 1;
 }
 .hero {
+  background: url(../img/hero8.jpg) center / cover no-repeat;
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -2421,10 +2422,7 @@ html {
   left: 0;
   z-index: -1;
 }
-.hero--background {
-  background: url(../img/hero8.jpg) center / cover no-repeat;
-}
-.hero--background:after {
+.hero:after {
   content: "";
   position: absolute;
   top: 0;
@@ -2573,6 +2571,7 @@ html {
   .offer .offer__square:hover {
     transform: scale(1.05);
     opacity: .7;
+    background-size: 150%;
   }
   .offer .offer__square:hover samp::before,
   .offer .offer__square:hover samp::after,
