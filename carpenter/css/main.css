@@ -2422,6 +2422,21 @@ html {
   left: 0;
   z-index: -1;
 }
+@media (max-width: 1200px) {
+  .hero {
+    background: url(../img/hero8-tablet.jpg) center / cover no-repeat;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero {
+    background: url(../img/hero8-mobile-landscape.jpg) center / cover no-repeat;
+  }
+}
+@media (max-width: 576px) {
+  .hero {
+    background: url(../img/hero8-mobile.jpg) center / cover no-repeat;
+  }
+}
 .hero:after {
   content: "";
   position: absolute;
@@ -2593,7 +2608,7 @@ html {
 }
 @media (max-width: 576px) {
   .offer .photo-1::after {
-    background: #808080 url(../img/xs/1xs.jpg) center / cover no-repeat;
+    background: #808080 url(../img/1-mobile.jpg) center / cover no-repeat;
   }
 }
 @media (min-width: 575px) {
@@ -2603,7 +2618,7 @@ html {
 }
 @media (max-width: 576px) {
   .offer .photo-2::after {
-    background: #808080 url(../img/xs/2xs.jpg) center / cover no-repeat;
+    background: #808080 url(../img/2-mobile.jpg) center / cover no-repeat;
   }
 }
 @media (min-width: 575px) {
@@ -2613,7 +2628,7 @@ html {
 }
 @media (max-width: 576px) {
   .offer .photo-3::after {
-    background: #808080 url(../img/xs/3xs.jpg) center / cover no-repeat;
+    background: #808080 url(../img/3-mobile.jpg) center / cover no-repeat;
   }
 }
 @media (min-width: 575px) {
@@ -2628,7 +2643,7 @@ html {
 }
 @media (min-width: 575px) {
   .offer .photo-4::after {
-    background: #808080 url(../img/xs/4s-landscape.jpg) center / cover no-repeat;
+    background: #808080 url(../img/4-landscape.jpg) center / cover no-repeat;
   }
 }
 @media (min-width: 767px) {
@@ -2638,7 +2653,7 @@ html {
 }
 @media (max-width: 576px) {
   .offer .photo-4::after {
-    background: #808080 url(../img/xs/4xs.jpg) center / cover no-repeat;
+    background: #808080 url(../img/4-mobile.jpg) center / cover no-repeat;
   }
 }
 @media (min-width: 767px) {
@@ -2653,7 +2668,7 @@ html {
 }
 @media (max-width: 576px) {
   .offer .photo-5::after {
-    background: #808080 url(../img/xs/5xs.jpg) center / cover no-repeat;
+    background: #808080 url(../img/5-mobile.jpg) center / cover no-repeat;
   }
 }
 @media (min-width: 575px) {
@@ -2663,7 +2678,7 @@ html {
 }
 @media (max-width: 576px) {
   .offer .photo-6::after {
-    background: #808080 url(../img/xs/6xs.jpg) center / cover no-repeat;
+    background: #808080 url(../img/6-mobile.jpg) center / cover no-repeat;
   }
 }
 .offer .square__content {
@@ -2753,8 +2768,17 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  background: url(../img/hero9.jpg) center / cover no-repeat;
   opacity: .1;
+}
+@media (min-width: 767px) {
+  .contact::after {
+    background: url(../img/hero9.jpg) center / cover no-repeat;
+  }
+}
+@media (max-width: 768px) {
+  .contact::after {
+    background: url(../img/hero9-mobile.jpg) center / cover no-repeat;
+  }
 }
 .contact .contact__container {
   position: relative;
