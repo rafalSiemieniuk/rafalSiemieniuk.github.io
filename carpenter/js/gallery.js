@@ -5,7 +5,7 @@
 
 var schody = 'schody1.jpg schody2.jpg schody3.jpg schody4.jpg schody5.jpg schody6.jpg schody7.jpg schody8.jpg schody9.jpg schody10.jpg schody11.jpg schody12.jpg';
 
-var meble = 'meble1.jpg meble2.jpg meble3.jpg meble4.jpg meble5.jpg meble6.jpg meble7.jpg meble8.jpg meble9.jpg meble10.jpg meble11.jpg meble12.jpg meble13.jpg meble14.jpg meble15.jpg meble16.jpg meble17.jpg meble18.jpg meble19.jpg meble20.jpg';
+var meble = 'meble1.jpg meble2.jpg meble3.jpg meble4.jpg meble5.jpg meble6.jpg meble7.jpg meble8.jpg meble9.jpg meble10.jpg meble11.jpg meble12.jpg meble13.jpg meble14.jpg meble15.jpg meble16.jpg meble17.jpg meble18.jpg meble19.jpg';
 
 var stoly = 'stol1.jpg stol2.jpg';
 
