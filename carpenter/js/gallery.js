@@ -5,15 +5,15 @@
 
 var schody = 'schody1.jpg schody2.jpg schody3.jpg schody4.jpg schody5.jpg schody6.jpg schody7.jpg schody8.jpg schody9.jpg schody10.jpg schody11.jpg schody12.jpg';
 
-var meble = 'meble1.jpg meble2.jpg meble3.jpg meble4.jpg meble5.jpg meble6.jpg meble7.jpg meble8.jpg meble9.jpg meble10.jpg meble11.jpg meble12.jpg meble13.jpg meble14.jpg meble15.jpg meble16.jpg meble17.jpg meble18.jpg meble19.jpg meble20.jpg';
+var meble = 'meble1.jpg meble2.jpg meble3.jpg meble4.jpg meble5.jpg meble6.jpg meble7.jpg meble8.jpg meble9.jpg meble10.jpg meble11.jpg meble12.jpg meble13.jpg meble14.jpg meble15.jpg meble16.jpg meble17.jpg meble18.jpg meble19.jpg';
 
 var stoly = 'stol1.jpg stol2.jpg';
 
-var drzwi = 'drzwi1.jpg drzwi2.jpg drzwi3.jpg drzwi4.jpg drzwi5.jpg drzwi6.jpg drzwi7.jpg drzwi8.jpg drzwi9.jpg drzwi10.jpg';
+var drzwi = 'drzwi1.jpg drzwi2.jpg drzwi3.jpg drzwi4.jpg drzwi5.jpg drzwi6.jpg drzwi7.jpg drzwi8.jpg drzwi9.jpg drzwi10.jpg drzwi11.jpg drzwi12.jpg';
 
-var szalowka = 'szalowka1.jpg szalowka2.jpg szalowka3.jpg szalowka4.jpg szalowka5.jpg szalowka6.jpg szalowka7.jpg';
+var szalowka = 'szalowka1.jpg szalowka2.jpg szalowka3.jpg szalowka4.jpg szalowka5.jpg';
 
-var pozostale = 'pozostale1.jpg pozostale2.jpg pozostale3.jpg pozostale4.jpg pozostale5.jpg pozostale6.jpg pozostale7.jpg pozostale8.jpg pozostale9.jpg pozostale10.jpg pozostale11.jpg pozostale12.jpg';
+var pozostale = 'pozostale1.jpg pozostale2.jpg pozostale3.jpg pozostale4.jpg pozostale5.jpg pozostale6.jpg pozostale7.jpg pozostale8.jpg pozostale9.jpg pozostale10.jpg';
 
 //
 //
