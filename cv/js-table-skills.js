@@ -4,41 +4,47 @@ var firstRow = ['nr', 'skill', 'level'];
 var firstRowLength = firstRow.length;
 
 var skills = [{
-  title: 'html',
+  title: 'HTML',
   stars: 4.5,
+}, {
+  title: 'SEO',
+  stars: 3,
 }, {
   title: 'CSS',
   stars: 4.5,
 }, {
+  title: 'SCSS',
+  stars: 4,
+}, {
+  title: 'LESS',
+  stars: 4,
+}, {
+  title: 'RWD, Bootstrap 4',
+  stars: 4,
+}, {
   title: 'Java Script (ES6)',
   stars: 3.5,
 }, {
-  title: 'Sass',
-  stars: 4,
-}, {
-  title: 'Less',
-  stars: 2.5,
-}, {
-  title: 'RWD, Bootstrap 4',
-  stars: 3,
-}, {
-  title: 'GiT',
-  stars: 3,
-}, {
-  title: 'Photoshop',
+  title: 'Type Script',
   stars: 2.5,
 }, {
   title: 'jQuery',
   stars: 3,
 }, {
+  title: 'Angular 2+',
+  stars: 3,
+}, {
+  title: 'GiT',
+  stars: 3.5,
+}, {
   title: 'webpack',
-  stars: 2,
+  stars: 3,
+}, {
+  title: 'Photoshop',
+  stars: 2.5,
 }, {
   title: 'MySQL',
   stars: 1.5,
-}, {
-  title: 'Angular 2',
-  stars: 1,
 }];
 
 var table = document.createElement('table');
