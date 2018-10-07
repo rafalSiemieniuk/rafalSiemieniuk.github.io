@@ -1,0 +1,21 @@
+﻿{
+  "mainPage": "Przyjeź i napraw",
+  "offer":
+  {
+    "title": "Zachęcamy do zapoznania się z pełną ofertą:",
+    "offers": [
+      "Wymiana rozrządu",
+      "Wymiana oleju",
+      "Wymiana sprzęgła",
+      "Wymiana łożysk piasty",
+      "Diagnostyka komputerowa",
+      "i wiele innych..."
+    ]
+  },
+  "contact": {
+    "location": "Wojszki 107",
+    "telephone": "123 456 789",
+    "mail": "krzysztofsiemieniuk@gmail.com",
+    "facebook": "znajdź mnie na facebooku"
+  }
+}
