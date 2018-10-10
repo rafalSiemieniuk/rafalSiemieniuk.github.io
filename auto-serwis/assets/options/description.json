@@ -1,15 +1,42 @@
-﻿{
-  "mainPage": "Przyjeź i napraw",
+{
+  "mainPage": "Przyjedź i napraw",
   "offer":
   {
     "title": "Zachęcamy do zapoznania się z pełną ofertą:",
+    "interactiveOffers": true,
     "offers": [
-      "Wymiana rozrządu",
-      "Wymiana oleju",
-      "Wymiana sprzęgła",
-      "Wymiana łożysk piasty",
-      "Diagnostyka komputerowa",
-      "i wiele innych..."
+      {
+        "assortment": "Wymiana silnika",
+        "description": "Lorem ipsum, dolo sit elen. Sed ut perspiciatis unde omnis. Lorem ipsum, dolo sit elen. Sed ut perspiciatis unde omnis."
+      },
+      {
+        "assortment": "Wymiana rozrządu",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus."
+      },
+      {
+        "assortment": "Wymiana oleju",
+        "description": "Quaerat voluptatem. Ut enim ad minima veniam, quis nostrum."
+      },
+      {
+        "assortment": "Wymiana łożysk piasty",
+        "description": "Exercitationem ullam corporis et accusamus et iusto. Benum eo."
+      },
+      {
+        "assortment": "Wymiana akumulatorów",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse."
+      },
+      {
+        "assortment": "Diagnostyka komputerowa",
+        "description": "cillum dolore manfe on opla poplin sef perspiciatis unde omnis."
+      },
+      {
+        "assortment": "Wymiana opon",
+        "description": "Corporis et accusamus et iusto. At vero eos et accusamus Yuol visuo den."
+      },
+      {
+        "assortment": "i wiele innych...",
+        "description": "Przyjedź i zobacz ;)"
+      }
     ]
   },
   "contact": {

@@ -1,7 +1,7 @@
 [
   {
     "isActive": true,
-    "isAutoPlay": true,
+    "isAutoPlay": false,
     "type": 0,
     "title": "Slider typ 0, jeden obraz i jeden post.",
     "sliders": [
@@ -9,6 +9,19 @@
         "photo": "0.jpg",
         "photoSmall": "0.jpg",
         "desctription": "Quisque pharetra velit venenatis iaculis faucibus. Morbi pretium, nisi ac tempus iaculis, dui lorem feugiat odio, sed luctus lacus velit vitae odio. Nunc egestas libero at facilisis pellentesque. Mauris placerat scelerisque maximus. Pellentesque sollicitudin bibendum velit, tempor vestibulum magna faucibus id. Curabitur egestas tincidunt turpis, ac dictum tellus posuere vitae."
+      }
+    ]
+  },
+  {
+    "isActive": false,
+    "isAutoPlay": false,
+    "type": 0,
+    "title": "Slider typ 0",
+    "sliders": [
+      {
+        "photo": "8.jpg",
+        "photoSmall": "8.jpg",
+        "desctription": "Pellentesque sollicitudin bibendum velit, tempor vestibulum magna faucibus id. Curabitur egestas tincidunt turpis, ac dictum tellus posuere vitae."
       }
     ]
   },
