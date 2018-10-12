@@ -41,8 +41,9 @@
   },
   "contact": {
     "location": "Wojszki 107",
-    "telephone": "123 456 789",
-    "mail": "krzysztofsiemieniuk@gmail.com",
-    "facebook": "znajdź mnie na facebooku"
+    "telephone": "507 127 209",
+    "mail": "krzysztof.siemieniuk\u0040gmail.com",
+    "facebook": "znajdź mnie na facebooku",
+    "facebookAddress": "https://www.facebook.com"
   }
 }
