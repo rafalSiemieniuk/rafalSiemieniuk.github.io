@@ -5,28 +5,13 @@ var firstRowLength = firstRow.length;
 
 var skills = [{
   title: 'HTML',
-  stars: 4.5,
+  stars: 5,
 }, {
-  title: 'SEO',
-  stars: 3,
-}, {
-  title: 'CSS',
-  stars: 4.5,
-}, {
-  title: 'SCSS',
-  stars: 4,
-}, {
-  title: 'LESS',
-  stars: 4,
-}, {
-  title: 'RWD, Bootstrap 4',
-  stars: 4,
+  title: 'SCSS / LESS',
+  stars: 5,
 }, {
   title: 'Java Script (ES6)',
-  stars: 3.5,
-}, {
-  title: 'Type Script',
-  stars: 2.5,
+  stars: 4,
 }, {
   title: 'jQuery',
   stars: 3,
@@ -34,17 +19,14 @@ var skills = [{
   title: 'Angular 2+',
   stars: 3,
 }, {
-  title: 'GiT',
-  stars: 3.5,
-}, {
-  title: 'webpack',
+  title: 'React',
   stars: 3,
 }, {
-  title: 'Photoshop',
-  stars: 2.5,
+  title: 'Vue',
+  stars: 4,
 }, {
-  title: 'MySQL',
-  stars: 1.5,
+  title: 'GiT',
+  stars: 4,
 }];
 
 var table = document.createElement('table');

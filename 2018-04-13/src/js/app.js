@@ -245,31 +245,31 @@ class Subject {
 	}
 }
 
-const rafal = new GradeBook('Rafal', 'Siemieniuk');
+const jan = new GradeBook('Jan', 'Kowalski');
 
-rafal.addSubject('Matematyka');
-rafal.addSubject('Angielski');
-rafal.addSubject('Polski');
+jan.addSubject('Matematyka');
+jan.addSubject('Angielski');
+jan.addSubject('Polski');
 
-rafal.subjects[0].addGrade(2, '2018-05-01');
-rafal.subjects[0].addGrade(3.5, '2018-05-02');
-rafal.subjects[0].addGrade(3, '2018-05-03');
-rafal.subjects[0].addGrade(3.5, '2018-05-04');
-rafal.subjects[0].addGrade(4.5, '2018-05-05');
-rafal.subjects[1].addGrade(5, '2018-05-06');
-rafal.subjects[1].addGrade(4.5, '2018-05-07');
-rafal.subjects[2].addGrade(2, '2018-05-08');
-rafal.subjects[2].addGrade(3, '2018-05-09');
-rafal.subjects[2].addGrade(4, '2018-05-10');
-rafal.subjects[2].addGrade(5, '2018-05-11');
+jan.subjects[0].addGrade(2, '2018-05-01');
+jan.subjects[0].addGrade(3.5, '2018-05-02');
+jan.subjects[0].addGrade(3, '2018-05-03');
+jan.subjects[0].addGrade(3.5, '2018-05-04');
+jan.subjects[0].addGrade(4.5, '2018-05-05');
+jan.subjects[1].addGrade(5, '2018-05-06');
+jan.subjects[1].addGrade(4.5, '2018-05-07');
+jan.subjects[2].addGrade(2, '2018-05-08');
+jan.subjects[2].addGrade(3, '2018-05-09');
+jan.subjects[2].addGrade(4, '2018-05-10');
+jan.subjects[2].addGrade(5, '2018-05-11');
 
-rafal.createTable();
+jan.createTable();
 
 render();
 
 task4__btnAddSubject.addEventListener('click', function () {
-	rafal.addSubject(task4__inputAddSubject.value);
-	rafal.createTable();
+	jan.addSubject(task4__inputAddSubject.value);
+	jan.createTable();
 	render();
 });
 
@@ -283,8 +283,8 @@ function render() {
 
 	for (var i = 0, n = task4__btnAddGrade.length; i < n; i++) {
 		task4__btnAddGrade[i].addEventListener('click', function () {
-			rafal.subjects[this.id].addGrade(parseInt(task4__inputText[this.id].value), task4__inputDate[this.id].value);
-			rafal.createTable();
+			jan.subjects[this.id].addGrade(parseInt(task4__inputText[this.id].value), task4__inputDate[this.id].value);
+			jan.createTable();
 			render();
 		});
 	}
@@ -296,7 +296,7 @@ function render() {
 				cIndex = this.cellIndex + 1;
 				if (this.classList.contains('task-4__cell-date')) {
 					task4__div.classList.add('red-cell');
-					task4__div.textContent = 'data: ' + rafal.subjects[rIndex].grades[cIndex - 2].date;
+					task4__div.textContent = 'data: ' + jan.subjects[rIndex].grades[cIndex - 2].date;
 					this.appendChild(task4__div);
 				}
 			};

@@ -215,9 +215,15 @@ h3 {
     cursor: pointer;
 }
 }
-.portfolio-left-col, .portfolio-right-col {
-  float: left;
-  width: 50%;
+@media (min-width: 480px) {
+    .portfolio-left-col {
+        float: left;
+        width: 65%;
+    }
+    .portfolio-right-col {
+        float: left;
+        width: 35%;
+    }
 }
 .portfolio-left-col span, .portfolio-right-col span {
   font-weight: bold;

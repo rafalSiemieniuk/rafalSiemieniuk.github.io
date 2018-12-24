@@ -96,6 +96,9 @@ h2 {
 .otherInformations {
     padding: 15px 0px;
 }
+.date {
+    min-width: 157px;
+}
 .date, .info, #tableSkills {
     float: left;
     padding: 10px;
