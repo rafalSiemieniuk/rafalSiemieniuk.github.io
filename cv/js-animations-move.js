@@ -74,23 +74,23 @@ menuHome.addEventListener('click', function () {
   menuButtons.classList.add('menu-buttons-one-page');
 });
 
-menuExperience.addEventListener('click', function () {
+menuExperience && menuExperience.addEventListener('click', function () {
   rightPageBtn(0);
 });
 
-menuSkills.addEventListener('click', function () {
+menuSkills && menuSkills.addEventListener('click', function () {
   rightPageBtn(1);
 });
 
-menuPortfolio.addEventListener('click', function () {
+menuPortfolio && menuPortfolio.addEventListener('click', function () {
   rightPageBtn(2);
 });
 
-menuHobby.addEventListener('click', function () {
+menuHobby && menuHobby.addEventListener('click', function () {
   rightPageBtn(3);
 });
 
-menuContact.addEventListener('click', function () {
+menuContact && menuContact.addEventListener('click', function () {
   rightPageBtn(4);
 });
 
