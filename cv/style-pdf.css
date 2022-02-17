@@ -1,254 +1,286 @@
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-  }
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 body {
-    font-size: 14px;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: grey; 
-  }
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: grey;
+}
 h1 {
-    font-size: 40px;
-    text-align: center;
+  font-size: 40px;
+  text-align: center;
 }
 h2 {
-    font-size: 20px;
-    padding: 5px;
-    margin-right: 40px;
-    border-bottom: 2px solid grey;
-    font-family: 'Hammersmith One', sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  margin-right: 40px;
+  border-bottom: 2px solid grey;
+  font-family: 'Hammersmith One', sans-serif;
 }
 
 .container {
-    width: 100%;
+  width: 100%;
 }
 .page {
-    background-color: white;
-    width: 210mm;
-    /* height: 281mm; */
-    margin: 60px auto;
-    position: relative;
+  background-color: white;
+  width: 210mm;
+  /* height: 281mm; */
+  margin: 60px auto;
+  position: relative;
 }
 .header {
-    padding: 40px;
+  padding: 40px;
 }
 .article {
-    padding: 0px 100px 55px 100px;
+  padding: 0px 100px 55px 100px;
 }
 .basic {
-    width: 100%;
-    padding-bottom: 15px;
+  width: 100%;
+  padding-bottom: 15px;
 }
 .picture {
-    padding-top: 12px;
-    width: 25%;
-    float: left;
-    text-align: center;
-    display: inline-block;
+  padding-top: 12px;
+  width: 25%;
+  float: left;
+  text-align: center;
+  display: inline-block;
 }
 .image {
-    height: 150px;
-    border-radius: 10%;
+  height: 150px;
+  border-radius: 50%;
 }
 .personalDetails {
-    padding-left: 10px;
-    width: 75%;
-    float: left;
-    position: relative;
+  padding-left: 10px;
+  width: 75%;
+  float: left;
+  position: relative;
 }
 .superscript {
-    font-size: 10px; 
+  font-size: 10px;
 }
 .github-link {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .github-link:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 .clear::after {
-    content: '';
-    display: block;
-    clear: both;
+  content: '';
+  display: block;
+  clear: both;
 }
 .float {
-    float: left;
+  float: left;
 }
 .personalDetails-ul {
-    list-style: none inside;
-    padding: 10px;
+  list-style: none inside;
+  padding: 10px;
+  min-width: 120px;
 }
 .personalDetails-ul > li {
-    padding: 1px 0px;
+  padding: 1px 0px;
 }
 .hobby-ul {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 .hobby-ul > li {
-    padding: 5px 0px;
-    list-style: none;
+  padding: 5px 0px;
+  list-style: none;
 }
 .bold {
-    font-weight: bold
+  font-weight: bold;
 }
 .otherInformations {
-    padding: 15px 0px;
+  padding: 15px 0px;
 }
 .date {
-    min-width: 157px;
+  min-width: 157px;
 }
-.date, .info, #tableSkills {
-    float: left;
-    padding: 10px;
+.date,
+.info,
+#tableSkills {
+  float: left;
+  padding: 10px;
 }
 .table-thead {
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
 }
 .table-cell-stars {
-    width: 110px;
-    text-align: right;
+  width: 110px;
+  text-align: right;
 }
 .table-cell-stars .fa {
-    padding: 2px;
+  padding: 2px;
 }
-.skills, .hobby {
-    float: left;
-    width: 50%;
+.skills,
+.hobby {
+  float: left;
+  width: 50%;
 }
 .language {
-    text-align: center;
-    display: inline-block;
-    padding: 10px;
-    float: left;
-    width: 46.5%;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  float: left;
+  width: 46.5%;
 }
 .language-bold {
-    font-weight: bold;
-    font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
 }
 .language-level {
-    padding-left: 5px;
+  padding-left: 5px;
 }
 .form {
-    padding: 10px 0 0 0;
-    width: 50%;
-    margin: 0 auto;
+  padding: 10px 0 0 0;
+  width: 50%;
+  margin: 0 auto;
 }
-.form-input > input, textarea {
-    display: block;
-    margin: 5px 0 15px 0;
-    padding: 5px;
-    border: 2px solid grey;
-    border-radius: 4px;
-    background-color: rgb(216, 216, 216);
-    width: 100%;
-    resize: none;
-    position: relative;
+.form-input > input,
+textarea {
+  display: block;
+  margin: 5px 0 15px 0;
+  padding: 5px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  background-color: rgb(216, 216, 216);
+  width: 100%;
+  resize: none;
+  position: relative;
 }
-.textarea  {
-    height: 100px;
+.textarea {
+  height: 100px;
 }
 .form-submit {
-    font-size: 15px;
-    letter-spacing: 2px;
-    width: 38%;
-    padding: 10px;
-    margin: 15px 0;
-    border: 2px solid grey;
-    border-radius: 4px;
-    transition: all 0.5s;
-    font-weight: bold; 
+  font-size: 15px;
+  letter-spacing: 2px;
+  width: 38%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 2px solid grey;
+  border-radius: 4px;
+  transition: all 0.5s;
+  font-weight: bold;
 }
 .form-submit:hover {
-    background-color: grey;
-    cursor: pointer;
-    color: white;
+  background-color: grey;
+  cursor: pointer;
+  color: white;
 }
 .form-input {
-    position: relative; 
+  position: relative;
 }
 .checkpiont {
-    position: absolute;
-    right: -60px;
-    top: 23px;
+  position: absolute;
+  right: -60px;
+  top: 23px;
 }
 .footer {
-    position: absolute; 
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .footer-text {
-    text-align: center;
-    font-size: 10px;
-    padding: 0 65px 15px 65px;;
+  text-align: center;
+  font-size: 10px;
+  padding: 0 65px 15px 65px;
 }
 .arrow {
-    right: 0;
-    animation: scale 3s infinite;
+  right: 0;
+  animation: scale 3s infinite;
 }
 .go-to-other-cv {
-    left: 0;
-    animation: clapper 1s infinite;
+  left: 0;
+  animation: clapper 1s infinite;
+  opacity: 0.3;
+}
+@media print {
+  .go-to-other-cv {
+    display: none;
+  }
 }
 .anchor {
-    font-size: 30px;
-    padding: 10px;
-    text-align: right;
-    position: absolute; 
-    bottom: 0;
+  font-size: 30px;
+  padding: 10px;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
 }
 .fa {
-    padding: 0 10px 0 5px;
-    color:black;
+  padding: 0 10px 0 5px;
+  color: black;
 }
 .fa-check-circle-o {
-    color: green;
+  color: green;
 }
 .fa-times-circle-o {
-    color: red;
+  color: red;
 }
 
 /* STYLE JS */
 .invisibilite {
-    display: none;
+  display: none;
 }
 .arrow:hover {
-	animation-play-state: paused;
+  animation-play-state: paused;
 }
 @keyframes scale {
-    0% {transform: scale(1);}
-    50% {transform: scale(1.5);}
-    100% {transform: scale(1);}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes clapper {
-    0% {transform: rotate(0deg);}
-    5% {transform: rotate(30deg);}
-    10% {transform: rotate(0deg);}
-    15% {transform: rotate(-30deg);}
-    20% {transform: rotate(0deg);}
-    25% {transform: rotate(30deg);}
-    30% {transform: rotate(0deg);}
-    100% {transform: rotate(0deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(30deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-30deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .special {
-    opacity: 0; 
-    font-size: 1px; 
-    letter-spacing: 0.5px;
+  opacity: 0;
+  font-size: 1px;
+  letter-spacing: 0.5px;
 }
 
 .div-validation {
-    position: absolute;
-    top: -1px;
-    width: 100%;
-    font-size: 14px;
-    font-weight: bold;
-    color: red;
-    text-align: center;
+  position: absolute;
+  top: -1px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
 }
-

@@ -38,7 +38,7 @@ for (var i = 0; i < menuButton.length; ++i) {
   menuButton[i].addEventListener('click', function (event) {
     arrayMenuButton.map(removeAllId);
     event.target.setAttribute('id', 'join__button');
-    menuHome.removeAttribute('id');
+    // menuHome.removeAttribute('id');
   });
 }
 

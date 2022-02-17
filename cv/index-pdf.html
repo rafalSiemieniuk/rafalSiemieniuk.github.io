@@ -1,204 +1,253 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pl">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title> CV - Rafał Siemieniuk </title>
+    <title>CV - Rafał Siemieniuk</title>
     <meta name="description" content="Staż dla każdego" />
-    <meta name="keywords" content="staż, challenge, kod, programista, web, www" />
+    <meta
+      name="keywords"
+      content="staż, challenge, kod, programista, web, www"
+    />
 
     <!-- <link rel="stylesheet" href="simple-line-icons.css"> -->
-    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="font-awesome.css" />
     <link rel="stylesheet" href="style-pdf.css" type="text/css" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;subset=latin-ext">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith+One">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;subset=latin-ext"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Hammersmith+One"
+    />
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
-        <div class="page">
-            <header class="header">
-                <h1>Curriculum vitae</h1>
-            </header>
-            <article class="article">
+      <div class="page">
+        <header class="header">
+          <h1>Curriculum vitae</h1>
+        </header>
+        <article class="article">
+          <div class="basic clear">
+            <div class="picture">
+              <img class="image" src="image/rafal.jpg" alt="Profile picture" />
+            </div>
+            <div class="personalDetails clear">
+              <h2>
+                <i class="fa fa-home" aria-hidden="true"></i>Personal details:
+              </h2>
+              <div class="float">
+                <ul class="personalDetails-ul bold">
+                  <li>Name:</li>
+                  <li>Age:</li>
+                  <li>E-mail:</li>
+                  <!-- <li>Telephone Number:</li> -->
+                  <li>Address:</li>
+                  <li>GitHub:</li>
+                </ul>
+              </div>
+              <div class="float">
+                <ul
+                  class="personalDetails-ul"
+                  itemscope
+                  itemtype="http://schema.org/Person"
+                >
+                  <li itemprop="givenName">Rafał Siemieniuk</li>
+                  <li class="birth-date" itemprop="birthDate"></li>
+                  <li itemprop="email" class="email-address"></li>
+                  <!-- <li itemprop="telephone" class="number-phone"></li> -->
+                  <li itemprop="address">Białystok</li>
+                  <li>
+                    <a
+                      class="github-link"
+                      title="https://github.com/rafalSiemieniuk"
+                      href="https://github.com/rafalSiemieniuk"
+                      itemprop="url"
+                      >https://github.com/rafalSiemieniuk</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-                <div class="basic clear">
-                    <div class="picture">
-                        <img class="image" src="image/rafal3.jpg" alt="Profile picture" />
+          <div class="cvContent">
+            <div class="experience otherInformations">
+              <h2>
+                <i class="fa fa-briefcase" aria-hidden="true"></i>Working
+                experience:
+              </h2>
+              <div class="date">
+                <h3>11.2021 - present</h3>
+              </div>
+              <div class="info">
+                <h3>9bits</h3>
+                <p>Worksite: Software Developer</p>
+              </div>
+              <div class="clear"></div>
+              <div class="date">
+                <h3>09.2018 - 10.2021</h3>
+              </div>
+              <div class="info">
+                <h3>SoftwareHut</h3>
+                <p>Worksite: Software Developer</p>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="education otherInformations">
+              <h2>
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i
+                >Education:
+              </h2>
+              <div class="date">
+                <h3>10.2017 - 06.2018</h3>
+              </div>
+              <div class="info">
+                <h3>Bialystok University of Technology</h3>
+                <p>Field of studies: Web Applications Front-End Development</p>
+              </div>
+              <div class="date">
+                <h3>10.2012 - 02.2016</h3>
+              </div>
+              <div class="info">
+                <h3>University of Warmia and Mazury in Olsztyn</h3>
+                <p>Field of studies: Geodesy and Cartography</p>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="cvContent clear otherInformations">
+              <div class="skills">
+                <h2><i class="fa fa-table" aria-hidden="true"></i>Skills:</h2>
+                <div id="tableSkills"></div>
+              </div>
+              <div class="hobby">
+                <h2><i class="fa fa-gamepad" aria-hidden="true"></i>Hobby:</h2>
+                <ul class="hobby-ul">
+                  <li>History - XX and XIX century</li>
+                  <li>Physics - General relativity</li>
+                  <li>Macroeconomics - Austrian school</li>
+                  <li>Psychology - Personality</li>
+                  <li>Sport - Ice skates, roller skates, bike, swimming</li>
+                </ul>
+              </div>
+            </div>
+            <div class="languages clear otherInformations">
+              <h2>
+                <i class="fa fa-comments" aria-hidden="true"></i>Languages:
+              </h2>
+              <p class="language">
+                <span class="language-bold">Polish:</span>
+                <span class="language-level">Mother tongue</span>
+              </p>
+              <p class="language">
+                <span class="language-bold">English:</span>
+                <span class="language-level">Level B1</span>
+              </p>
+            </div>
+            <div class="contactForm otherInformations invisibilite">
+              <h2><i class="fa fa-envelope" aria-hidden="true"></i>Form:</h2>
+              <form
+                name="CVForm"
+                action="mailto:@gmail.com"
+                method="post"
+                enctype="text/plain"
+              >
+                <div class="form">
+                  <div class="form-input">
+                    <div class="div-validation"></div>
+                    <label for="name">Name:</label>
+                    <input
+                      class="input-txt"
+                      id="name"
+                      name="name"
+                      type="text"
+                    />
+                    <div class="checkpiont">
+                      <i class="fa fa-2x" aria-hidden="true"></i>
+                      <i class="fa fa-2x" aria-hidden="true"></i>
                     </div>
-                    <div class="personalDetails clear">
-                        <h2>
-                            <i class="fa fa-home" aria-hidden="true"></i>Personal details:</h2>
-                        <div class="float">
-                            <ul class="personalDetails-ul bold">
-                                <li>Name:</li>
-                                <li>E-mail:</li>
-                                <li>Telephone Number:</li>
-                                <li>Date of Birth:</li>
-                                <li>Address:</li>
-                                <li>GitHub:</li>
-                            </ul>
-                        </div>
-                        <div class="float">
-                            <ul class="personalDetails-ul" itemscope itemtype="http://schema.org/Person">
-                                <li itemprop="givenName">Rafał Siemieniuk</li>
-                                <li itemprop="email" class="email-address"></li>
-                                <li itemprop="telephone" class="number-phone"></li>
-                                <li itemprop="birthDate">20
-                                    <sup class="superscript">th</sup> July 1992</li>
-                                <li itemprop="address">Białystok</li>
-                                <li>
-                                    <a class="github-link" title="https://github.com/rafalSiemieniuk" href="https://github.com/rafalSiemieniuk" itemprop="url">https://github.com/rafalSiemieniuk</a>
-                                </li>
-                            </ul>
-                        </div>
+                  </div>
+                  <div class="form-input">
+                    <div class="div-validation"></div>
+                    <label for="e-mail">Email:</label>
+                    <input
+                      class="input-txt"
+                      id="e-mail"
+                      name="e-mail"
+                      type="email"
+                    />
+                    <div class="checkpiont">
+                      <i class="fa fa-2x" aria-hidden="true"></i>
+                      <i class="fa fa-2x" aria-hidden="true"></i>
                     </div>
+                  </div>
+                  <div class="form-input">
+                    <div class="div-validation"></div>
+                    <label for="topic">Topic:</label>
+                    <input
+                      class="input-txt"
+                      id="topic"
+                      name="topic"
+                      type="text"
+                      required
+                    />
+                    <div class="checkpiont">
+                      <i class="fa fa-2x" aria-hidden="true"></i>
+                      <i class="fa fa-2x" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="form-input">
+                    <div class="div-validation"></div>
+                    <label class="Label" for="message">Message:</label>
+                    <textarea
+                      class="textarea input-txt"
+                      id="message"
+                      name="message"
+                    ></textarea>
+                    <div class="checkpiont">
+                      <i class="fa fa-2x" aria-hidden="true"></i>
+                      <i class="fa fa-2x" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <button class="form-submit" type="submit">Send</button>
                 </div>
+              </form>
+            </div>
+          </div>
+        </article>
 
-                <div class="cvContent">
-                    <div class="experience otherInformations">
-                        <h2>
-                            <i class="fa fa-briefcase" aria-hidden="true"></i>Working experience:</h2>
-                        <div class="date">
-                            <h3>09.2018 - 05.2020</h3>
-                        </div>
-                        <div class="info">
-                            <h3>SoftwareHut</h3>
-                            <p>Worksite: Software Developer</p>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="date">
-                            <h3>03.2016 - 03.2018</h3>
-                        </div>
-                        <div class="info">
-                            <h3>Surveyor services „Croma”</h3>
-                            <p>Worksite: Surveyor Assistant</p>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="education otherInformations">
-                        <h2>
-                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>Education:</h2>
-                        <div class="date">
-                            <h3>10.2017 - 06.2018</h3>
-                        </div>
-                        <div class="info">
-                            <h3>Bialystok University of Technology</h3>
-                            <p>Field of studies: Web Applications Front-End Development</p>
-                        </div>
-                        <div class="date">
-                            <h3>10.2012 - 02.2016</h3>
-                        </div>
-                        <div class="info">
-                            <h3>University of Warmia and Mazury in Olsztyn</h3>
-                            <p>Field of studies: Geodesy and Cartography</p>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="cvContent clear otherInformations">
-                        <div class="skills">
-                            <h2>
-                                <i class="fa fa-table" aria-hidden="true"></i>Skills:</h2>
-                            <div id="tableSkills"></div>
-                        </div>
-                        <div class="hobby">
-                            <h2>
-                                <i class="fa fa-gamepad" aria-hidden="true"></i>Hobby:</h2>
-                            <ul class="hobby-ul">
-                                <li>Macroeconomics - Austrian school</li>
-                                <li>Psychology - Personality, psychopathology</li>
-                                <li>History - XX and XIX century</li>
-                                <li>Sport - Ice skates, roller skates, bike, swimming</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="languages clear otherInformations">
-                        <h2>
-                            <i class="fa fa-comments" aria-hidden="true"></i>Languages:
-                        </h2>
-                        <p class="language">
-                            <span class="language-bold">Polish:</span>
-                            <span class="language-level">Mother tongue</span>
-                        </p>
-                        <p class="language">
-                            <span class="language-bold">English:</span>
-                            <span class="language-level">Level B1</span>
-                        </p>
-                    </div>
-                    <div class="contactForm otherInformations invisibilite">
-                        <h2>
-                            <i class="fa fa-envelope" aria-hidden="true"></i>Form:</h2>
-                        <form name="CVForm" action="mailto:siemieniukrafal@gmail.com" method="post" enctype="text/plain">
-                            <div class="form">
-                                <div class="form-input">
-                                    <div class="div-validation"></div>
-                                    <label for="name">Name:</label>
-                                    <input class="input-txt" id="name" name="name" type="text">
-                                    <div class="checkpiont">
-                                        <i class="fa fa-2x" aria-hidden="true"></i>
-                                        <i class="fa fa-2x" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                                <div class="form-input">
-                                    <div class="div-validation"></div>
-                                    <label for="e-mail">Email:</label>
-                                    <input class="input-txt" id="e-mail" name="e-mail" type="email">
-                                    <div class="checkpiont">
-                                        <i class="fa fa-2x" aria-hidden="true"></i>
-                                        <i class="fa fa-2x" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                                <div class="form-input">
-                                    <div class="div-validation"></div>
-                                    <label for="topic">Topic:</label>
-                                    <input class="input-txt" id="topic" name="topic" type="text" required>
-                                    <div class="checkpiont">
-                                        <i class="fa fa-2x" aria-hidden="true"></i>
-                                        <i class="fa fa-2x" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                                <div class="form-input">
-                                    <div class="div-validation"></div>
-                                    <label class="Label" for="message">Message:</label>
-                                    <textarea class="textarea input-txt" id="message" name="message"></textarea>
-                                    <div class="checkpiont">
-                                        <i class="fa fa-2x" aria-hidden="true"></i>
-                                        <i class="fa fa-2x" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                                <button class="form-submit" type="submit">Send</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </article>
-
-            <footer class="footer">
-                <div class="anchor go-to-other-cv">
-                    <a href="../index.html">
-                        <i title="Go to the interactive version" class="fa fa-address-card" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <p class="footer-text">I hereby agree for processing the following personal information strictly for the purposes of job recruitment
-                    in accordance with the regulation for the protection of personal data passed on the following day: 29.08.97
-                    r. consolidated text Dz. U. 2016 r. poz. 922.</p>
-                <div class="anchor arrow">
+        <footer class="footer">
+          <div class="anchor go-to-other-cv">
+            <a href="../index.html">
+              <i
+                title="Go to the interactive version"
+                class="fa fa-address-card"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+          <p class="footer-text">
+            I hereby agree for processing the following personal information
+            strictly for the purposes of job recruitment in accordance with the
+            regulation for the protection of personal data passed on the
+            following day: 29.08.97 r. consolidated text Dz. U. 2016 r. poz.
+            922.
+          </p>
+          <!-- <div class="anchor arrow">
                     <a href="#name">
                         <i title="Show the form" class="fa fa-chevron-circle-down" aria-hidden="true"></i>
                     </a>
-                </div>
-            </footer>
-        </div>
-
+                </div> -->
+        </footer>
+      </div>
     </div>
 
     <script src="js-show-the-form-pdf.js"></script>
     <script src="js-table-skills.js"></script>
     <script src="js-form-validation.js"></script>
     <script src="js-emailAndPhone.js"></script>
-</body>
-
+  </body>
 </html>

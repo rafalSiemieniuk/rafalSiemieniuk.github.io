@@ -1,305 +1,439 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title> CV - Rafał Siemieniuk </title>
+    <title>CV - Rafał Siemieniuk</title>
     <meta name="description" content="Staż dla każdego" />
-    <meta name="keywords" content="staż, challenge, kod, programista, web, www" />
+    <meta
+      name="keywords"
+      content="staż, challenge, kod, programista, web, www"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="cv/font-awesome.css">
+    <link rel="stylesheet" href="cv/font-awesome.css" />
     <link rel="stylesheet" href="cv/style-topographic.css" type="text/css" />
-    <link rel="stylesheet" href="cv/style-start-animation.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="cv/style-start-animation.css"
+      type="text/css"
+    />
     <link rel="stylesheet" href="cv/style-table-skills.css" type="text/css" />
     <link rel="stylesheet" href="cv/style-jquery.css" type="text/css" />
     <link rel="stylesheet" href="cv/style-rwd.css" type="text/css" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;subset=latin-ext">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith+One">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;subset=latin-ext"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Hammersmith+One"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="background-mobile"></div>
     <div class="background">
-
-        <div class="container">
-            <div class="menu-buttons menu-buttons-one-page">
-                <ul class="menu-buttons-ul">
-                    <li>
-                        <button class="menu-home" type="button">Home</button>
-                    </li>
-                    <li>
-                        <button class="menu-experience" type="button">Experience</button>
-                    </li>
-                    <li>
-                        <button class="menu-skills" type="button">Skills</button>
-                    </li>
-                    <!-- <li>
+      <div class="container">
+        <div class="menu-buttons menu-buttons-one-page">
+          <ul class="menu-buttons-ul">
+            <li>
+              <button id="join__button" class="menu-home" type="button">
+                Home
+              </button>
+            </li>
+            <li>
+              <button class="menu-experience" type="button">Experience</button>
+            </li>
+            <li>
+              <button class="menu-skills" type="button">Skills</button>
+            </li>
+            <!-- <li>
                         <button class="menu-portfolio" type="button">Portfolio</button>
                     </li> -->
-                    <li>
-                        <button class="menu-hobby" type="button">Hobby</button>
-                    </li>
-                    <li>
-                        <button class="menu-contact" type="button">Contact</button>
-                    </li>
-                </ul>
-            </div>
+            <li>
+              <button class="menu-hobby" type="button">Hobby</button>
+            </li>
+            <li>
+              <button class="menu-contact" type="button">Contact</button>
+            </li>
+          </ul>
+        </div>
 
-            <div class="loading-start-window">
-                <i class="fa fa-hourglass" aria-hidden="true"></i>
-            </div>
+        <div class="loading-start-window">
+          <i class="fa fa-hourglass" aria-hidden="true"></i>
+        </div>
 
-            <div class="first-page first-page-active">
-                <div class="vcard-pic">
-                    <img class="vcard-pic-img" src="cv/image/rafal.jpg" alt="person picture">
-                </div>
-                <div class="vcard-description">
-                    <h1>Hi! I'm Rafał Siemieniuk</h1>
-                    <div class="vcard-description-text">
-                        <span>My name is Rafal and I am a Front-End Developer. I work on web technologies like HTML,
-                            CSS, JavaScript.</span>
-                    </div>
-                    <footer class="footer">
-                        <div class="email-and-phone">
-                            <p>
-                                <i class="vcard-icon fa fa-envelope-o" aria-hidden="true"></i><span class="email-address"></span></p>
-                            <p>
-                                <i class="vcard-icon fa fa-phone" aria-hidden="true"></i><span class="number-phone"></span></p>
-                        </div>
-                        <div class="footer-link-icons">
-                            <a class="hyper-link-icon" href="https://www.facebook.com/people/Rafa%C5%82-Siemieniuk/100002641560066">
-                                <i title="Go to the my Facebook" class="footer-icon fa fa-facebook-square" aria-hidden="true"></i>
-                            </a>
-                            <a class="hyper-link-icon" href="https://github.com/rafalSiemieniuk">
-                                <i title="Go to the my Github" class="footer-icon fa fa-github-square" aria-hidden="true"></i>
-                            </a>
-                            <a class="hyper-link-icon" href="https://www.linkedin.com/in/rafa%C5%82-siemieniuk-a15999162/">
-                                <i title="Go to the my Linkedin" class="footer-icon fa fa-linkedin-square" aria-hidden="true"></i>
-                            </a>
-                            <a class="fake-link-icon" href="#">
-                                <i class="footer-icon fa fa-print" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </footer>
-                </div>
+        <div class="first-page first-page-active">
+          <div class="vcard-pic">
+            <img
+              class="vcard-pic-img"
+              src="cv/image/rafal.jpg"
+              alt="person picture"
+            />
+          </div>
+          <div class="vcard-description">
+            <h1>Hi! I'm Rafał Siemieniuk</h1>
+            <div class="vcard-description-text">
+              <span
+                >My name is Rafal and I am a Front-End Developer. I work on web
+                technologies like HTML, CSS, JavaScript.</span
+              >
             </div>
-
-            <div class="left-page left-page-hidden">
-                <div class="vcard-pic">
-                    <img class="vcard-pic-img" src="cv/image/rafal2.jpg" alt="person picture">
-                </div>
-                <div class="vcard-description">
-                    <h1>Hi! I'm Rafał Siemieniuk</h1>
-                    <div class="vcard-description-text">
-                        <span>My name is Rafal and I am a Front-End Developer. I work on web technologies like HTML,
-                            CSS, JavaScript.</span>
-                    </div>
-                    <footer class="footer">
-                        <div class="email-and-phone">
-                            <p>
-                                <i class="vcard-icon fa fa-envelope-o" aria-hidden="true"></i><span class="email-address"></span></p>
-                            <p>
-                                <i class="vcard-icon fa fa-phone" aria-hidden="true"></i><span class="number-phone"></span></p>
-                        </div>
-                        <div class="footer-link-icons">
-                            <a class="hyper-link-icon" href="https://www.facebook.com/people/Rafa%C5%82-Siemieniuk/100002641560066">
-                                <i title="Go to the my Facebook" class="footer-icon fa fa-facebook-square" aria-hidden="true"></i>
-                            </a>
-                            <a class="hyper-link-icon" href="https://github.com/rafalSiemieniuk">
-                                <i title="Go to the my Github" class="footer-icon fa fa-github-square" aria-hidden="true"></i>
-                            </a>
-                            <a class="hyper-link-icon" href="https://www.linkedin.com/in/rafa%C5%82-siemieniuk-a15999162/">
-                                <i title="Go to the my Linkedin" class="footer-icon fa fa-linkedin-square" aria-hidden="true"></i>
-                            </a>
-                            <a class="hyper-link-icon" href="cv/index-pdf.html">
-                                <i title="Go to the print version" class="footer-icon fa fa-print" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="right-page right-page-hidden experience">
-                <div class="job-experience">
-                    <h2>
-                        <i class="header-icon fa fa-briefcase" aria-hidden="true"></i>Working experience</h2>
-                    <div class="job">
-                        <h3>SoftwareHut</h3>
-                        <p class="job-date">09.2018 - 05.2020</p>
-                        <p class="job-description">Worksite: Software Developer</p>
-                    </div>
-                    <div class="job">
-                        <h3>Surveyor services „Croma”</h3>
-                        <p class="job-date">03.2016 - 03.2018</p>
-                        <p class="job-description">Worksite: Surveyor Assistant</p>
-                    </div>
-                </div>
-                <div class="edu-experience">
-                    <h2>
-                        <i class="header-icon fa fa-graduation-cap" aria-hidden="true"></i>Education</h2>
-                    <div class="edu">
-                        <h3>Bialystok University of Technology</h3>
-                        <p class="edu-date">10.2017 - 06.2018</p>
-                        <p class="edu-description">Field of studies: Web Applications Front-End Development</p>
-                    </div>
-                    <div class="edu">
-                        <h3>University of Warmia and Mazury in Olsztyn</h3>
-                        <p class="edu-date">10.2012 - 02.2016</p>
-                        <p class="edu-description">Field of studies: Geodesy and Cartography</p>
-                    </div>
-                    <div class="edu">
-                        <h3>Zespół Szkół Budowlano-Geodezyjnych w Białymstoku</h3>
-                        <p class="edu-date">09.2008 - 06.2012</p>
-                        <p class="edu-description">Field of studies: Surveying technician</p>
-                    </div>
-                </div>
-                <div class="workshop-experience">
-                    <h2>
-                        <i class="header-icon fa fa-plus" aria-hidden="true"></i>Workshops</h2>
-                    <div class="workshop">
-                        <h3>Scrum.org</h3>
-                        <p class="workshop-date">31 May 2019</p>
-                        <p class="workshop-description">Professional Scrum Master I</p>
-                    </div>
-                    <div class="workshop">
-                        <h3>Training center EDUGIKA</h3>
-                        <p class="workshop-date">20 December 2015</p>
-                        <p class="workshop-description">AutoCAD workshop</p>
-                    </div>
-                </div>
-            </div>
-            <div class="right-page right-page-hidden skills clear">
-                <h2>
-                    <i class="header-icon fa fa-table" aria-hidden="true"></i>Skills</h2>
-                <div id="tableSkills"></div>
-                <h2>
-                    <i class="header-icon fa fa-comments" aria-hidden="true"></i>Languages
-                </h2>
-                <p class="language">
-                    <span class="language-bold">Polish:</span>
-                    <span class="language-level">Mother tongue</span>
+            <footer class="footer">
+              <div class="email-and-phone">
+                <p>
+                  <i class="vcard-icon fa fa-envelope-o" aria-hidden="true"></i
+                  ><span class="email-address"></span>
                 </p>
-                <p class="language">
-                    <span class="language-bold">English:</span>
-                    <span class="language-level">Level B1</span>
+                <!-- <p>
+                  <i class="vcard-icon fa fa-phone" aria-hidden="true"></i
+                  ><span class="number-phone"></span>
+                </p> -->
+              </div>
+              <div class="footer-link-icons">
+                <a
+                  class="hyper-link-icon"
+                  href="https://www.facebook.com/people/Rafa%C5%82-Siemieniuk/100002641560066"
+                >
+                  <i
+                    title="Go to the my Facebook"
+                    class="footer-icon fa fa-facebook-square"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  class="hyper-link-icon"
+                  href="https://github.com/rafalSiemieniuk"
+                >
+                  <i
+                    title="Go to the my Github"
+                    class="footer-icon fa fa-github-square"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  class="hyper-link-icon"
+                  href="https://www.linkedin.com/in/rafa%C5%82-siemieniuk-a15999162/"
+                >
+                  <i
+                    title="Go to the my Linkedin"
+                    class="footer-icon fa fa-linkedin-square"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </div>
+            </footer>
+          </div>
+        </div>
+
+        <div class="left-page left-page-hidden">
+          <div class="vcard-pic">
+            <img
+              class="vcard-pic-img"
+              src="cv/image/rafal.jpg"
+              alt="person picture"
+            />
+          </div>
+          <div class="vcard-description">
+            <h1>Hi! I'm Rafał Siemieniuk</h1>
+            <div class="vcard-description-text">
+              <span
+                >My name is Rafal and I am a Front-End Developer. I work on web
+                technologies like HTML, CSS, JavaScript.</span
+              >
+            </div>
+            <footer class="footer">
+              <div class="email-and-phone">
+                <p>
+                  <i class="vcard-icon fa fa-envelope-o" aria-hidden="true"></i
+                  ><span class="email-address"></span>
                 </p>
+                <!-- <p>
+                  <i class="vcard-icon fa fa-phone" aria-hidden="true"></i
+                  ><span class="number-phone"></span>
+                </p> -->
+              </div>
+              <div class="footer-link-icons">
+                <a
+                  class="hyper-link-icon"
+                  href="https://www.facebook.com/people/Rafa%C5%82-Siemieniuk/100002641560066"
+                >
+                  <i
+                    title="Go to the my Facebook"
+                    class="footer-icon fa fa-facebook-square"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  class="hyper-link-icon"
+                  href="https://github.com/rafalSiemieniuk"
+                >
+                  <i
+                    title="Go to the my Github"
+                    class="footer-icon fa fa-github-square"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  class="hyper-link-icon"
+                  href="https://www.linkedin.com/in/rafa%C5%82-siemieniuk-a15999162/"
+                >
+                  <i
+                    title="Go to the my Linkedin"
+                    class="footer-icon fa fa-linkedin-square"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </div>
+              <div class="special-link-icons">
+                <a class="hyper-link-icon" href="cv/index-pdf.html">
+                  <i
+                    title="Go to the print version"
+                    class="footer-icon fa fa-print"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </div>
+            </footer>
+          </div>
+        </div>
+
+        <div class="right-page right-page-hidden experience">
+          <div class="job-experience">
+            <h2>
+              <i class="header-icon fa fa-briefcase" aria-hidden="true"></i
+              >Working experience
+            </h2>
+            <div class="job">
+              <h3>9bits</h3>
+              <p class="job-date">11.2021 - present</p>
+              <p class="job-description">Worksite: Software Developer</p>
             </div>
-            <div class="right-page right-page-hidden portfolio" style="display: none;">
-                <div class="portfolio-description clear">
-                    <h2>
-                        <i class="header-icon fa fa-tasks" aria-hidden="true"></i>Portfolio</h2>
-                    <div class="portfolio-left-col">
-                        <ol class="portfolio-ol"> <span>Websites:</span>
-                            <li>
-                                <a class="portfolio-hyper-link portfolio-masteralb" href="1_task/index.html">Masteralb
-                                </a>
-                            </li>
-                            <li>
-                                <a class="portfolio-hyper-link portfolio-cahee" href="2_task/index.html">Cahee
-                                </a>
-                            </li>
-                            <li>
-                                <a class="portfolio-hyper-link portfolio-tree-house" href="3_task/index.html">TreeHouse
-                                </a>
-                            </li>
-                            <li>
-                                <a class="portfolio-hyper-link portfolio-macan-kumbang" href="4_task/index.html">MacanKumbang
-                                </a>
-                            </li>
-                            <li>
-                                <a class="portfolio-hyper-link portfolio-fashiondesigner" href="5_task/index.html">FashionDesigner
-                                </a>
-                            </li>
-                            <li>
-                                <a class="portfolio-hyper-link portfolio-carpenter" href="http://www.aps-stolarnia.pl">www.aps-stolarnia.pl
-                                </a>
-                            </li>
-                            <li>
-                                <a class="portfolio-hyper-link portfolio-carpenter" href="http://www.autosiemieniuk.pl">www.autosiemieniuk.pl
-                                </a>
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="portfolio-right-col">
-                        <ol class="portfolio-ol"> <span>Java Script:</span>
-                            <li>
-                                <a class="portfolio-hyper-link" href="2018-04-13/index.html">2018-04-13
-                                </a>
-                            </li>
-                            <li>
-                                <a class="portfolio-hyper-link" href="2018-06-03/index.html">2018-06-03
-                                </a>
-                            <li>
-                                <a class="portfolio-hyper-link" href="angular-1/index.html">Angular cli
-                                </a>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
+            <div class="job">
+              <h3>SoftwareHut</h3>
+              <p class="job-date">09.2018 - 10.2021</p>
+              <p class="job-description">Worksite: Software Developer</p>
             </div>
-            <div class="right-page right-page-hidden hobby">
-                <div class="hobby-description">
-                    <h2>
-                        <i class="header-icon fa fa-gamepad" aria-hidden="true"></i>Hobby</h2>
-                    <ul class="hobby-ul">
-                        <li>Macroeconomics - Austrian school</li>
-                        <li>Psychology - Personality, psychopathology</li>
-                        <li>History - XX and XIX century</li>
-                        <li>Sport - Ice skates, roller skates, bike, swimming</li>
-                    </ul>
-                </div>
+            <div class="job">
+              <h3>Surveyor services „Croma”</h3>
+              <p class="job-date">03.2016 - 03.2018</p>
+              <p class="job-description">Worksite: Surveyor Assistant</p>
             </div>
-            <div class="right-page right-page-hidden contact">
-                <h2>
-                    <i class="header-icon fa fa-envelope" aria-hidden="true"></i>Contact</h2>
-                <div class="div-map">
-                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d76618.69597537257!2d23.0922058!3d53.1221452!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc048f41971d%3A0x72317dcc8bf07b2c!2s15-001+Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1516475457651"
-                        style="border:0"></iframe>
-                </div>
-                <div class="adress">
-                    <h3 class="header-adress">
-                        <i class="contact-icon fa fa-map-marker" aria-hidden="true"></i>Adress</h3>
-                    <p class="contact-text">Białystok</p>
-                </div>
-                <div class="phone">
+          </div>
+          <div class="edu-experience">
+            <h2>
+              <i class="header-icon fa fa-graduation-cap" aria-hidden="true"></i
+              >Education
+            </h2>
+            <div class="edu">
+              <h3>Bialystok University of Technology</h3>
+              <p class="edu-date">10.2017 - 06.2018</p>
+              <p class="edu-description">
+                Field of studies: Web Applications Front-End Development
+              </p>
+            </div>
+            <div class="edu">
+              <h3>University of Warmia and Mazury in Olsztyn</h3>
+              <p class="edu-date">10.2012 - 02.2016</p>
+              <p class="edu-description">
+                Field of studies: Geodesy and Cartography
+              </p>
+            </div>
+            <div class="edu">
+              <h3>Zespół Szkół Budowlano-Geodezyjnych w Białymstoku</h3>
+              <p class="edu-date">09.2008 - 06.2012</p>
+              <p class="edu-description">
+                Field of studies: Surveying technician
+              </p>
+            </div>
+          </div>
+          <div class="workshop-experience">
+            <h2>
+              <i class="header-icon fa fa-plus" aria-hidden="true"></i>Workshops
+            </h2>
+            <div class="workshop">
+              <h3>Scrum.org</h3>
+              <p class="workshop-date">31 May 2019</p>
+              <p class="workshop-description">Professional Scrum Master I</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-page right-page-hidden skills clear">
+          <h2>
+            <i class="header-icon fa fa-table" aria-hidden="true"></i>Skills
+          </h2>
+          <div id="tableSkills"></div>
+          <h2>
+            <i class="header-icon fa fa-comments" aria-hidden="true"></i
+            >Languages
+          </h2>
+          <p class="language">
+            <span class="language-bold">Polish:</span>
+            <span class="language-level">Mother tongue</span>
+          </p>
+          <p class="language">
+            <span class="language-bold">English:</span>
+            <span class="language-level">Level B1</span>
+          </p>
+        </div>
+        <div
+          class="right-page right-page-hidden portfolio"
+          style="display: none"
+        >
+          <div class="portfolio-description clear">
+            <h2>
+              <i class="header-icon fa fa-tasks" aria-hidden="true"></i
+              >Portfolio
+            </h2>
+            <div class="portfolio-left-col">
+              <ol class="portfolio-ol">
+                <span>Websites:</span>
+                <li>
+                  <a
+                    class="portfolio-hyper-link portfolio-masteralb"
+                    href="1_task/index.html"
+                    >Masteralb
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="portfolio-hyper-link portfolio-cahee"
+                    href="2_task/index.html"
+                    >Cahee
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="portfolio-hyper-link portfolio-tree-house"
+                    href="3_task/index.html"
+                    >TreeHouse
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="portfolio-hyper-link portfolio-macan-kumbang"
+                    href="4_task/index.html"
+                    >MacanKumbang
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="portfolio-hyper-link portfolio-fashiondesigner"
+                    href="5_task/index.html"
+                    >FashionDesigner
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="portfolio-hyper-link portfolio-carpenter"
+                    href="http://www.aps-stolarnia.pl"
+                    >www.aps-stolarnia.pl
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="portfolio-hyper-link portfolio-carpenter"
+                    href="http://www.autosiemieniuk.pl"
+                    >www.autosiemieniuk.pl
+                  </a>
+                </li>
+              </ol>
+            </div>
+            <div class="portfolio-right-col">
+              <ol class="portfolio-ol">
+                <span>Java Script:</span>
+                <li>
+                  <a class="portfolio-hyper-link" href="2018-04-13/index.html"
+                    >2018-04-13
+                  </a>
+                </li>
+                <li>
+                  <a class="portfolio-hyper-link" href="2018-06-03/index.html"
+                    >2018-06-03
+                  </a>
+                </li>
+
+                <li>
+                  <a class="portfolio-hyper-link" href="angular-1/index.html"
+                    >Angular cli
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="right-page right-page-hidden hobby">
+          <div class="hobby-description">
+            <h2>
+              <i class="header-icon fa fa-gamepad" aria-hidden="true"></i>Hobby
+            </h2>
+            <ul class="hobby-ul">
+              <li>History - XX and XIX century</li>
+              <li>Physics - General relativity</li>
+              <li>Macroeconomics - Austrian school</li>
+              <li>Psychology - Personality</li>
+              <li>Sport - Ice skates, roller skates, bike, swimming</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-page right-page-hidden contact">
+          <h2>
+            <i class="header-icon fa fa-envelope" aria-hidden="true"></i>Contact
+          </h2>
+          <div class="div-map">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d76618.69597537257!2d23.0922058!3d53.1221452!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc048f41971d%3A0x72317dcc8bf07b2c!2s15-001+Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1516475457651"
+              style="border: 0"
+            ></iframe>
+          </div>
+          <div class="adress">
+            <h3 class="header-adress">
+              <i class="contact-icon fa fa-map-marker" aria-hidden="true"></i
+              >Adress
+            </h3>
+            <p class="contact-text">Białystok</p>
+          </div>
+          <!-- <div class="phone">
                     <h3 class="header-phone">
                         <i class="contact-icon fa fa-phone" aria-hidden="true"></i>Phone</h3>
                     <p class="contact-text number-phone"></p>
-                </div>
-                <div class="mail">
-                    <h3 class="header-mail">
-                        <i class="contact-icon fa fa-envelope" aria-hidden="true"></i>Mail</h3>
-                    <p class="contact-text email-address"></p>
-                </div>
-                <div class="contact-form">
+                </div> -->
+          <div class="mail">
+            <h3 class="header-mail">
+              <i class="contact-icon fa fa-envelope" aria-hidden="true"></i>Mail
+            </h3>
+            <p class="contact-text email-address"></p>
+          </div>
+          <!-- <div class="contact-form">
                     <h3 class="header-contact-form">
                         <i class="contact-icon fa fa-share" aria-hidden="true"></i>Send Me a Message</h3>
-                    <form class="form" name="CVForm" action="mailto:siemieniukrafal@gmail.com" method="post" enctype="text/plain">
+                    <form class="form" name="CVForm" action="mailto:" method="post" enctype="text/plain">
                         <input id="name" name="name" type="text" placeholder="Name">
                         <input id="e-mail" name="e-mail" type="email" placeholder="Email">
                         <input id="topic" name="topic" type="text" placeholder="Subject">
                         <textarea class="textarea" id="message" name="message" placeholder="Message"></textarea>
                         <button class="form-submit" type="submit">Send</button>
                     </form>
-                </div>
-                <footer>
-                    <p class="footer-text">I hereby agree for processing the following personal information strictly
-                        for the purposes of job recruitment
-                        in accordance with the regulation for the protection of personal data passed on the following
-                        day:
-                        29.08.97 r. consolidated text Dz. U. 2016 r. poz. 922.</p>
-                </footer>
-            </div>
+                </div> -->
+          <!-- <footer>
+            <p class="footer-text">
+              I hereby agree for processing the following personal information
+              strictly for the purposes of job recruitment in accordance with
+              the regulation for the protection of personal data passed on the
+              following day: 29.08.97 r. consolidated text Dz. U. 2016 r. poz.
+              922.
+            </p>
+          </footer> -->
         </div>
-        <div id="bottom">
-            <a href="#" class="scrollup">
-                <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
-            </a>
-        </div>
+      </div>
+      <div id="bottom">
+        <a href="#" class="scrollup">
+          <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
 
     <script src="cv/jquery-3.3.1.min.js"></script>
@@ -307,8 +441,5 @@
     <script src="cv/js-animations-move.js"></script>
     <script src="cv/js-table-skills.js"></script>
     <script src="cv/js-emailAndPhone.js"></script>
-
-</body>
-
-
+  </body>
 </html>

@@ -10,17 +10,14 @@ var skills = [{
   title: 'SCSS / LESS',
   stars: 5,
 }, {
-  title: 'Java Script (ES9)',
-  stars: 4,
+  title: 'Java Script (ES12)',
+  stars: 5,
 }, {
   title: 'React',
-  stars: 4,
+  stars: 5,
 }, {
   title: 'Vue',
-  stars: 4.5,
-}, {
-  title: 'Angular 2+',
-  stars: 3,
+  stars: 5,
 }];
 
 var table = document.createElement('table');
